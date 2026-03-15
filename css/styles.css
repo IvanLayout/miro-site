@@ -496,8 +496,8 @@ button
 
 .header__info-box
 {
-    align-content: flex-end;
-    align-items: flex-end;
+    align-content: center;
+    align-items: center;
 
 	background: #fff;
 	border-radius: 8px;
@@ -614,6 +614,7 @@ button
     width: 400px;
     max-width: 711px;
     margin-left: 10px;
+	margin-right: 15px;
 }
 
 .header__search-field
@@ -621,7 +622,7 @@ button
     flex-wrap: nowrap;
 	border: 1px solid #E8E8EC;
 	border-radius: 6px;
-	padding: 6px;
+	padding: 5px;
 }
 
 .header__search .header__search-input
@@ -632,7 +633,8 @@ button
     display: block;
 
     width: 100%;
-    height: 52px;
+    height: 40px;
+	padding: 0 15px;
 
     background: none;
 	border: none;
@@ -640,7 +642,88 @@ button
 
 .header__search-submit
 {
-    
+    color: #FFF;
+	font: 16px var(--font-family);
+
+    flex-shrink: 0;
+
+    height: 40px;
+    margin-left: 10px;
+	padding: 0 20px;
+
+    border-radius: 6px;
+    background: #F52121;
+	transition: background .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .header__search-submit:hover
+    {
+        background: #363B3F;
+    }
+}
+
+
+.header__btns
+{
+    margin-left: auto;
+}
+
+.header__btn
+{
+    position: relative;
+
+    color: inherit;
+    font-size: 12px;
+
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .header__btn:hover
+    {
+        color: #F52121;
+    }
+}
+
+.header__btn + .header__btn
+{
+    margin-left: 28px;
+}
+
+.header__btn-icon
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    height: 24px;
+}
+
+.header__btn-icon svg
+{
+    display: block;
+	width: 24px;
+	height: 24px;
+
+    fill: currentColor;
+    stroke: none;
+}
+
+.header__btn-name
+{
+    display: block;
+
+    margin-top: 4px;
 }
 /*------------
     BTNS
