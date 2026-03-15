@@ -36,17 +36,18 @@ $(() => {
 	$(':root').css('--scroll_width', widthScroll() + 'px')
 
 
+
+	// commit
+
+
 })
 
 
 $(window).on('load', () => {
-	adjustMenu()
-
+	
+	// commit
 	
 })
-
-
-$(window).on('resize', adjustMenu);
 
 
 // Вспомогательные функции

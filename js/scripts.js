@@ -11,11 +11,14 @@ if (document.body.clientWidth < 375) {
 
 $(() => {
 
+	// commit
+	
 });
 
 
 $(window).on('load', () => {
 	
+	// commit
 
 });
 
