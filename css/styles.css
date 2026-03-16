@@ -2662,6 +2662,12 @@ html.with-fancybox{
     transition: color .2s linear, background .2s linear;
 }
 
+.main-slider .slider-button-prev,
+.main-slider .slider-button-next
+{
+	margin-top: -26px;
+}
+
 
 @media (any-hover: hover)
 {
@@ -2716,9 +2722,9 @@ html.with-fancybox{
 
 .slider-pagination
 {
-    position: absolute;
+    position: relative;
     z-index: 9;
-    bottom: 9px;
+    bottom: 0;
     left: 0;
 
     display: flex;
@@ -2735,6 +2741,13 @@ html.with-fancybox{
     transition: 300ms opacity, 300ms visibility;
 }
 
+.main-slider .slider-pagination
+{
+	margin-top: 10px;
+	bottom: 0;
+	top: 0;
+}
+
 .slider-pagination.swiper-pagination-lock
 {
     display: none !important;
@@ -2746,13 +2759,13 @@ html.with-fancybox{
 
     display: block;
 
-    width: 5px;
-    height: 5px;
+    width: 20px;
+    height: 2px;
     margin: 0;
     padding: 0;
 
-    border-radius: 50%;
-    background: #F9F9F9;
+    border-radius: 10px;
+    background: #E5E5EA;
     box-shadow: none;
 
     transition: background .2s linear, height .2s linear, width .2s linear;
@@ -2762,7 +2775,7 @@ html.with-fancybox{
 
 .slider-dot + .slider-dot
 {
-    margin-left: 7px;
+    margin-left: 10px;
 }
 
 .slider-pagination-clickable .slider-dot
@@ -2774,13 +2787,13 @@ html.with-fancybox{
 {
     .slider-dot:hover
     {
-        background: #F87740;
+        background: #D30000;
     }
 }
 
 .slider-dot.slider-dot_active
 {
-    background: #F87740;
+    background: #F52121;
 }
 
 .swiper-scrollbar
@@ -2824,9 +2837,96 @@ html.with-fancybox{
 }
 
 
-.first-section
+.first-section_marg
 {
-    
+    margin-top: 20px;
+}
+
+.main-slider__slide
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: auto;
+	min-height: 355px;
+
+    border-radius: 8px;
+	padding: 35px 40px 40px;
+}
+
+.main-slider__box
+{
+	max-width: 430px;
+	color: #fff;
+
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 1;
+
+	min-height: 100%;
+}
+
+.main-slider__info
+{
+	flex: 1 0 auto;
+}
+
+.main-slider__title
+{
+	font-size: 40px;
+	line-height: 1.05;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.main-slider__desc
+{
+	margin-top: 9px;
+}
+
+.main-slider__btn
+{
+	margin-top: 40px;
+}
+
+.main-slider__img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+    display: block;
+
+    width: 100%;
+	height: 100%;
+}
+
+.main-slider__img picture
+{
+    position: absolute;
+	top: 0;
+	left: 0;
+
+    display: block;
+
+	width: 100%;
+	height: 100%;
+}
+
+.main-slider__img img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
 }
 
 /*------------
