@@ -123,7 +123,44 @@ $(() => {
 
 	// commit
 
+	$('.form__input-anim').each(function(){
+		let value = $(this).val()
 
+		if ( value != '' ) {
+			$(this).closest('.form__field').addClass('_full')
+		} else {
+			$(this).closest('.form__field').removeClass('_full')
+		}
+	})
+
+	$('.form__input-anim').change(function() {
+		let value = $(this).val()
+
+		if ( value != '' ) {
+			$(this).closest('.form__field').addClass('_full')
+		} else {
+			$(this).closest('.form__field').removeClass('_full')
+		}
+	})
+
+
+	$('body').on('click', '[data-open-acc]', function (e) {
+		e.preventDefault()
+
+		if ($(this).closest('[data-item-acc]').hasClass('_active')) {
+			$(this).removeClass('_active')
+			$(this).closest('[data-item-acc]').removeClass('_active')
+			$(this).closest('[data-item-acc]').find('[data-data-acc]').slideUp(300)
+		} else {
+			$(this).closest('[data-items-acc]').find('[data-open-acc]').removeClass('_active')
+			$(this).closest('[data-items-acc]').find('[data-item-acc]').removeClass('_active')
+			$(this).closest('[data-items-acc]').find('[data-data-acc]').slideUp(300)
+
+			$(this).addClass('_active')
+			$(this).closest('[data-item-acc]').addClass('_active')
+			$(this).closest('[data-item-acc]').find('[data-data-acc]').slideDown(300)
+		}
+	})
 })
 
 
