@@ -3267,6 +3267,50 @@ html.with-fancybox{
 }
 
 
+.product-info__more
+{
+	margin-top: 15px;
+
+	color: #0064B5;
+	font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+	padding-right: 15px;
+}
+
+.product-info__more::after
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	right: 0;
+
+	display: block;
+
+	width: 7px;
+	height: 13px;
+
+	margin-top: -6px;
+
+	background: url(../images/ic_arrowl_link.svg) 50% no-repeat;
+}
+
+.product-info__more span
+{
+	border-bottom: 1px solid transparent;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.product-info__more:hover span
+	{
+		border-color: #0064B5;
+	}
+}
+
+
 .product-info__box + .product-info__box
 {
 	margin-top: 10px;
