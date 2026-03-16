@@ -1,0 +1,29 @@
+@media (max-width: 1400px)
+{
+    /*------------
+		commit
+	------------*/
+	.slider-button-prev{
+		left: -10px;
+	}
+
+	.slider-button-next{
+		right: -10px;
+	}
+
+	.main-cats__item{
+		font-size: 16px;
+	}
+
+	.header__btn + .header__btn {
+		margin-left: 20px;
+	}
+
+	.footer__coll {
+		width: 332px;
+	}
+
+	.footer__colr {
+		width: 320px;
+	}
+}

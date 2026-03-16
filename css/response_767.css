@@ -3,4 +3,179 @@
     /*------------
 		commit
 	------------*/
+	.cont{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	._marg{
+		margin-top: 44px;
+	}
+
+	.main-title {
+		font-size: 20px;
+	}
+
+	.main-cats__flex {
+		margin-left: -8px;
+		gap: 8px 0;
+	}
+
+	.main-cats__item {
+		width: calc(100% / 2 - 8px);
+		margin-left: 8px;
+
+		font-size: 14px;
+		line-height: 1.25;
+	}
+
+	.become-partner__flex{
+		flex-wrap: wrap;
+		margin-top: 16px;
+	}
+
+	.become-partner__coll{
+		width: 100%;
+		order: 2;
+		padding: 16px;
+	}
+
+	.become-partner__text{
+		margin-top: 32px;
+		font-size: 16px;
+	}
+
+	.become-partner__colr{
+		width: 100%;
+	}
+
+	.become-partner .video{
+		aspect-ratio: 1;
+	}
+
+
+	.become-partner__items{
+		margin-top: 6px;
+	}
+
+	.become-partner__item {
+		margin-top: 8px;
+		width: calc(100% / 1 - 10px);
+	}
+
+
+	.products__slider{
+		margin-top: 16px;
+	}
+
+	.main-action__slider{
+		margin-top: 16px;
+	}
+
+
+	.swiper-overflow{
+		overflow: visible;
+	}
+
+	.swiper-slide.product{
+		width: 268px;
+	}
+
+	.slider-button-next,
+	.slider-button-prev{
+		display: none;
+	}
+
+
+	.main-action__slider{
+		padding: 0 11px;
+	}
+
+	.main-action__slide{
+		width: 332px;
+	}
+
+
+	.brands__flex {
+		margin-top: 16px;
+		margin-left: -8px;
+		row-gap: 8px;
+	}
+
+	.brands__item {
+		width: calc(100% / 3 - 8px);
+		margin-left: 8px;
+	}
+
+
+	.section-news__flex {
+		margin: -16px 0 0 -8px;
+	}
+
+	.section-news__item {
+		margin-left: 8px;
+		width: calc(100% / 2 - 8px);
+	}
+
+	
+	.section-faq__flex{
+		margin-top: 16px;
+		flex-wrap: wrap;
+	}
+
+	.section-faq__colr{
+		width: 100%;
+	}
+
+
+	.section-subscribe__box{
+		min-height: 1px;
+	}
+
+	.agree-text{
+		margin-top: 16px;
+	}
+
+
+	.product__price {
+		font-size: 20px;
+	}
+
+	.product__old-price {
+		font-size: 20px;
+	}
+
+
+	.footer__coll{
+		width: 100%;
+	}
+
+	.footer__menu{
+		width: 100%;
+	}
+
+	.footer__copy{
+		width: 100%;
+	}
+
+	.footer__creator{
+		width: 100%;
+	}
+
+	.footer__link{
+		order: 0;
+		width: 100%;
+	}
+
+	.form__submit{
+		margin-top: 16px;
+	}
+
+	.footer .form__submit-btn{
+		width: 100%;
+	}
+
+	.footer__info{
+		margin-top: 16px;
+	}
 }

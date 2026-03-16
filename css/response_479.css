@@ -3,4 +3,35 @@
     /*------------
 		commit
 	------------*/
+	.section-news__item {
+		margin-left: 8px;
+		width: calc(100% - 8px);
+	}
+
+
+	.section-subscribe__bg{
+		padding: 16px;
+		background-position: 56% 50%;
+	}
+
+	.section-subscribe__box{
+		max-width: 323px;
+	}
+
+	.form__one{
+		gap: 8px;
+		flex-wrap: wrap;
+	}
+
+	.form__one .form__submit{
+		width: 100%;
+	}
+
+	.form__one .form__submit-btn{
+		width: 100%;
+	}
+
+	.footer__menu-col{
+		width: 100%;
+	}
 }

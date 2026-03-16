@@ -3,4 +3,189 @@
     /*------------
 		commit
 	------------*/
+	body{
+		font-size: 14px;
+	}
+
+	._marg {
+		margin-top: 50px;
+	}
+
+	.main-title{
+		font-size: 24px;
+	}
+
+	.main-cats__flex{
+		gap: 16px 0;
+		margin-left: -16px;
+	}
+
+	.main-cats__item {
+		width: calc(100% / 3 - 16px);
+		margin-left: 16px;
+	}
+
+	.main-cats__item {
+		font-size: 16px;
+	}
+
+	.become-partner__text {
+		font-size: 14px;
+		margin-top: 20px;
+	}
+
+	.become-partner__coll {
+		padding: 20px;
+	}
+
+	.become-partner__flex{
+		margin-top: 20px;
+	}
+
+
+	.become-partner__items{
+		margin-top: 10px;
+	}
+
+	.become-partner__item{
+		padding: 16px;
+	}
+
+	.become-partner__name{
+		font-size: 14px;
+	}
+
+	.become-partner__desc{
+		font-size: 12px;
+	}
+
+	
+	.products__slider{
+		margin-top: 20px;
+	}
+
+
+	.main-action__slider{
+		margin-top: 20px;
+	}
+
+
+	.brands__flex{
+		margin-top: 20px;
+		margin-left: -16px;
+		row-gap: 16px;
+	}
+
+	.brands__item {
+		width: calc(100% / 4 - 16px);
+		margin-left: 16px;
+	}
+
+
+	.section-news__flex {
+		margin: -12px 0 0 -16px;
+	}
+
+	.section-news__item {
+		margin-left: 16px;
+		width: calc(100% / 3 - 16px);
+	}
+	
+	.section-news__date{
+		margin-top: 16px;
+	}
+
+	.section-news__name{
+		font-size: 14px;
+		margin-top: 10px;
+	}
+
+	.section-news__desc{
+		font-size: 12px;
+		margin-top: 4px;
+	}
+
+	.section-faq__flex{
+		margin-top: 20px;
+		gap: 16px;
+	}
+
+	.accordion__open {
+		font-size: 16px;
+		padding: 16px;
+		gap: 16px;
+		min-height: 64px;
+	}
+
+	.accordion__open-arrow{
+		width: 32px;
+		height: 32px;
+	}
+
+	.accordion__data{
+		padding: 0 16px 16px;
+	}
+
+	.section-faq__colr {
+		width: 32%;
+		padding: 16px;
+	}
+
+	.section-faq__title {
+		font-size: 16px;
+	}
+
+	/* .section-faq__colr{
+		width: 100%;
+	} */
+
+	.section-subscribe__bg{
+		padding: 20px;
+	}
+
+	.section-subscribe__box{
+		min-height: 170px;
+	}
+
+
+	.footer{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.footer__coll{
+		width: calc(44% - 16px);
+	}
+
+	.footer__menu{
+		width: calc(56% - 16px);
+
+		gap: 32px 24px;
+	}
+
+	.footer__menu-col{
+		width: calc(50% - 12px);
+	}
+
+	.footer__colr{
+		width: 100%;
+	}
+
+	.footer__bot{
+		padding-top: 31px;
+		margin-top: 32px;
+	}
+
+	.footer__copy{
+		width: calc(50% - 10px);
+	}
+
+	.footer__creator{
+		width: calc(50% - 10px);
+	}
+
+	.footer__link{
+		order: 2;
+		width: calc(50% - 10px);
+	}
 }

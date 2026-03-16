@@ -3,4 +3,94 @@
     /*------------
 		commit
 	------------*/
+	.header__list-item + .header__list-item {
+		margin-left: 40px;
+	}
+
+	.header-catalog__wrap{
+		gap: 20px;
+	}
+
+
+	.main-slider__slide{
+		padding: 30px;
+		min-height: 320px;
+	}
+
+	.main-slider__box{
+		max-width: 400px;
+	}
+
+	.main-cats__item-name{
+		padding: 16px 16px 4px;
+	}
+
+	.main-cats__item {
+		font-size: 14px;
+	}
+
+
+	.become-partner__coll{
+		padding: 30px;
+	}
+
+	.become-partner__desc{
+		font-size: 16px;
+	}
+
+
+	.product__price{
+		font-size: 18px;
+	}
+
+	.product__oldprice{
+		font-size: 18px;
+	}
+
+	.section-news__name{
+		font-size: 18px;
+	}
+
+	.section-news__desc{
+		font-size: 14px;
+	}
+
+
+	.accordion__open{
+		font-size: 18px;
+	}
+
+	.section-faq__title{
+		font-size: 18px;
+	}
+
+
+	.section-subscribe__box{
+		min-height: 210px;
+	}
+
+
+	.footer__coll {
+		width: 260px;
+	}
+
+	.footer__menu {
+		gap: 20px 30px;
+	}
+
+	.footer__colr {
+		width: 270px;
+	}
+
+	.footer__copy{
+		font-size: 12px;
+	}
+
+	.footer__link{
+		font-size: 12px;
+	}
+
+	.footer__creator{
+		font-size: 12px;
+	}
 }

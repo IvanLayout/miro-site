@@ -139,7 +139,7 @@ $(() => {
 	if ($('.products__slider').length) {
 		new Swiper(".products__slider", {
 			loop: false,
-			spaceBetween: 10,
+			spaceBetween: 8,
 			slidesPerView: 'auto',
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -158,18 +158,22 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 10,
+					spaceBetween: 8,
 					slidesPerView: 'auto',
 				},
 				'480': {
-					spaceBetween: 10,
-					slidesPerView: 2,
+					spaceBetween: 8,
+					slidesPerView: 'auto',
 				},
 				'768': {
 					spaceBetween: 16,
 					slidesPerView: 3,
 				},
 				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 4,
+				},
+				'1300': {
 					spaceBetween: 20,
 					slidesPerView: 5,
 				}
@@ -200,8 +204,8 @@ $(() => {
 	if ($('.main-action__slider').length) {
 		new Swiper(".main-action__slider", {
 			loop: false,
-			spaceBetween: 10,
-			slidesPerView: 1,
+			spaceBetween: 8,
+			slidesPerView: 'auto',
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			preloadImages: false,
@@ -219,16 +223,16 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 10,
-					slidesPerView: 1,
+					spaceBetween: 8,
+					slidesPerView: 'auto',
 				},
 				'480': {
-					spaceBetween: 10,
-					slidesPerView: 2,
+					spaceBetween: 8,
+					slidesPerView: 'auto',
 				},
 				'768': {
 					spaceBetween: 16,
-					slidesPerView: 3,
+					slidesPerView: 2,
 				},
 				'1024': {
 					spaceBetween: 20,

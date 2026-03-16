@@ -59,22 +59,39 @@ $(() => {
 		}
 	})
 
-	// $('.header-menu__item').hover(function() {
-	// 	// $(this).addClass('_active');
 
+	if ( $(window).width() > 1024 ) {
+		$('body').on('mousemove', '.header-menu__link', function (e) {
+			if( !$(this).hasClass('_active') ) {
+				let parent = $(this).closest('.header-catalog__block')
+				let subMenu = $(this).data('sub-menu')
 
-	// 	if( !$(this).hasClass('_active') ) {
-	// 		let parent = $(this).closest('.header-catalog__block')
-	// 		let activeTab = $(this).data('content')
+				parent.find('.header-menu__link').removeClass('_active')
+				parent.find('.header-submenu').removeClass('_active')
 
-	// 		parent.find('.header-menu:first').find('.menu_js').removeClass('_active')
+				if ( $(this).hasClass('open-sub-menu') ) {
+					$(this).addClass('_active')
+				}
+				$(subMenu).addClass('_active')
+			}
+		});
+	} else {
+		$('body').on('click', '.open-sub-menu', function (e) {
+			e.preventDefault()
 
-	// 		$(this).addClass('_active')
-	// 		$(activeTab).addClass('_active')
-	// 	}
-	// }, function() {
-	// 	$(this).removeClass('_active');
-	// });
+			let parent = $(this).closest('.header-catalog__block')
+			let subMenu = $(this).data('sub-menu')
+
+			parent.find('.open-sub-menu').removeClass('_active')
+			parent.find('.header-submenu').removeClass('_active')
+
+			if ( $(this).hasClass('open-sub-menu') ) {
+				$(this).addClass('_active')
+			}
+			$(subMenu).addClass('_active')
+		});
+	}
+	
 
 
 	// Табы
