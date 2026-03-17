@@ -93,50 +93,76 @@ $(() => {
 	}
 	
 
+	// Плавная прокрутка к якорю
+	$('.scroll-btn').click(function(e) {
+		e.preventDefault()
 
+		let href = $(this).data('anchor')
+
+		let offsetTop = 10;
+
+		$('html, body').stop().animate({ scrollTop: $(href).offset().top - offsetTop }, 1000)
+	})
+
+
+	
 	// Табы
-	// var locationHash = window.location.hash
+	var locationHash = window.location.hash
 
-	// $('body').on('click', '.tabs__button_js', function(e) {
-	// 	e.preventDefault()
+	$('body').on('click', '.tabs__button_js', function(e) {
+		e.preventDefault()
 
-	// 	if( !$(this).hasClass('_active') ) {
-	// 		let parent = $(this).closest('.tabs-container')
-	// 		let activeTab = $(this).data('content')
-	// 		let level = $(this).data('level')
+		if( !$(this).hasClass('_active') ) {
+			let parent = $(this).closest('.tabs-container')
+			let activeTab = $(this).data('content')
+			let activeTitle = $(this).data('content-title')
+			let level = $(this).data('level')
 
-	// 		parent.find('.tabs:first').find('.tabs__button_js').removeClass('_active')
-	// 		parent.find('.tab-content.' + level).removeClass('_active')
+			console.log(activeTitle)
 
-	// 		$(this).addClass('_active')
-	// 		$(activeTab).addClass('_active')
+			parent.find('.tabs:first').find('.tabs__button_js').removeClass('_active')
+			parent.find('.tab-content.' + level).removeClass('_active')
 
-	// 		if ( $(this).closest('.production-process').length ) {
-	// 			clearTimeout($stopTimer);
-	// 			$index = $(this).index();
-	// 			$('.production-process .tabs').attr('class', '').addClass('tabs act' + $index);
-	// 			tabsTimer();
+			if ( parent.hasClass('animated') ) {
+				parent.removeClass('animated')
 
-	// 			return false
-	// 		}
-	// 	}
-	// })
+				setTimeout(function(){
+					if ( !parent.hasClass('animated') ) {
+						parent.addClass('animated')
+					}
+				},50)
+			}
 
-	// if( locationHash && $('.tabs-container').length ) {
-	// 	let activeTab = $('.tabs__button_js[data-content="'+ locationHash +'"]')
-	// 	let parent = activeTab.closest('.tabs-container')
-	// 	let level = activeTab.data('level')
+			$(this).addClass('_active')
+			$(activeTab).addClass('_active')
 
-	// 	parent.find('.tabs:first').find('.tabs__button_js').removeClass('_active')
-	// 	parent.find('.tab-content.' + level).removeClass('_active')
+			if( $(this).closest('.tabs__item').length ){
+				parent.find('.tabs__item').removeClass('_active')
+				$(this).closest('.tabs__item').addClass('_active')
+			}
 
-	// 	activeTab.addClass('_active')
-	// 	$(locationHash).addClass('_active')
+			if( activeTitle !== 'undefined' ){
+				parent.find('.tabs__data').removeClass('_active')
+				$(activeTitle).addClass('_active')
+			}
+		}
+	})
 
-	// 	$('html, body').stop().animate({
-	// 		scrollTop: $(locationHash).offset().top - 120
-	// 	}, 1000)
-	// }
+	if( locationHash && $('.tabs-container').length ) {
+		let activeTab = $('.tabs__button_js[data-content="'+ locationHash +'"]')
+		let parent = activeTab.closest('.tabs-container')
+		let level = activeTab.data('level')
+
+		parent.find('.tabs:first').find('.tabs__button_js').removeClass('_active')
+		parent.find('.tab-content.' + level).removeClass('_active')
+
+		activeTab.addClass('_active')
+		$(locationHash).addClass('_active')
+
+		$('html, body').stop().animate({
+			scrollTop: $(locationHash).offset().top - 120
+		}, 1000)
+	}
 
 	// commit
 
