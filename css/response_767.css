@@ -1,5 +1,12 @@
 @media (max-width: 767px)
 {
+	.page-top 
+	{
+		padding-top: 15px;
+		padding-bottom: 25px;
+	}
+
+
 	.header__top
 	{
 		padding-top: 7px;
@@ -62,6 +69,185 @@
 	.header-submenu
 	{
 		
+	}
+
+
+	.product-info__images
+	{
+		width: 100%;
+		order: 2;
+
+		margin-top: 20px;
+	}
+
+	.product-thumbs
+	{
+		display: none;
+	}
+
+	.product-images
+	{
+		width: 100%;
+	}
+
+	.product-images__slider .slider-pagination
+	{
+		justify-content: center;
+	}
+
+	.product-info__info
+	{
+		width: 100%;
+		order: 1;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		align-content: flex-end;
+		flex-wrap: wrap;
+	}
+
+	.product-info__title
+	{
+		order: 1;
+		margin-top: 0;
+	}
+
+	.product-info__review
+	{
+		order: 2;
+	}
+
+	.product-info__code
+	{
+		order: 3;
+		margin-top: 10px;
+	}
+
+	.product-info__feature
+	{
+		display: none;
+	}
+
+	.informations
+	{
+		order: 3;
+	}
+
+	.informations._marg
+	{
+		margin-top: 20px;
+	}
+
+	.informations__tabs
+	{
+		display: none;
+	}
+
+	.informations .tab-content + .tab-content
+	{	
+		margin-top: 4px;
+	}
+
+	.informations .tab-content
+	{
+		visibility: visible;
+		overflow: visible;
+		height: auto;
+		opacity: 1;
+
+		border-radius: 8px;
+		background: #fff;
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	.tabs-accord__open
+	{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+
+		font-size: 16px;
+		line-height: normal;
+		position: relative;
+		padding: 0 56px 0 16px;
+		cursor: pointer;
+		font-weight: 600;
+
+		min-height: 32px;
+	}
+
+	.tabs-accord__open::after
+	{
+		position: absolute;
+		content: '';
+		top: 0;
+		right: 16px;
+
+		display: block;
+
+		width: 32px;
+		height: 32px;
+
+		border-radius: 50%;
+		background: #E8E8EC;
+	}
+
+	.tabs-accord__open::before
+	{
+		position: absolute;
+		content: '';
+		top: 13px;
+		right: 25px;
+
+		display: block;
+
+		width: 14px;
+		height: 8px;
+		z-index: 1;
+
+		background: url(../images/ic_arrow_acord.svg) 50% no-repeat;
+	}
+
+	.informations .tab-content._active .tabs-accord__open::before
+	{
+		transform: rotate(180deg);
+		top: 12px;
+	}
+
+	.tabs-accord__data
+	{
+		display: none;
+	}
+
+	.informations__data
+	{
+		padding: 10px 16px 0;
+	}
+
+	.features__feature:first-child 
+	{
+		padding-top: 5.5px;
+		border-top: 1px solid #E8E8EC;
+	}
+
+	.documentation__download 
+	{
+		width: calc(100% / 3 - 20px);
+	}
+
+	.product-info__box
+	{
+		width: 100%;
+		margin-top: 44px;
+	}
+
+	.product-info__box + .product-info__box
+	{
+		margin-top: 44px;
 	}
     /*------------
 		commit

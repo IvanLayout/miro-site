@@ -3130,7 +3130,6 @@ html.with-fancybox{
     flex-shrink: 0;
 
     width: 220px;
-    margin-right: 5px;
     padding-right: 15px;
 }
 
@@ -3598,6 +3597,7 @@ html.with-fancybox{
 	height: 32px;
 	border: none;
 	background: transparent;
+	white-space: nowrap;
 
     padding: 0 10px;
 	border-radius: 6px;

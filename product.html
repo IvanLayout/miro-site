@@ -49,10 +49,14 @@
 				<header class="header">
 					<div class="header__top">
 						<div class="cont _flex">
+							<div class="header__logo">
+								<a href="/">
+									<img src="images/logo-white.svg" alt="">
+								</a>
+							</div>
+
 							<div class="header__adres">
-								<button type="button" data-content="#modal-addres" class="header__adres-btn modal-btn">
-									<span>Москва</span>
-								</button>
+								<a href="/" class="header__adres-btn"><span>Москва</span></a>
 							</div>
 
 							<div class="header__list _flex">
@@ -99,12 +103,12 @@
 										Каталог
 									</button>
 
-									<div class="header-catalog__block">
+									<div class="header-catalog__block _active">
 										<div class="cont">
 											<div class="header-catalog__wrap _flex">
 												<div class="header-menu">
-													<div class="header-menu__item menu_js _active">
-														<a href="/" data-content="#menu1" class="header-menu__link">
+													<div class="header-menu__item">
+														<a href="/" data-sub-menu="#sub-menu1" class="header-menu__link open-sub-menu _active">
 															<span class="header-menu__link-icon">
 																<svg>
 																	<use xlink:href="images/sprite.svg#ic_cat1"></use>
@@ -113,8 +117,8 @@
 															<span class="header-menu__link-name">Теплый пол</span>
 														</a>
 													</div>
-													<div class="header-menu__item menu_js">
-														<a href="/" data-content="#menu2" class="header-menu__link">
+													<div class="header-menu__item">
+														<a href="/" data-sub-menu="#sub-menu2" class="header-menu__link  open-sub-menu">
 															<span class="header-menu__link-icon">
 																<svg>
 																	<use xlink:href="images/sprite.svg#ic_cat2"></use>
@@ -123,8 +127,8 @@
 															<span class="header-menu__link-name">Кабель для обогрева труб</span>
 														</a>
 													</div>
-													<div class="header-menu__item menu_js">
-														<a href="/" data-content="#menu3" class="header-menu__link">
+													<div class="header-menu__item">
+														<a href="/" data-sub-menu="#sub-menu3" class="header-menu__link open-sub-menu">
 															<span class="header-menu__link-icon">
 																<svg>
 																	<use xlink:href="images/sprite.svg#ic_cat3"></use>
@@ -133,8 +137,8 @@
 															<span class="header-menu__link-name">Саморегулирующейся кабель</span>
 														</a>
 													</div>
-													<div class="header-menu__item menu_js">
-														<a href="/" data-content="#menu4" class="header-menu__link">
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
 															<span class="header-menu__link-icon">
 																<svg>
 																	<use xlink:href="images/sprite.svg#ic_cat4"></use>
@@ -143,8 +147,8 @@
 															<span class="header-menu__link-name">Электромонтажные изделия</span>
 														</a>
 													</div>
-													<div class="header-menu__item menu_js">
-														<a href="/" data-content="#menu5" class="header-menu__link">
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
 															<span class="header-menu__link-icon">
 																<svg>
 																	<use xlink:href="images/sprite.svg#ic_cat5"></use>
@@ -157,7 +161,7 @@
 
 												<div class="header-catalog__submenu">
 													<div class="header-catalog__submenu-wrap">
-														<div class="header-submenu-content header-submenu _active" id="menu1">
+														<div class="header-submenu _active" id="sub-menu1">
 															<div class="header-submenu__item">
 																<div class="header-submenu__link">
 																	<a href="/" class="header-submenu__link-title">
@@ -232,7 +236,7 @@
 															</div>
 														</div>
 
-														<div class="header-submenu-content header-submenu" id="menu2">
+														<div class="header-submenu" id="sub-menu2">
 															<div class="header-submenu__item">
 																<div class="header-submenu__link">
 																	<a href="/" class="header-submenu__link-title">
@@ -307,161 +311,11 @@
 															</div>
 														</div>
 
-														<div class="header-submenu-content header-submenu" id="menu3">
+														<div class="header-submenu" id="sub-menu3">
 															<div class="header-submenu__item">
 																<div class="header-submenu__link">
 																	<a href="/" class="header-submenu__link-title">
 																		<span>Кабельный теплый пол 3</span>
-																	</a>
-																</div>
-																<div class="header-submenu__link">
-																	<a href="/">
-																		<span>Миниматы</span>
-
-																		<span class="header-submenu__all-val">29</span>
-																	</a>
-																</div>
-																<div class="header-submenu__link">
-																	<a href="/">
-																		<span>Резистивный кабель</span>
-
-																		<span class="header-submenu__all-val">12</span>
-																	</a>
-																</div>
-															</div>
-															<div class="header-submenu__item">
-																<div class="header-submenu__link">
-																	<a href="/" class="header-submenu__link-title">
-																		<span>Инфракрасный теплый пол</span>
-																	</a>
-																</div>
-																<div class="header-submenu__link">
-																	<a href="/">
-																		<span>Инфракрасный теплый пол</span>
-
-																		<span class="header-submenu__all-val">76</span>
-																	</a>
-																</div>
-																<div class="header-submenu__link">
-																	<a href="/">
-																		<span>Карбоновый теплый пол</span>
-
-																		<span class="header-submenu__all-val">134</span>
-																	</a>
-																</div>
-																<div class="header-submenu__link">
-																	<a href="/">
-																		<span>Компоненты волоконной оптики</span>
-
-																		<span class="header-submenu__all-val">56</span>
-																	</a>
-																</div>
-																<div class="header-submenu__link">
-																	<a href="/">
-																		<span>Нагревательный кабель</span>
-
-																		<span class="header-submenu__all-val">29</span>
-																	</a>
-																</div>
-																<div class="header-submenu__link">
-																	<a href="/">
-																		<span>Фольгированный мат</span>
-
-																		<span class="header-submenu__all-val">45</span>
-																	</a>
-																</div>
-															</div>
-															<div class="header-submenu__item">
-																<div class="header-submenu__link">
-																	<a href="/" class="header-submenu__link-title">
-																		<span>Кабельный теплый пол</span>
-
-																		<span class="header-submenu__all-val">15</span>
-																	</a>
-																</div>
-															</div>
-														</div>
-
-														<div class="header-submenu-content header-submenu" id="menu4">
-															<div class="header-submenu__item">
-																<div class="header-submenu__link">
-																	<a href="/" class="header-submenu__link-title">
-																		<span>Кабельный теплый пол 4</span>
-																	</a>
-																</div>
-																<div class="header-submenu__link">
-																	<a href="/">
-																		<span>Миниматы</span>
-
-																		<span class="header-submenu__all-val">29</span>
-																	</a>
-																</div>
-																<div class="header-submenu__link">
-																	<a href="/">
-																		<span>Резистивный кабель</span>
-
-																		<span class="header-submenu__all-val">12</span>
-																	</a>
-																</div>
-															</div>
-															<div class="header-submenu__item">
-																<div class="header-submenu__link">
-																	<a href="/" class="header-submenu__link-title">
-																		<span>Инфракрасный теплый пол</span>
-																	</a>
-																</div>
-																<div class="header-submenu__link">
-																	<a href="/">
-																		<span>Инфракрасный теплый пол</span>
-
-																		<span class="header-submenu__all-val">76</span>
-																	</a>
-																</div>
-																<div class="header-submenu__link">
-																	<a href="/">
-																		<span>Карбоновый теплый пол</span>
-
-																		<span class="header-submenu__all-val">134</span>
-																	</a>
-																</div>
-																<div class="header-submenu__link">
-																	<a href="/">
-																		<span>Компоненты волоконной оптики</span>
-
-																		<span class="header-submenu__all-val">56</span>
-																	</a>
-																</div>
-																<div class="header-submenu__link">
-																	<a href="/">
-																		<span>Нагревательный кабель</span>
-
-																		<span class="header-submenu__all-val">29</span>
-																	</a>
-																</div>
-																<div class="header-submenu__link">
-																	<a href="/">
-																		<span>Фольгированный мат</span>
-
-																		<span class="header-submenu__all-val">45</span>
-																	</a>
-																</div>
-															</div>
-															<div class="header-submenu__item">
-																<div class="header-submenu__link">
-																	<a href="/" class="header-submenu__link-title">
-																		<span>Кабельный теплый пол</span>
-
-																		<span class="header-submenu__all-val">15</span>
-																	</a>
-																</div>
-															</div>
-														</div>
-
-														<div class="header-submenu-content header-submenu" id="menu5">
-															<div class="header-submenu__item">
-																<div class="header-submenu__link">
-																	<a href="/" class="header-submenu__link-title">
-																		<span>Кабельный теплый пол 5</span>
 																	</a>
 																</div>
 																<div class="header-submenu__link">
@@ -551,11 +405,13 @@
 								</div>
 
 								<div class="header__search">
-									<div class="header__search-field _flex">
-										<input type="text" value="" placeholder="Умный поиск по названию, артикулу, свойству, производителю" id="header__search-input" class="header__search-input">
+									<form action="">
+										<div class="header__search-field _flex">
+											<input type="text" value="" placeholder="Умный поиск по названию, артикулу, свойству, производителю" id="header__search-input" class="header__search-input">
 
-										<button type="submit" class="header__search-submit">Найти</button>
-									</div>
+											<button type="submit" class="header__search-submit">Найти</button>
+										</div>
+									</form>
 								</div>
 
 								<div class="header__btns _flex">
@@ -591,7 +447,7 @@
 										</span>
 										<span class="header__btn-name">Корзина</span>
 									</a>
-									<a href="/" class="header__btn">
+									<a href="/" class="header__btn header__btn-first-mob">
 										<span class="header__btn-icon">
 											<svg>
 												<use xlink:href="images/sprite.svg#user"></use>

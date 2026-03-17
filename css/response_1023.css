@@ -160,6 +160,60 @@
 		width: 392px;
 		margin-top: 25px;
 	}
+
+
+	.breadcrumbs
+    {
+        overflow: hidden;
+        overflow-x: auto;
+
+        width: calc(100% + 80px);
+        margin-right: -40px;
+        margin-left: -40px;
+        padding-right: 40px;
+        padding-left: 40px;
+
+        white-space: nowrap;
+    }
+
+    .breadcrumbs::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+
+	.product-info__coll
+	{
+		width: 100%;
+	}
+
+	.product-info__colr
+	{
+		width: 100%;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.product-info__box
+	{
+		width: calc(50% - 5px);
+		margin-top: 10px;
+	}
+
+	.product-info__box:first-child
+	{
+		width: 100%;
+	}
+
+
+	.informations__data 
+	{
+		padding: 20px;
+	}
     /*------------
 		commit
 	------------*/

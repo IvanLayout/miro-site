@@ -1,5 +1,53 @@
 @media (max-width: 1199px)
 {
+
+	.product-info__coll 
+	{
+		width: calc(68% - 10px);
+	}
+
+	.product-info__colr 
+	{
+		width: calc(32% - 10px);
+	}
+
+	.product-info__images 
+	{
+		width: calc(50% - 10px);
+	}
+
+	.product-thumbs
+	{
+		width: 60px;
+		height: 408px;
+	}
+
+	.product-images 
+	{
+		width: calc(100% - 75px);
+	}
+
+	.product-images__img
+	{
+		height: 375px;
+	}
+
+	.product-info__info .features__feature-name 
+	{
+		width: 180px;
+	}
+
+	.product-info__info 
+	{
+		width: calc(50% - 10px);
+	}
+	
+
+	.informations__tabs-btn
+	{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
     /*------------
 		commit
 	------------*/

@@ -39,6 +39,33 @@
 		gap: 30px;
 	}
 
+
+	.product-info__images
+	{
+		width: calc(55% - 10px);
+	}
+
+	.product-info__info 
+	{
+		width: calc(45% - 10px);
+	}
+
+	.product-info__info .features__feature-name
+	{
+		width: 190px;
+	}
+
+
+	.informations__data
+	{
+		padding: 30px;
+	}
+
+	.documentation__download
+	{
+		width: calc(100% / 5 - 20px);
+	}
+
 	/*------------
 		commit
 	------------*/
