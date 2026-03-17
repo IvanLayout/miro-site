@@ -1,5 +1,44 @@
 @media (max-width: 1319px)
 {
+	.header-catalog 
+	{
+		margin-left: 25px;
+	}
+
+	.header-catalog__open 
+	{
+		padding-right: 15px;
+		padding-left: 40px;
+	}
+
+	.header-catalog__open-btn
+	{
+		left: 10px;
+	}
+
+	.header__search .header__search-input 
+	{
+		font-size: 14px;
+		padding: 0 10px;
+	}
+
+	.header__search-submit 
+	{
+		font-size: 14px;
+		line-height: 40px;
+		padding: 0 18px;
+	}
+
+	.header__btn + .header__btn 
+	{
+		margin-left: 18px;
+	}
+
+	.header-catalog__wrap
+	{
+		gap: 30px;
+	}
+
 	/*------------
 		commit
 	------------*/

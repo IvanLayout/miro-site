@@ -1,5 +1,68 @@
 @media (max-width: 767px)
 {
+	.header__top
+	{
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
+
+	.header__top .header__logo a 
+	{
+		height: 30px;
+	}
+
+	.header__phone
+	{
+		font-size: 0;
+	}
+
+	.header__phone a
+	{
+		width: 24px;
+		height: 24px;
+		padding-left: 0;
+	}
+
+	.header__phone a::before
+	{
+		width: 24px;
+		height: 24px;
+	}
+
+	.header__info-box 
+	{
+		padding: 10px;
+	}
+
+	.header-catalog__open
+	{
+		height: 40px;
+		width: 40px;
+	}
+
+	.header__search-field
+	{
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+
+	.header__search .header__search-input 
+	{
+		height: 32px;
+	}
+
+	.header__search-submit 
+	{
+		height: 32px;
+		line-height: 32px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.header-submenu
+	{
+		
+	}
     /*------------
 		commit
 	------------*/

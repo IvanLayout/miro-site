@@ -491,7 +491,7 @@ button
 	width: 18px;
 	height: 18px;
 
-	background: url(../images/ic_phone.svg) 50% no-repeat;
+	background: url(../images/ic_phone.svg) 50%/contain no-repeat;
 }
 
 
@@ -512,10 +512,26 @@ button
 	box-shadow: 0 0px 10px 0 rgba(0, 0, 0, .1);
 }
 
-.header__logo a,
+.header__logo a
+{
+    display: block;
+}
+
 .header__logo img
 {
     display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.header__top .header__logo
+{
+	display: none;
+}
+
+.header__top .header__logo a
+{
+	height: 40px;
 }
 
 .header-catalog
@@ -731,19 +747,31 @@ button
     }
 }
 
+.header-menu__link._active
+{
+	/* font-weight: 700; */
+
+	background: #F5F7FA;
+}
+
+.header-menu__link._active .header-menu__link-icon svg
+{
+	fill: #F52121;
+}
+
 @media (min-width: 768px)
 {
     .header-menu__link._active
     {
         /* font-weight: 700; */
 
-		background: #F5F7FA;
+		/* background: #F5F7FA; */
     }
 
-    .header-menu__link-icon._active svg
+    /* .header-menu__link-icon._active svg
     {
         fill: #F52121;
-    }
+    } */
 
     /* .header-menu__item._active .header-submenu
     {
@@ -797,13 +825,17 @@ button
     }
 }
 
+.header-submenu__link span
+{
+	display: inline-block;
+}
+
 .header-submenu__all-val
 {
 	color: #939393;
 	position: relative;
 	display: inline-block;
 	padding-right: 14px;
-	margin-left: 10px;
 	font-weight: 400;
 }
 
