@@ -1,5 +1,9 @@
 @media (max-width: 1400px)
 {
+	.contacts__item-adres
+	{
+		width: 340px;
+	}
     /*------------
 		commit
 	------------*/

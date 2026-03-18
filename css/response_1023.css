@@ -307,6 +307,36 @@
 	{
 		padding: 20px;
 	}
+
+
+	.contacts__info 
+	{
+		padding: 20px;
+		width: calc(58% - 10px);
+	}
+
+	.contacts__help 
+	{
+		width: calc(42% - 10px);
+	}
+
+	.contacts__item-adres,
+	.contacts__item-phone,
+	.contacts__item-mail
+	{
+		width: 100%;
+	}
+
+	.contacts__location
+	{
+		padding: 20px;
+	}
+
+	.contacts__map
+	{
+		margin-top: 30px;
+	}
+
     /*------------
 		commit
 	------------*/

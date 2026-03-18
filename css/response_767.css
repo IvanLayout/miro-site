@@ -273,6 +273,50 @@
 	{
 		order: 1;
 	}
+
+
+	.contacts__info
+	{
+		width: 100%;
+		order: 1;
+		padding: 16px;
+	}
+
+	.contacts__item-desc a
+	{
+		font-size: 18px;
+	}
+
+	.contacts__location
+	{
+		order: 2;
+		padding: 16px;
+		margin-top: 44px;
+	}
+
+	.contacts__tabs
+	{
+		margin-top: 0;
+	}
+
+	.contacts__tabs-btn
+	{
+		width: 100%;
+		margin-top: 0;
+	}
+
+	.contacts__map
+	{
+		margin-top: 20px;
+		height: 350px;
+	}
+
+	.contacts__help
+	{
+		order: 3;
+		margin-top: 44px;
+		width: 100%;
+	}
     /*------------
 		commit
 	------------*/

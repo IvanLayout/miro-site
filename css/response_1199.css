@@ -48,6 +48,28 @@
 		padding-left: 8px;
 		padding-right: 8px;
 	}
+
+
+	.contacts__info
+	{
+		padding: 25px;
+		width: calc(68% - 10px);
+	}
+
+	.contacts__help 
+	{
+		width: calc(32% - 10px);
+	}
+
+	.contacts__location
+	{
+		padding: 25px;
+	}
+
+	.contacts__map
+	{
+		height: 450px;
+	}
     /*------------
 		commit
 	------------*/

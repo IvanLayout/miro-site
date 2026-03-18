@@ -159,6 +159,17 @@
 		margin-left: 36px;
 	}
 	
+
+	.contacts__item-desc a
+	{
+		font-size: 16px;
+	}
+
+
+	.page-top
+	{
+		padding-bottom: 15px;
+	}
     /*------------
 		commit
 	------------*/
