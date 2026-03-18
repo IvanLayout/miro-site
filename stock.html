@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Переключение IE в последнию версию, на случай если в настройках пользователя стоит меньшая -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Miro</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/dropzone.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1400.css" media="(max-width: 1400px)">
+		<link rel="stylesheet" href="css/response_1319.css" media="(max-width: 1319px)">
+		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+	<body>
+		<div class="wrap wrap-product">
+			<div class="main">
+				<!-- Шапка -->
+				<header class="header">
+					<div class="header__top">
+						<div class="cont _flex">
+							<div class="header__logo">
+								<a href="/">
+									<img src="images/logo-white.svg" alt="">
+								</a>
+							</div>
+
+							<div class="header__adres">
+								<a href="/" class="header__adres-btn"><span>Москва</span></a>
+							</div>
+
+							<div class="header__list _flex">
+								<div class="header__list-item">
+									<a href="/">О нас</a>
+								</div>
+								<div class="header__list-item">
+									<a href="/">Доставка и оплата</a>
+								</div>
+								<div class="header__list-item">
+									<a href="/">Оптовым клиентам</a>
+								</div>
+								<div class="header__list-item">
+									<a href="/">Документация</a>
+								</div>
+								<div class="header__list-item">
+									<a href="/">Контакты</a>
+								</div>
+							</div>
+
+							<div class="header__phone">
+								<a href="tel:+74993941625">+7 (499) 394 16 25</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__info">
+						<div class="cont">
+							<div class="header__info-box _flex">
+								<div class="header__logo">
+									<a href="/">
+										<img src="images/logo.svg" alt="">
+									</a>
+								</div>
+
+								<div class="header-catalog">
+									<button type="button" class="header-catalog__open">
+										<span class="header-catalog__open-btn">
+											<span></span>
+											<span></span>
+											<span></span>
+										</span>
+
+										Каталог
+									</button>
+
+									<div class="header-catalog__block _active">
+										<div class="cont">
+											<div class="header-catalog__wrap _flex">
+												<div class="header-menu">
+													<div class="header-menu__item">
+														<a href="/" data-sub-menu="#sub-menu1" class="header-menu__link open-sub-menu _active">
+															<span class="header-menu__link-icon">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_cat1"></use>
+																</svg>
+															</span>
+															<span class="header-menu__link-name">Теплый пол</span>
+														</a>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" data-sub-menu="#sub-menu2" class="header-menu__link  open-sub-menu">
+															<span class="header-menu__link-icon">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_cat2"></use>
+																</svg>
+															</span>
+															<span class="header-menu__link-name">Кабель для обогрева труб</span>
+														</a>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" data-sub-menu="#sub-menu3" class="header-menu__link open-sub-menu">
+															<span class="header-menu__link-icon">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_cat3"></use>
+																</svg>
+															</span>
+															<span class="header-menu__link-name">Саморегулирующейся кабель</span>
+														</a>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
+															<span class="header-menu__link-icon">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_cat4"></use>
+																</svg>
+															</span>
+															<span class="header-menu__link-name">Электромонтажные изделия</span>
+														</a>
+													</div>
+													<div class="header-menu__item">
+														<a href="/" class="header-menu__link">
+															<span class="header-menu__link-icon">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_cat5"></use>
+																</svg>
+															</span>
+															<span class="header-menu__link-name">Терморегуляторы</span>
+														</a>
+													</div>
+												</div>
+
+												<div class="header-catalog__submenu">
+													<div class="header-catalog__submenu-wrap">
+														<div class="header-submenu _active" id="sub-menu1">
+															<div class="header-submenu__item">
+																<div class="header-submenu__link">
+																	<a href="/" class="header-submenu__link-title">
+																		<span>Кабельный теплый пол</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Миниматы</span>
+
+																		<span class="header-submenu__all-val">29</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Резистивный кабель</span>
+
+																		<span class="header-submenu__all-val">12</span>
+																	</a>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<div class="header-submenu__link">
+																	<a href="/" class="header-submenu__link-title">
+																		<span>Инфракрасный теплый пол</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Инфракрасный теплый пол</span>
+
+																		<span class="header-submenu__all-val">76</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Карбоновый теплый пол</span>
+
+																		<span class="header-submenu__all-val">134</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Компоненты волоконной оптики</span>
+
+																		<span class="header-submenu__all-val">56</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Нагревательный кабель</span>
+
+																		<span class="header-submenu__all-val">29</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Фольгированный мат</span>
+
+																		<span class="header-submenu__all-val">45</span>
+																	</a>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<div class="header-submenu__link">
+																	<a href="/" class="header-submenu__link-title">
+																		<span>Кабельный теплый пол</span>
+
+																		<span class="header-submenu__all-val">15</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="header-submenu" id="sub-menu2">
+															<div class="header-submenu__item">
+																<div class="header-submenu__link">
+																	<a href="/" class="header-submenu__link-title">
+																		<span>Кабельный теплый пол 2</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Миниматы</span>
+
+																		<span class="header-submenu__all-val">29</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Резистивный кабель</span>
+
+																		<span class="header-submenu__all-val">12</span>
+																	</a>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<div class="header-submenu__link">
+																	<a href="/" class="header-submenu__link-title">
+																		<span>Инфракрасный теплый пол</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Инфракрасный теплый пол</span>
+
+																		<span class="header-submenu__all-val">76</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Карбоновый теплый пол</span>
+
+																		<span class="header-submenu__all-val">134</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Компоненты волоконной оптики</span>
+
+																		<span class="header-submenu__all-val">56</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Нагревательный кабель</span>
+
+																		<span class="header-submenu__all-val">29</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Фольгированный мат</span>
+
+																		<span class="header-submenu__all-val">45</span>
+																	</a>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<div class="header-submenu__link">
+																	<a href="/" class="header-submenu__link-title">
+																		<span>Кабельный теплый пол</span>
+
+																		<span class="header-submenu__all-val">15</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="header-submenu" id="sub-menu3">
+															<div class="header-submenu__item">
+																<div class="header-submenu__link">
+																	<a href="/" class="header-submenu__link-title">
+																		<span>Кабельный теплый пол 3</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Миниматы</span>
+
+																		<span class="header-submenu__all-val">29</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Резистивный кабель</span>
+
+																		<span class="header-submenu__all-val">12</span>
+																	</a>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<div class="header-submenu__link">
+																	<a href="/" class="header-submenu__link-title">
+																		<span>Инфракрасный теплый пол</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Инфракрасный теплый пол</span>
+
+																		<span class="header-submenu__all-val">76</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Карбоновый теплый пол</span>
+
+																		<span class="header-submenu__all-val">134</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Компоненты волоконной оптики</span>
+
+																		<span class="header-submenu__all-val">56</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Нагревательный кабель</span>
+
+																		<span class="header-submenu__all-val">29</span>
+																	</a>
+																</div>
+																<div class="header-submenu__link">
+																	<a href="/">
+																		<span>Фольгированный мат</span>
+
+																		<span class="header-submenu__all-val">45</span>
+																	</a>
+																</div>
+															</div>
+															<div class="header-submenu__item">
+																<div class="header-submenu__link">
+																	<a href="/" class="header-submenu__link-title">
+																		<span>Кабельный теплый пол</span>
+
+																		<span class="header-submenu__all-val">15</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="header-catalog__banner">
+													<div class="header-catalog__banner-wrap">
+														<img data-src="images/catalog_banner.jpg" src="images/img_plug.png" alt="" class="lazyload header-catalog__banner-bg">
+
+														<div class="header-catalog__banner-title">Получите доступ в личный кабинет для удобного управления заказами</div>
+
+														<div class="header-catalog__banner-link">
+															<a href="/">Получить доступ</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="header__search">
+									<form action="">
+										<div class="header__search-field _flex">
+											<input type="text" value="" placeholder="Умный поиск по названию, артикулу, свойству, производителю" id="header__search-input" class="header__search-input">
+
+											<button type="submit" class="header__search-submit">Найти</button>
+										</div>
+									</form>
+								</div>
+
+								<div class="header__btns _flex">
+									<a href="/" class="header__btn">
+										<span class="header__btn-icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#favorite"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Избранное</span>
+									</a>
+									<a href="/" class="header__btn">
+										<span class="header__btn-icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#compare"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Сравнение</span>
+									</a>
+									<a href="/" class="header__btn">
+										<span class="header__btn-icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#orders"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Заказы</span>
+									</a>
+									<a href="/" class="header__btn">
+										<span class="header__btn-icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#cart"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Корзина</span>
+									</a>
+									<a href="/" class="header__btn header__btn-first-mob">
+										<span class="header__btn-icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#user"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Войти</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<div class="overlay-catalog"></div>
+
+				<!-- End Шапка -->
+
+				<section class="page-top">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a><span class="breadcrumbs_sep">/</span><a href="/">Акции</a><span class="breadcrumbs_sep">/</span>Акция на декоративный свет
+						</div>
+					</div>
+				</section>
+
+				<section class="stock">
+					<div class="cont">
+						<div class="stock__wrap">
+							<div class="stock__img">
+								<img src="images/tmp/promotion_image.jpg" alt="">
+							</div>
+
+							<div class="stock__bg">
+								<div class="stock__sticker">
+									<span>Акция</span>
+								</div>
+
+								<div class="stock__date">до 30.11.2024</div>
+
+								<div class="stock__text-block text-block">
+									<h1>Акция на декоративный свет</h1>
+
+									<p>Информируем вас о старте осенней акции, действующей на весь ассортимент декоративного освещения до 30 ноября. Это оптимальное время для формирования складских запасов и подготовки выгодных коммерческих предложений для ваших клиентов перед зимним периодом повышенного спроса.</p>
+
+									<h2>Ключевые преимущества акции для вашего бизнеса:</h2>
+
+									<ol>
+										<li>Повышенная маржинальность. Специальные оптовые цены позволяют увеличить вашу прибыль при розничной продаже или укрепить конкурентные преимущества.</li>
+										<li>Готовое решение для сезонного спроса. Мы предлагаем популярные позиции, пользующиеся стабильно высоким спросом в осенне-зимний период: гирлянды, светодиодные свечи, уличные и интерьерные светильники.</li>
+										<li>Эффективное управление запасами. Закупите товар по выгодной цене сейчас, чтобы избежать логистических пиков и обеспечить бесперебойные поставки для ваших точек продаж.</li>
+										<li>Минимизация рисков. Работа с надежным поставщиком и прогнозируемые поставки — залог стабильности вашего бизнеса.</li>
+									</ol>
+
+									<h2>Условия акции:</h2>
+
+									<ul>
+										<li>Скидка до 15% от стандартного оптового прайса в зависимости от объема партии.</li>
+										<li>Действует на все категории товаров из раздела «Декоративное освещение».</li>
+										<li>Срок действия: до 30.11.2024 включительно.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section-subscribe _marg">
+					<div class="cont">
+						<div class="section-subscribe__bg">
+							<div class="section-subscribe__box">
+								<div class="main-title main-title_white section-subscribe__main-title">Получайте лучшие предложения! <br>Подпишитесь на рассылку</div>
+								
+								<form action="" class="form section-subscribe__form">
+									<div class="form__one _flex">
+										<div class="form__line">
+											<div class="form__field">
+												<input type="email" value="" class="form__input form__input-anim form__input_white">
+												<label class="form__label">Введите email</label>
+											</div>
+										</div>
+										<div class="form__submit">
+											<button type="submit" class="form__submit-btn btn-red">Подписаться</button>
+										</div>
+									</div>
+
+									<div class="agree-text">Нажимая кнопку вы соглашаетесь с «<a href="/">Политикой конфиденциальности</a>» и «<a href="/">Обработки персональных данных</a>».</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer class="footer _marg">
+				<div class="cont">
+					<div class="footer__logo">
+						<img src="images/logo-white.svg" alt="">
+					</div>
+
+					<div class="footer__flex _flex">
+						<div class="footer__coll">
+							<div class="footer__text">Юридический адрес: г. Москва Шипиловский проезд 39 / 1 помещение 1, комната 5</div>
+							<div class="footer__text">Склад: Московская область, Ленинский городской округ, ПГТ Измайлово, ул. Гибридная 1</div>
+							<div class="footer__text">
+								<a href="tel:+74993941625">+7 (499) 394 16 25</a>
+							</div>
+							<div class="footer__text">
+								<a href="mailto:sale@miro24.ru">sale@miro24.ru</a>
+							</div>
+							<div class="footer__socials _flex">
+								<a href="/" class="footer__socials-link">
+									<svg>
+										<use xlink:href="images/sprite.svg#ic_soc1"></use>
+									</svg>
+								</a>
+								<a href="/" class="footer__socials-link">
+									<svg>
+										<use xlink:href="images/sprite.svg#ic_soc2"></use>
+									</svg>
+								</a>
+								<a href="/" class="footer__socials-link footer__socials-link_rad">
+									<svg>
+										<use xlink:href="images/sprite.svg#ic_soc3"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="footer__info">
+								ООО «Миро» Юр. Адрес: г. Москва Шипиловский проезд 39/1 помещение 1, комната 5
+								<br>
+								ИНН 7724495294, КПП 772401001, ОГРН 1197746715781
+								<br>
+								ПАО «Промсвязбанк» р/ с 40702810300000233334 к/ с 30101810400000000555 БИК 044525555
+							</div>
+						</div>
+						<div class="footer__menu _flex">
+							<div class="footer__menu-col">
+								<div class="footer__list">
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">
+											<b>Каталог</b>
+										</a>
+									</div>
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">Теплый пол</a>
+									</div>
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">Терморегуляторы</a>
+									</div>
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">Саморегулирующийся кабель</a>
+									</div>
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">Кабель для обогрева труб</a>
+									</div>
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">Электромонтажные изделия</a>
+									</div>
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">Кабель для обогрева труб</a>
+									</div>
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">Кабель для обогрева труб</a>
+									</div>
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">Кабель для обогрева труб</a>
+									</div>
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">Кабель для обогрева труб</a>
+									</div>
+								</div>
+							</div>
+							<div class="footer__menu-col">
+								<div class="footer__list">
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">
+											<b>Покупателям</b>
+										</a>
+									</div>
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">О нас</a>
+									</div>
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">Доставка и оплата</a>
+									</div>
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">Оптовым клиентам</a>
+									</div>
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">Документация</a>
+									</div>
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">Сертификаты дилера</a>
+									</div>
+									<div class="footer__list-item">
+										<a href="/" class="footer__list-link">Контакты</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__colr">
+							<div class="footer__title">Обратная связь</div>
+
+							<form action="" class="form">
+								<div class="form__line">
+									<div class="form__field">
+										<input type="text" value="" class="form__input form__input-anim form__input_white">
+										<label class="form__label">Имя</label>
+									</div>
+								</div>
+								<div class="form__line">
+									<div class="form__field">
+										<input type="text" value="" class="form__input form__input-anim form__input_white">
+										<label class="form__label">Телефон</label>
+									</div>
+								</div>
+
+								<div class="form__submit">
+									<button type="submit" class="form__submit-btn btn-red">Заказать звонок</button>
+								</div>
+
+								<div class="agree-text">Нажимая кнопку вы соглашаетесь с «<a href="/">Политикой конфиденциальности</a>» и «<a href="/">Обработки персональных данных</a>».</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="footer__bot">
+						<div class="footer__bot-flex _flex">
+							<div class="footer__copy">&copy; 2025 г. MIRO Company. Все права защищены.</div>
+							<div class="footer__link">
+								<a href="/">Политика обработки персональных данных</a>
+							</div>
+							<div class="footer__link">
+								<a href="/">Пользовательское соглашение</a>
+							</div>
+							<div class="footer__creator">
+								Сайт разработан в <a href="/">MWI</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- <div class="footer__bot">
+					<div class="cont _flex">
+						<div class="footer__copy">&copy; 2025 Компания «Мульча.рф». <span>Все права защищены и охраняются законом.</span></div>
+
+						<div class="footer__links _flex">
+							<div class="footer__link">
+								<a href="/" target="_blank">Политика конфиденциальности</a>
+							</div>
+							<div class="footer__link">
+								<a href="/" target="_blank">Публичная оферта</a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</footer>
+		</div>
+
+
+		<div id="" class="modal">
+			<div class="modal__title"></div>
+		</div>
+
+
+		<div class="supports-error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/jquery.rating.pack.js"></script>
+		<script src="js/dropzone.min.js"></script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

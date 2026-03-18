@@ -3879,6 +3879,37 @@ button.informations__tabs-btn
 	border-radius: 8px;
 	overflow: hidden;
 }
+
+/*------------
+    stock
+------------*/
+
+.stock__wrap
+{
+	max-width: 720px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.stock__img img
+{
+	display: block;
+	max-width: 100%;
+	border-radius: 8px;
+}
+
+.stock__bg
+{
+	border-radius: 8px;
+	background: #fff;
+	padding: 40px;
+	margin-top: 10px;
+}
+
+.stock__sticker span
+{
+
+}
 /*------------
     commit
 ------------*/
