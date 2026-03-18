@@ -43,7 +43,7 @@
 		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
 	</head>
 	<body>
-		<div class="wrap">
+		<div class="wrap wrap-product">
 			<div class="main">
 				<!-- Шапка -->
 				<header class="header">
@@ -698,6 +698,22 @@
 									</div>
 								</div>
 
+								<div class="product-info__box product-info__box-tablet">
+									<div class="product-info__stock _flex">
+										<div class="product-info__stock-name">В наличии:</div>
+
+										<div class="product-info__stock-val">320 шт.</div>
+									</div>
+
+									<div class="product-info__link">
+										<a href="/">Посмотреть наличие на складах</a>
+									</div>
+
+									<div class="product-info__discount">
+										<a href="/">Хочу со скидкой</a>
+									</div>
+								</div>
+
 								<div class="informations _marg" id="anchor1">
 									<div class="tabs-container tabs-accord">
 										<div class="informations__tabs tabs">
@@ -843,7 +859,7 @@
 							</div>
 
 							<div class="product-info__colr">
-								<div class="product-info__box">
+								<div class="product-info__box product-info__box-fixed">
 									<div class="product-info__price">2 099 ₽/шт</div>
 
 									<div class="product-info__discount">
@@ -861,9 +877,17 @@
 													<button type="button" class="amount__btn amount__btn_plus"></button>
 												</div>
 											</div>
+
+											<div class="product-info__buy-text">шт</div>
 	
 											<div class="product-info__cart">
-												<a href="/" class="btn-red">В корзину</a>
+												<a href="/" class="btn-red">
+													В корзину
+
+													<svg>
+														<use xlink:href="images/sprite.svg#cart"></use>
+													</svg>
+												</a>
 											</div>
 										</div>
 

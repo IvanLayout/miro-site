@@ -5,6 +5,11 @@
 		padding-bottom: 64px;
 	}
 
+	.wrap-product
+	{
+		padding-bottom: 124px;
+	}
+
 
 	.header__top
 	{
@@ -209,6 +214,57 @@
 		width: 100%;
 	}
 
+	.product-info__box-fixed
+	{
+		position: fixed;
+		z-index: 70;
+		bottom: 56px;
+		left: 0;
+		width: 100%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+
+		padding-top: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+
+		border-radius: 6px 6px 0 0;
+	}
+
+	.product-info__box-fixed .product-info__stock,
+	.product-info__box-fixed .product-info__link,
+	.product-info__box-fixed .product-info__discount
+	{
+		display: none;
+	}
+	
+	.product-info__box-tablet
+	{
+		display: block;
+
+		margin-top: 30px;
+		margin-left: auto;
+	}
+
+	.product-info__buy
+	{
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	.product-info__buy-box
+	{
+		margin-top: 0;
+	}
+
+	.product-info__btns
+	{
+		margin-top: 0;
+	}
 
 	.informations__data 
 	{

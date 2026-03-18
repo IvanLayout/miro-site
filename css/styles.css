@@ -3202,6 +3202,16 @@ html.with-fancybox{
 	background: #363B3F;
 }
 
+.product-info__box-tablet
+{
+	display: none;
+}
+
+.product-info__box-tablet .product-info__stock
+{
+	margin-top: 0;
+}
+
 
 .product-info__price
 {
@@ -3459,7 +3469,7 @@ html.with-fancybox{
     }
 }
 
-.amount .amount__input
+.product-info__amount .amount__input
 {
     color: #363B3F;
     font: 16px var(--font-family);
@@ -3474,9 +3484,21 @@ html.with-fancybox{
 }
 
 
+.product-info__buy-text
+{
+	display: none;
+	margin-left: 6px;
+}
+
+
 .product-info__cart
 {
 	margin-left: 10px;
+}
+
+.product-info__cart svg
+{
+	display: none;
 }
 
 

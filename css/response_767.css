@@ -129,9 +129,27 @@
 		display: none;
 	}
 
-	.informations
+
+	.product-info__box.product-info__box-tablet
 	{
 		order: 3;
+		margin-top: 20px;
+	}
+
+	.product-info__price
+	{
+		font-size: 18px;
+	}
+
+	.product-info__btns
+	{
+		display: none;
+	}
+
+
+	.informations
+	{
+		order: 4;
 	}
 
 	.informations._marg
@@ -243,11 +261,17 @@
 	{
 		width: 100%;
 		margin-top: 44px;
+		order: 2;
 	}
 
 	.product-info__box + .product-info__box
 	{
 		margin-top: 44px;
+	}
+
+	.product-info__help
+	{
+		order: 1;
 	}
     /*------------
 		commit

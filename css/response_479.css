@@ -58,6 +58,107 @@
 	{
 		padding: 16px;
 	}
+
+	.product-info__box-fixed
+	{
+		padding-bottom: 20px;
+	}
+
+	.product-info__box.product-info__box-tablet
+	{
+		padding: 20px;
+	}
+
+	.product-info__box-tablet .product-info__discount
+	{
+		margin-top: 20px;
+	}
+
+
+	.product-info__btns
+	{
+		display: none;
+	}
+
+	.product-info__price
+	{
+		font-size: 16px;
+	}
+
+	.product-info__cart a
+	{
+		font-size: 0;
+		padding: 0;
+		width: 44px;
+		height: 44px;
+		line-height: 0;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+	}
+
+	.product-info__cart svg
+	{
+		width: 24px;
+		height: 24px;
+		display: block;
+		fill: #fff;
+	}
+
+
+	.product-info__buy-box
+	{
+		align-items: center;
+		align-content: center;
+	}
+
+	.product-info__amount
+	{
+		width: 65px;
+		height: 32px;
+		background: #F5F7FA;
+	}
+
+	.product-info__amount .amount__btn
+	{
+		height: 30px;
+		width: 17px;
+	}
+
+	.product-info__amount .amount__btn::before
+	{
+		margin-left: -3px;
+	}
+
+	.product-info__amount .amount__btn.amount__btn_plus::before 
+	{
+		margin-left: -5px;
+	}
+
+	.product-info__amount .amount__btn_plus::after
+	{
+		margin-left: -2px;
+	}
+
+	.product-info__amount .amount__input
+	{
+		width: calc(100% - 34px);
+		font-size: 14px;
+	}
+
+	.product-info__buy-text
+	{
+		display: block;
+	}
+
+	.product-info__cart
+	{
+		margin-left: 36px;
+	}
+	
     /*------------
 		commit
 	------------*/
