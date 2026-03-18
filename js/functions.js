@@ -210,6 +210,47 @@ $(() => {
 			$(this).closest('[data-item-acc]').find('[data-data-acc]').slideDown(300)
 		}
 	})
+
+	$('body').on('click', '.aside-cats__menu-link._sub', function (e) {
+		e.preventDefault()
+
+		if ($(this).closest('.aside-cats__menu-item').hasClass('_active')) {
+			$(this).closest('.aside-cats__menu-item').removeClass('_active')
+			$(this).next().slideUp(300)
+		} else {
+			$(this).closest('.aside-cats__menu').find('.aside-cats__menu-item').removeClass('_active')
+			$(this).closest('.aside-cats__menu').find('.aside-cats__submenu').slideUp(300)
+
+			$(this).closest('.aside-cats__menu-item').addClass('_active')
+			$(this).next().slideDown(300)
+		}
+	})
+
+
+	$('.filter input').change(function() {
+		const $input = $(this);
+		let heigh = $input.height()
+		let inputOffsetTop = 0;
+		if ( $input.attr('type') === 'checkbox' || $input.attr('type') === 'radio' ) {
+			inputOffsetTop = $input.closest('label').offset().top;
+
+			heigh = $input.closest('label').height()
+		} else {
+			inputOffsetTop = $input.offset().top;
+		}
+		
+		const containerOffsetTop = $input.closest('.filter').offset().top;
+
+		const relativeOffset = inputOffsetTop - containerOffsetTop;
+
+		console.log(containerOffsetTop)
+
+		if( !$('.filter-show').hasClass('_show') ){
+			$('.filter-show').addClass('_show')
+		}
+
+		$('.filter-show').css('top', relativeOffset + heigh/2)
+	})
 })
 
 
