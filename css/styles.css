@@ -1224,36 +1224,10 @@ button
 
 .page-title
 {
-    color: #282828;
-    font-size: 36px;
-    font-weight: 500;
+    color: #363B3F;
+    font-size: 32px;
+    font-weight: 600;
     line-height: 1.3;
-}
-
-.page-title_white
-{
-    color: #F9F9F9;
-}
-
-.page-title_marg
-{
-    margin-top: 40px;
-}
-
-.page-title span
-{
-    color: #616161;
-    font-size: 16px;
-    font-weight: 400;
-
-    display: inline-block;
-
-    opacity: .5;
-}
-
-.breadcrumbs + .page-title
-{
-    margin-top: 25px;
 }
 
 
@@ -3741,6 +3715,124 @@ button.informations__tabs-btn
 	display: block;
 	text-align: center;
 	margin-top: 25px;
+}
+
+
+/*------------
+    contacts
+------------*/
+
+.contacts__wrap
+{
+	justify-content: space-between;
+}
+
+
+.contacts__info
+{
+	background: #fff;
+	border-radius: 8px;
+	padding: 40px;
+
+	width: calc(70.36% - 10px);
+}
+
+.contacts__items
+{
+	margin-top: 15px;
+}
+
+.contacts__item
+{
+	margin-left: -40px;
+}
+
+.contacts__item-adres
+{
+	width: 375px;
+	margin-left: 40px;
+}
+
+.contacts__item-phone
+{
+	width: 220px;
+	margin-left: 40px;
+}
+
+.contacts__item-mail
+{
+	margin-left: 40px;
+}
+
+.contacts__item-title
+{
+	color: #92959C;
+	font-size: 14px;
+}
+
+.contacts__item-desc
+{
+	margin-top: 6px;
+}
+
+.contacts__item-desc a
+{
+	text-decoration: none;
+	font-weight: 700;
+	color: #363B3F;
+	font-size: 20px;
+	white-space: nowrap;
+}
+
+.contacts__item-box + .contacts__item-box
+{
+	margin-top: 16px;
+}
+
+
+.contacts__help
+{
+	width: calc(29.64% - 10px);
+	padding: 20px;
+	border-radius: 8px;
+	background: #363B3F;
+	color: #fff;
+}
+
+.contacts__help-title
+{
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.contacts__help-desc
+{
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.contacts__help-btn
+{
+	margin-top: 28px;
+}
+
+.contacts__help-btn a
+{
+	width: 100%;
+	color: #363B3F;
+}
+
+
+.contacts__location
+{
+	border-radius: 8px;
+	background: #fff;
+	padding: 40px;
+
+	margin-top: 20px;
+
+	width: 100%;
 }
 /*------------
     commit
