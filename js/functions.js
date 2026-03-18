@@ -39,10 +39,13 @@ $(() => {
 	$('body').on('click', '.header-catalog__open', function (e) {
 		e.preventDefault()
 
-		if ($(this).hasClass('_active')) {
+		if ($(this).hasClass('_active') & !$(this).hasClass('_active-inner')) {
 			$(this).removeClass('_active')
 			$('.header-catalog__block').removeClass('_show')
 			$('.overlay-catalog').removeClass('_show')
+		} else if ($(this).hasClass('_active-inner')){
+			$(this).removeClass('_active-inner')
+			$('.header-catalog__block').removeClass('_show-inner')
 		} else {
 			$(this).addClass('_active')
 			$('.header-catalog__block').addClass('_show')
@@ -81,6 +84,9 @@ $(() => {
 
 			let parent = $(this).closest('.header-catalog__block')
 			let subMenu = $(this).data('sub-menu')
+
+			parent.addClass('_show-inner')
+			$('.header-catalog__open').addClass('_active-inner')
 
 			parent.find('.open-sub-menu').removeClass('_active')
 			parent.find('.header-submenu').removeClass('_active')
