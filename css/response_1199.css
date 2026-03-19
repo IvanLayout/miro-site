@@ -70,6 +70,21 @@
 	{
 		height: 450px;
 	}
+
+
+	.inner-action__grid 
+	{
+		width: calc(100% + 15px);
+		margin-left: -15px;
+	}
+
+	.inner-action__item 
+	{
+		width: calc(100% / 3 - 15px);
+		margin-top: 15px;
+		margin-left: 15px;
+		padding: 16px;
+	}
     /*------------
 		commit
 	------------*/

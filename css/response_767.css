@@ -317,6 +317,24 @@
 		margin-top: 44px;
 		width: 100%;
 	}
+
+
+	.inner-action__item 
+	{
+		width: calc(100% / 1 - 15px);
+	}
+
+
+	.stock__bg
+	{
+		padding: 16px;
+	}
+
+
+	.text-block h1, .text-block .title
+	{
+		font-size: 22px;
+	}
     /*------------
 		commit
 	------------*/

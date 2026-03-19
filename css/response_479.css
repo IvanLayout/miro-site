@@ -1,5 +1,10 @@
 @media (max-width: 479px)
 {
+	.text-block h1, .text-block .title
+	{
+		font-size: 20px;
+	}
+
 	.text-block h2
 	{
 		font-size: 16px;
@@ -169,6 +174,24 @@
 	.page-top
 	{
 		padding-bottom: 15px;
+	}
+	
+
+
+	.inner-action__wrap .btn-bord
+	{
+		order: 3;
+		margin: 16px auto 0;
+	}
+
+	.inner-action__grid
+	{
+		margin-top: 8px;
+	}
+
+	.inner-action__item
+	{
+		margin-top: 8px;
 	}
     /*------------
 		commit
