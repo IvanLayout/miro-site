@@ -4080,10 +4080,22 @@ button.informations__tabs-btn
 	margin-top: 32px;
 }
 
+.products__grid{
+    --product_marg: 20px;
+    --products_count: 4;
+    margin-left: calc(var(--product_marg)*-1);
+    row-gap: 20px;
+}
+
 .product{
 	background: #fff;
 	border-radius: 8px;
 	position: relative;
+}
+
+.products__grid .product{
+    width: calc(100%/var(--products_count) - var(--product_marg));
+    margin-left: var(--product_marg);
 }
 
 .product__stickers{
@@ -4751,6 +4763,7 @@ button.informations__tabs-btn
     background: #F52121;
     border-radius: 2px;
     transform: rotate(45deg);
+    transition: background .2s linear;
 }
 
 @media (any-hover: hover){
@@ -4821,6 +4834,86 @@ button.informations__tabs-btn
     font-weight: 700;
 }
 
+.content{
+    margin-left: 20px;
+
+    width: calc(100% - 100%/5 - 20px);
+}
+
+
+.pagination{
+    margin-top: 32px;
+    justify-content: center;
+    column-gap: 13px;
+}
+
+.pagination a{
+    box-shadow: 0 5px 25px 0 rgba(98, 108, 119, 0.1);
+    background: #fff;
+
+    font-size: 14px;
+    line-height: 38px;
+    height: 38px;
+    width: 38px;
+    text-align: center;
+    color: #363B3F;
+    text-decoration: none;
+    display: block;
+    transition: background .2s linear, color .2s linear;
+    border-radius: 50%;
+}
+
+@media (any-hover: hover){
+    .pagination a:hover{
+        color: #fff;
+        background: #363B3F;
+    }
+}
+
+.pagination a.active{
+    color: #fff;
+    background: #363B3F;
+}
+
+.pagination a.prev,
+.pagination a.next{
+    background: transparent;
+    color: #363B3F;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.pagination a.prev{
+    transform: rotate(180deg);
+}
+
+@media (any-hover: hover){
+    .pagination a.prev:hover,
+    .pagination a.next:hover{
+        background-color: #F52121;
+        color: #fff;
+    }
+}
+
+.pagination a svg{
+    display: block;
+    width: 7px;
+    height: 13px;
+    fill: none;
+    stroke: currentColor;
+}
+
+.pagination .dot{
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    color: #363B3F;
+    display: block;
+}
 
 
 /*------------
