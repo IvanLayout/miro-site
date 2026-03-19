@@ -85,6 +85,61 @@
 		margin-left: 15px;
 		padding: 16px;
 	}
+
+
+	.section-cart__boxr
+	{
+		flex-wrap: wrap;
+	}
+
+	.section-cart__action
+	{
+		order: 2;
+		margin-top: 9px;
+		width: 100%;
+	}
+
+	.section-cart__search
+	{
+		max-width: 100%;
+		margin-left: 0;
+		order: 1;
+	}
+
+
+	.cart-table th
+	{
+		font-size: 12px;
+		padding-left: 10px;
+	}
+
+	.cart-table td
+	{
+		font-size: 12px;
+		padding-left: 10px;
+	}
+
+	.cart-table__info 
+	{
+		width: 260px;
+	}
+
+	.cart-table__img 
+	{
+		width: 60px;
+		height: 60px;
+	}
+
+	.cart-table__box 
+	{
+		width: calc(100% - 70px);
+	}
+
+	.cart-table__delete
+	{
+		padding-right: 10px;
+		width: 44px;
+	}
     /*------------
 		commit
 	------------*/

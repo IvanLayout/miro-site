@@ -355,6 +355,241 @@
 		font-size: 26px;
 	}
 
+
+	.section-cart__delete 
+	{
+		margin-left: 30px;
+	}
+
+	.section-cart__search .section-cart__search-input
+	{
+		font-size: 14px;
+	}
+	
+
+	.section-cart__boxl
+	{
+		margin-right: 20px;
+	}
+
+	.section-cart__action-link
+	{
+		padding: 8px;
+	}
+
+
+	.cart-table thead
+	{
+		display: none;
+	}
+
+	.cart-table tr 
+	{
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+
+		padding: 16px;
+		border-radius: 8px;
+		background: #fff;
+
+		position: relative;
+	}
+
+	.cart-table tr + tr
+	{
+		margin-top: 16px;
+	}
+
+	.cart-table td 
+	{
+		display: block;
+		height: auto;
+		padding: 0;
+		background: none;
+
+		font-size: 14px;
+	}
+
+	.cart-table td:first-child
+	{
+		padding-left: 0;
+		border-radius: 0;
+	}
+
+	.cart-table__info
+	{
+		width: 100%;
+		order: 1;
+	}
+
+	.cart-table__info-wrap
+	{
+		padding-left: 135px;
+	}
+
+	.cart-table__checkbox
+	{
+		top: 10px;
+		left: 10px;
+		z-index: 2;
+	}
+
+	.cart-table__img
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 120px;
+		height: 120px;
+		border-color: #E8E8EC;
+	}
+
+	.cart-table__box 
+	{
+		width: 100%;
+		margin-left: 0;
+
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.cart-table__cod
+	{
+		margin-top: 0;
+		width: 100%;
+	}
+
+	.cart-table__name
+	{
+		margin-top: 10px;
+		order: 2;
+	}
+
+	.cart-table td.cart-table__mob-none
+	{
+		display: none;
+	}
+
+	.cart-table__total span
+	{
+		display: inline-block;
+	}
+
+	.cart-table td:last-child
+	{
+		border-radius: 0;
+	}
+
+	.cart-table__status
+	{
+		order: 2;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.cart-table td.cart-table__status
+	{
+		padding-left: 135px;
+	}
+
+	.cart-table td.cart-table__min-val
+	{
+		order: 3;
+
+		border-radius: 6px;
+		padding: 10px;
+		background: #F5F7FA;
+
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	.cart-table td.cart-table__remainder
+	{
+		order: 4;
+
+		border-radius: 6px;
+		padding: 10px;
+		background: #F5F7FA;
+
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	.cart-table td.cart-table__val
+	{
+		order: 5;
+
+		border-radius: 6px;
+		padding: 10px;
+		background: #F5F7FA;
+
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	.cart-table td.cart-table__date
+	{
+		order: 6;
+
+		border-radius: 6px;
+		padding: 10px;
+		background: #F5F7FA;
+
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	.cart-table__total
+	{
+		order: 7;
+		width: 100%;
+	}
+
+	.cart-table__amount-td
+	{
+		order: 8;
+		width: 100%;
+	}
+
+	.cart-table__delete
+	{
+		order: 9;
+		width: 100%;
+	}
+
+	.cart-table__delete
+	{
+		width: 44px;
+		height: 44px;
+
+		/* position: absolute;
+		right: 16px;
+		bottom: 16px; */
+	}
+
+	.cart-table__delete-btn
+	{
+		width: 44px;
+		height: 44px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+
+		border-radius: 6px;
+		padding: 5px;
+		background: #F5F7FA;
+	}
     /*------------
 		commit
 	------------*/

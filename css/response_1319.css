@@ -66,6 +66,47 @@
 		width: calc(100% / 5 - 20px);
 	}
 
+
+	.cart-table th
+	{
+		padding-left: 12px;
+	}
+
+	.cart-table td
+	{
+		padding-left: 12px;
+	}
+
+	.cart-table__info
+	{
+		width: 320px;
+	}
+
+	.cart-table__img
+	{
+		width: 68px;
+		height: 68px;
+	}
+
+	.cart-table__box 
+	{
+		width: calc(100% - 78px);
+	}
+
+	.cart-table__delete
+	{
+		padding-right: 12px;
+		width: 48px;
+	}
+
+	.cart-table__delete-btn,
+	.cart-table__delete-btn svg
+	{
+		width: 24px;
+		height: 24px;
+	}
+	
+
 	/*------------
 		commit
 	------------*/
