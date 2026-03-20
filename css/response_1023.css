@@ -650,6 +650,30 @@
 		padding: 5px;
 		background: #F5F7FA;
 	}
+
+
+
+	.checkout__info
+	{
+		padding: 58px 16px 16px;
+	}
+
+	.checkout__info::before
+	{
+		top: 16px;
+		left: 16px;
+	}
+
+	.form__flex .form__line.form__line-small,
+	.form__flex .form__line.form__line-middle
+	{
+		width: calc(100%/1 - 10px);
+	}
+
+	.checkout-total__price 
+	{
+		font-size: 28px;
+	}
     /*------------
 		commit
 	------------*/

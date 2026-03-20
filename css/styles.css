@@ -1491,6 +1491,13 @@ button
     transition: border .2s linear;
 }
 
+.form__label-stat
+{
+	font-size: 12px;
+	margin-bottom: 6px;
+	display: block;
+}
+
 .form .form__input-anim
 {
     padding-top: 9px;
@@ -1813,49 +1820,50 @@ input[type=checkbox]:checked + .checkbox__text::after
     position: relative;
     z-index: 4;
 
-    color: #282828;
+    color: #6E7277;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 50px;
 
     display: block;
     overflow: hidden;
 
-    height: 44px;
-    padding: 14px 30px 0 14px;
+    height: 52px;
+    padding: 0 48px 0 16px;
 
     cursor: pointer;
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    border: 1px solid rgba(0, 118, 87, .2);
-    border-radius: 4px;
+    border: 1px solid #92959C;
+    border-radius: 6px;
+	background: #fff;
 
     transition: border .2s linear, color .2s linear;
 }
 
 .checkout .select-wrap .nice-select .current
 {
-    border-color: rgba(97, 97, 97, .3);
+    /* border-color: rgba(97, 97, 97, .3); */
 }
 
 .checkout .select-wrap .nice-select.open .current,
 .checkout .select-wrap .nice-select .current.selected
 {
-    color: #282828;
+    color: #363B3F;
 }
 
 @media (any-hover: hover)
 {
     .select-wrap .nice-select .current:hover
     {
-        border-color: #00684D;
+        border-color: #363B3F;
     }
 }
 
 .select-wrap .nice-select.open .current,
 .select-wrap .nice-select .current.selected
 {
-    color: #00684D;
+    color: #363B3F;
 }
 
 .select-wrap .nice-select .current:after
@@ -1864,21 +1872,19 @@ input[type=checkbox]:checked + .checkbox__text::after
 
     position: absolute;
     top: 50%;
-    right: 14px;
+    right: 18px;
 
-    margin-top: -4px;
+    margin-top: -2px;
 
-    border-top: 8px solid #D2D2D2;
-    border-right: 5px solid transparent;
-    border-left: 5px solid transparent;
+	width: 9px;
+	height: 6px;
 
-    transition: border .2s linear;
+    background: url(../images/ic_arrow_select.svg) 50% no-repeat;
 }
 
 .select-wrap .nice-select.open .current:after
 {
-    border-top-color: #00684D;
-
+	margin-top: -3px;
     transform: rotate(180deg);
 }
 
@@ -1886,7 +1892,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
     position: absolute;
     z-index: 9;
-    top: calc(100% + 10px);
+    top: calc(100% + 5px);
     left: 0;
 
     visibility: hidden;
@@ -1898,7 +1904,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 
     opacity: 0;
     background: #FFF;
-    box-shadow: 0 4px 4px 0 rgba(191, 191, 191, .25);
+	border-radius: 6px;
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, .1);
 
     transition: opacity .2s linear;
 }
@@ -1927,11 +1934,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
     position: relative;
 
-    color: #282828;
+    color: #363B3F;
     font-size: 16px;
     line-height: 1.3;
 
-    padding: 5px 20px;
+    padding: 5px 16px;
 
     cursor: pointer;
 
@@ -1943,15 +1950,14 @@ input[type=checkbox]:checked + .checkbox__text::after
     display: none;
 }
 
-.select-wrap .nice-select .list .list_item:hover,
-.select-wrap .nice-select .list .list_item.selected
+.select-wrap .nice-select .list .list_item:hover
 {
-    color: #007657;
+    color: #F52121;
 }
 
 .select-wrap .nice-select .list .list_item.selected
 {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 
@@ -4463,7 +4469,7 @@ button.informations__tabs-btn
 	position: relative;
 	border-radius: 8px;
 	border: 1px solid #363B3F;
-	padding: 20px 20px 20px 72px;
+	padding: 18px 20px 18px 72px;
 
 	font-size: 14px;
 }
@@ -4488,6 +4494,11 @@ button.informations__tabs-btn
 	margin-top: 40px;
 }
 
+.checkout__form .form__input
+{
+	height: 52px;
+}
+
 
 
 .checkout-total 
@@ -4505,7 +4516,7 @@ button.informations__tabs-btn
 
 .checkout-total__items
 {
-	margin-top: 10px;
+	margin-top: 17px;
 }
 
 .checkout-total__item 

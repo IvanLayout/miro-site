@@ -105,6 +105,17 @@
 		width: 24px;
 		height: 24px;
 	}
+
+
+	.checkout__coll 
+	{
+		width: calc(100% - 400px);
+	}
+
+	.checkout__colr 
+	{
+		width: 370px;
+	}
 	
 
 	/*------------
