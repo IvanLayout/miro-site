@@ -232,6 +232,17 @@
 		font-size: 20px;
 		font-weight: 700;
 	}
+
+
+	.cart-empty__bg
+	{
+		padding-bottom: 344px;
+	}
+
+	.cart-empty__img img 
+	{
+		object-position: 87%;
+	}
     /*------------
 		commit
 	------------*/

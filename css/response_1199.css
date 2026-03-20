@@ -99,11 +99,12 @@
 		width: 100%;
 	}
 
-	.section-cart__search
+
+	.section-cart .section-cart-search
 	{
-		max-width: 100%;
 		margin-left: 0;
 		order: 1;
+		max-width: 100%;
 	}
 
 

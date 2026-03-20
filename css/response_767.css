@@ -390,6 +390,35 @@
 	{
 		margin-top: 44px;
 	}
+
+
+	.cart-empty__bg
+	{
+		padding-bottom: 260px;
+	}
+
+	.cart-empty__img
+	{
+		top: auto;
+		bottom: 0;
+		height: 270px;
+	}
+
+	.cart-empty__img img
+	{
+		object-position: 94%;
+	}
+
+	.cart-empty .section-cart-search
+	{
+		margin-bottom: 35px;
+	}
+
+	.cart-empty__desc,
+	.cart-empty__btn
+	{
+		margin-top: 16px;
+	}
     /*------------
 		commit
 	------------*/
