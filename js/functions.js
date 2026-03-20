@@ -251,6 +251,9 @@ $(() => {
 
 		$('.filter-show').css('top', relativeOffset + heigh/2)
 	})
+
+	// Кастомный select
+	$('select').niceSelect()
 })
 
 
