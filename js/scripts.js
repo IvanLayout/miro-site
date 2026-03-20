@@ -167,14 +167,15 @@ $(() => {
 	$('body').on('click', '.tabs-accord__open', function(e) {
 		e.preventDefault()
 
-		let parent = $(this).closest('.tabs-accord__item')
-
-		if( parent.hasClass('_active') ) {
-			parent.removeClass('_active')
-			parent.find('.tabs-accord__data').slideUp(300)
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+			$(this).next().slideUp(300)
 		} else {
-			parent.addClass('_active')
-			parent.find('.tabs-accord__data').slideDown(300)
+			$(this).closest('.tabs-accord').find('.tabs-accord__open').removeClass('_active')
+			$(this).closest('.tabs-accord').find('.tabs-accord__data').slideUp(300)
+
+			$(this).addClass('_active')
+			$(this).next().slideDown(300)
 		}
 	})
 
