@@ -582,6 +582,8 @@
 												</div>
 
 												<div class="cart-table__cod">Артикул: 1234567</div>
+
+												<div class="cart-table__status cart-table__status-mob"><span>В наличии</span></div>
 											</div>
 										</div>
 									</td>
@@ -637,6 +639,8 @@
 												</div>
 
 												<div class="cart-table__cod">Артикул: 1234567</div>
+
+												<div class="cart-table__status cart-table__status-order cart-table__status-mob"><span>Под заказ</span></div>
 											</div>
 										</div>
 									</td>
@@ -656,7 +660,7 @@
 										</div>
 									</td>
 									<td class="cart-table__min-val" data-label="Упаковка Мин.кол.">1/150<br> 1</td>
-									<td class="cart-table__status cart-table__status-order"><span>В наличии</span></td>
+									<td class="cart-table__status cart-table__status-order"><span>Под заказ</span></td>
 									<td class="cart-table__date" data-label="Дата поставки">29.08.25</td>
 									<td class="cart-table__val" data-label="Кол-во в пути">320</td>
 									<td class="cart-table__mob-none">2 099</td>
@@ -692,6 +696,8 @@
 												</div>
 
 												<div class="cart-table__cod">Артикул: 1234567</div>
+
+												<div class="cart-table__status cart-table__status-mob"><span>В наличии</span></div>
 											</div>
 										</div>
 									</td>
@@ -732,9 +738,99 @@
 				</section>
 
 
-				<section class="checkout-secton _marg">
+				<section class="checkout _marg">
 					<div class="cont">
 						<div class="main-title">Оформление заказа</div>
+
+						<div class="checkout__wrap _flex">
+							<div class="checkout__coll">
+								<div class="checkout__info">
+									Вы заказывали в нашем интернет-магазине, поэтому мы заполнили все данные автоматически. Если все заполнено верно, нажмите кнопку «Оформить заказ»
+								</div>
+
+								<form action="" class="form checkout__form">
+									<div class="form__flex _flex">
+										<div class="form__line form__line-small">
+											<div class="form__field">
+												<label class="form__label">Комментарий</label>
+
+												<input type="text" value="" placeholder="Выбор" class="form__input">
+											</div>
+										</div>
+										<div class="form__line form__line-small">
+											<div class="form__field">
+												<label class="form__label">Клиент</label>
+
+												<input type="text" value="" placeholder="Выбор" class="form__input">
+											</div>
+										</div>
+										<div class="form__line form__line-small">
+											<div class="form__field">
+												<label class="form__label">Статус</label>
+
+												<input type="text" value="" placeholder="Заявка на сборку" class="form__input">
+											</div>
+										</div>
+										<div class="form__line form__line-middle">
+											<div class="form__field">
+												<label class="form__label">Адрес</label>
+
+												<input type="text" value="" placeholder="Выбор" class="form__input">
+											</div>
+										</div>
+										<div class="form__line form__line-middle">
+											<div class="form__field">
+												<label class="form__label">Наименование</label>
+
+												<input type="text" value="" placeholder="ООО «Иванов»" class="form__input">
+											</div>
+										</div>
+										<div class="form__line">
+											<div class="form__field">
+												<label class="form__label">Комментарий</label>
+
+												<input type="email" value="" placeholder="Введите email" class="form__input">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+
+							<div class="checkout__colr">
+								<div class="checkout-total">
+									<div class="checkout-total__title">Заказ:</div>
+
+									<div class="checkout-total__items">
+										<div class="checkout-total__item _flex">
+											<div class="checkout-total__item-name">Сумма без скидок</div>
+											<div class="checkout-total__item-val">2 099 ₽</div>
+										</div>
+										<div class="checkout-total__item _flex">
+											<div class="checkout-total__item-name">Скидка 10%</div>
+											<div class="checkout-total__item-val">-299 ₽</div>
+										</div>
+									</div>
+
+									<div class="checkout-total__box">
+										<div class="checkout-total__box-title">Итого:</div>
+
+										<div class="checkout-total__price">1 800 ₽</div>
+									</div>
+
+									<a href="/" class="btn-red checkout-total__btn">Оформить заказ</a>
+								</div>
+
+								<div class="checkout-help">
+									<div class="checkout-help__title">Нужна помощь?</div>
+
+									<div class="checkout-help__desc">Наши специалисты ответят на любой <br>интересующий вопрос</div>
+
+									<div class="checkout-help__btn">
+										<a href="/" class="btn-white">Задать вопрос</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</section>
 

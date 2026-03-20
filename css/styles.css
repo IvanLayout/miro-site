@@ -1440,9 +1440,32 @@ button
 }
 
 
+.form__flex
+{
+    margin-left: -20px;
+}
+
+.form__flex .form__line.form__line-small
+{
+    width: calc(100%/3 - 20px);
+    margin-left: 20px;
+}
+
+.form__flex .form__line.form__line-middle
+{
+    width: calc(100%/2 - 20px);
+    margin-left: 20px;
+}
+
+.form__flex .form__line
+{
+	width: calc(100%/1 - 20px);
+	margin-left: 20px;
+}
+
 .form__line
 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .form__field
@@ -3103,6 +3126,7 @@ html.with-fancybox{
 {
 	width: 100%;
 	line-height: 42px;
+	color: #363B3F;
 }
 
 
@@ -4364,6 +4388,11 @@ button.informations__tabs-btn
 	background: #FC9B00;
 }
 
+.cart-table__status-mob
+{
+	display: none;
+}
+
 .cart-table__total
 {
 	font-weight: 700;
@@ -4403,6 +4432,153 @@ button.informations__tabs-btn
 	{
 		fill: #D30000;
 	}
+}
+
+
+
+/*------------
+    checkout
+------------*/
+
+
+.checkout__wrap
+{
+	margin-top: 40px;
+	justify-content: space-between;
+}
+
+.checkout__coll
+{
+	width: calc(100% - 432px);
+}
+
+.checkout__colr
+{
+	width: 412px;
+}
+
+
+.checkout__info
+{
+	position: relative;
+	border-radius: 8px;
+	border: 1px solid #363B3F;
+	padding: 20px 20px 20px 72px;
+
+	font-size: 14px;
+}
+
+.checkout__info::before
+{
+	position: absolute;
+	content: '';
+	top: 22px;
+	left: 20px;
+
+	display: block;
+
+	width: 32px;
+	height: 32px;
+
+	background: url(../images/ic_checkout.svg) 50% no-repeat;
+}
+
+.checkout__form
+{
+	margin-top: 40px;
+}
+
+
+
+.checkout-total 
+{
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.checkout-total__title
+{
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.checkout-total__items
+{
+	margin-top: 10px;
+}
+
+.checkout-total__item 
+{
+    justify-content: space-between;
+    flex-wrap: nowrap;
+	margin-top: 10px;
+}
+
+.checkout-total__item-val 
+{
+    font-weight: 600;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+.checkout-total__box
+{
+	margin-top: 20px;
+}
+
+.checkout-total__box-title
+{
+	font-size: 14px;
+}
+
+.checkout-total__price
+{
+	margin-top: 6px;
+	white-space: nowrap;
+	font-size: 32px;
+	line-height: 1.1;
+	font-weight: 600;
+}
+
+.checkout-total__btn
+{
+	margin-top: 20px;
+	width: 100%;
+}
+
+
+.checkout-help
+{
+	background: #363B3F;
+	color: #fff;
+	border-radius: 8px;
+	margin-top: 10px;
+	padding: 20px;
+}
+
+.checkout-help__title
+{
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.checkout-help__desc
+{
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.checkout-help__btn
+{
+	margin-top: 28px;
+}
+
+.checkout-help__btn a
+{
+	width: 100%;
+	color: #363B3F;
 }
 /*------------
     commit

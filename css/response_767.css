@@ -335,6 +335,25 @@
 	{
 		font-size: 22px;
 	}
+
+
+	.section-cart__top
+	{
+		flex-wrap: wrap;
+	}
+
+	.section-cart__boxl
+	{
+		width: 100%;
+		order: 2;
+		margin-top: 16px;
+		margin-right: 0;
+	}
+
+	.section-cart__boxl-bot
+	{
+		margin-top: 16px;
+	}
     /*------------
 		commit
 	------------*/
