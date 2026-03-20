@@ -4372,6 +4372,11 @@ button.informations__tabs-btn
 	background: #FC9B00;
 }
 
+.cart-table__status-mob
+{
+	display: none;
+}
+
 .cart-table__total
 {
 	font-weight: 700;
