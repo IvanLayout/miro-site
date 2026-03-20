@@ -211,6 +211,14 @@
 		max-width: 323px;
 	}
 
+	.cart-table tr::before {
+		content: "";
+		flex-basis: 100%;
+		width: 0;
+		height: 0;
+		order: 5;
+	}
+
 	.form__one{
 		gap: 8px;
 		flex-wrap: wrap;

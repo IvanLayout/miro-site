@@ -386,10 +386,11 @@
 	.cart-table tr 
 	{
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-start;
 		align-items: stretch;
 		align-content: stretch;
 		flex-wrap: wrap;
+		gap: 0 10px;
 
 		padding: 16px;
 		border-radius: 8px;
@@ -401,6 +402,14 @@
 	.cart-table tr + tr
 	{
 		margin-top: 16px;
+	}
+
+	.cart-table tr::after {
+		content: "";
+		flex-basis: 100%;
+		width: 0;
+		height: 0;
+		order: 6;
 	}
 
 	.cart-table td 
@@ -531,7 +540,6 @@
 		background: #F5F7FA;
 
 		margin-top: 10px;
-		margin-left: 10px;
 	}
 
 	.cart-table td.cart-table__val
@@ -543,7 +551,6 @@
 		background: #F5F7FA;
 
 		margin-top: 10px;
-		margin-left: 10px;
 	}
 
 	.cart-table td.cart-table__date
@@ -555,7 +562,6 @@
 		background: #F5F7FA;
 
 		margin-top: 10px;
-		margin-left: 10px;
 	}
 
 	.cart-table__total
@@ -584,6 +590,7 @@
 
 		margin-top: 10px;
 		margin-left: 10px;
+		margin-right: auto;
 	}
 
 	.cart-table td.cart-table__min-val::before
