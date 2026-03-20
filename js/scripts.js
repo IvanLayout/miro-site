@@ -163,23 +163,6 @@ $(() => {
 
 
 
-		// Аккордион простой моб
-	$('body').on('click', '.tabs-accord__open', function(e) {
-		e.preventDefault()
-
-		if ($(this).hasClass('_active')) {
-			$(this).removeClass('_active')
-			$(this).next().slideUp(300)
-		} else {
-			$(this).closest('.tabs-accord').find('.tabs-accord__open').removeClass('_active')
-			$(this).closest('.tabs-accord').find('.tabs-accord__data').slideUp(300)
-
-			$(this).addClass('_active')
-			$(this).next().slideDown(300)
-		}
-	})
-
-
 	// commit
 	// favorite
 	$('body').on('click', '.product-favorite:not(.product-favorite_delete)', function (e) {
