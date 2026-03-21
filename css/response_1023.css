@@ -361,7 +361,7 @@
 		margin-left: 30px;
 	}
 
-	.section-cart__search .section-cart__search-input
+	.section-cart-search .section-cart-search__input
 	{
 		font-size: 14px;
 	}
@@ -649,6 +649,41 @@
 		border-radius: 6px;
 		padding: 5px;
 		background: #F5F7FA;
+	}
+
+
+
+	.checkout__info
+	{
+		padding: 58px 16px 16px;
+	}
+
+	.checkout__info::before
+	{
+		top: 16px;
+		left: 16px;
+	}
+
+	.form__flex .form__line.form__line-small,
+	.form__flex .form__line.form__line-middle
+	{
+		width: calc(100%/1 - 10px);
+	}
+
+	.checkout-total__price 
+	{
+		font-size: 28px;
+	}
+
+
+	.cart-empty__bg
+	{
+		padding: 20px;
+	}
+
+	.cart-empty__box
+	{
+		min-height: 1px;
 	}
     /*------------
 		commit

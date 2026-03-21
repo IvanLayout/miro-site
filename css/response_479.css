@@ -193,6 +193,56 @@
 	{
 		margin-top: 8px;
 	}
+
+
+	.section-cart__action-link
+	{
+		width: 40px;
+		height: 40px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+	}
+
+	.section-cart__action-name
+	{
+		display: none;
+	}
+
+	.cart-table_marg
+	{
+		margin-top: 14px;
+	}
+
+	.checkout__colr
+	{
+		margin-top: 10px;
+	}
+
+	.checkout-total
+	{
+		padding: 16px;
+	}
+
+	.checkout-total__price
+	{
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+
+	.cart-empty__bg
+	{
+		padding-bottom: 344px;
+	}
+
+	.cart-empty__img img 
+	{
+		object-position: 87%;
+	}
     /*------------
 		commit
 	------------*/

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Переключение IE в последнию версию, на случай если в настройках пользователя стоит меньшая -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Miro</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/dropzone.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1400.css" media="(max-width: 1400px)">
+		<link rel="stylesheet" href="css/response_1319.css" media="(max-width: 1319px)">
+		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<!-- Шапка -->
+				<header class="header-lk">
+					<div class="cont _flex">
+						<div class="header-lk__logo">
+							<a href="/">
+								<img src="images/logo-white.svg" alt="">
+							</a>
+						</div>
+
+						<div class="header-lk__search">
+							<form action="">
+								<div class="header-lk__search-field _flex">
+									<input type="text" value="" placeholder="Введите ваш запрос" id="header-lk__search-input" class="header-lk__search-input">
+
+									<button type="submit" class="header-lk__search-submit">Найти</button>
+								</div>
+							</form>
+						</div>
+
+						<div class="header-lk__links _flex">
+							<div class="header-lk__item-link">
+								<a href="/" class="header-lk__link">
+									<svg class="header-lk__link-icon">
+										<use xlink:href="images/sprite.svg#ic_cart2"></use>
+									</svg>
+									<span class="header-lk__link-name">Интернет-магазин</span>
+								</a>
+							</div>
+							<div class="header-lk__item-link">
+								<a href="/" class="header-lk__link">
+									<svg class="header-lk__link-icon">
+										<use xlink:href="images/sprite.svg#ic_price_list"></use>
+									</svg>
+									<span class="header-lk__link-name">Прайс лист</span>
+								</a>
+							</div>
+							<div class="header-lk__item-link">
+								<a href="/" class="header-lk__link">
+									<svg class="header-lk__link-icon">
+										<use xlink:href="images/sprite.svg#ic_download"></use>
+									</svg>
+									<span class="header-lk__link-name">Загрузить заказ из XLS</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="header-lk__links _flex">
+							<div class="header-lk__item-link">
+								<a href="/" class="header-lk__link">
+									<span class="header-lk__link-name">Выйти</span>
+								</a>
+							</div>
+							<div class="header-lk__item-link">
+								<a href="/" class="header-lk__link">
+									<span class="header-lk__link-name">Отправить жалобу</span>
+								</a>
+							</div>
+							<div class="header-lk__item-link">
+								<a href="tel:+74993941625" class="header-lk__link header-lk__phone">+7 (499) 394 16 25</a>
+							</div>
+						</div>
+
+						<div class="header-lk__btns _flex">
+							<button type="button" class="header-lk__btn">
+								<svg class="header-lk__btn-icon">
+									<use xlink:href="images/sprite.svg#ic_notification"></use>
+								</svg>
+
+								<span class="header-lk__btn-active"></span>
+							</button>
+
+							<a href="/" class="header-lk__btn">
+								<svg class="header-lk__btn-icon">
+									<use xlink:href="images/sprite.svg#cart"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</header>
+
+				<div class="overlay-catalog"></div>
+
+				<!-- End Шапка -->
+
+				<section class="section-lk">
+					<div class="cont">
+						<div class="section-lk__flex _flex">
+							<aside class="aside-lk">
+								<div class="aside-lk__top">
+									<div class="aside-lk__top-flex _flex">
+										<div class="aside-lk__foto">
+											<img src="images/ic_foto_user.svg" alt="">
+										</div>
+
+										<div class="aside-lk__name">Константин Константинопольский</div>
+									</div>
+
+									<div class="aside-lk__top-data">infomail123@gmail.com</div>
+									<div class="aside-lk__top-data">+7 963 923-45-88</div>
+								</div>
+
+								<div class="aside-lk__item">
+									<a class="aside-lk__item-link _active">
+										<svg class="aside-lk__item-icon">
+											<use xlink:href="images/sprite.svg#ic_lk1"></use>
+										</svg>
+
+										<span class="aside-lk__item-name">Главная</span>
+									</a>
+								</div>
+
+								<div class="aside-lk__item">
+									<a href="/" class="aside-lk__item-link aside-lk__item-link-arrow">
+										<svg class="aside-lk__item-icon">
+											<use xlink:href="images/sprite.svg#ic_lk2"></use>
+										</svg>
+
+										<span class="aside-lk__item-name">Личная информация</span>
+									</a>
+
+									<div class="aside-lk__links">
+										<div class="aside-lk__link">
+											<a href="/">Личная информация</a>
+										</div>
+										<div class="aside-lk__link">
+											<a href="/">Список пользователей</a>
+										</div>
+										<div class="aside-lk__link">
+											<a href="/">График оплат</a>
+										</div>
+										<div class="aside-lk__link">
+											<a href="/">Договоры и условия</a>
+										</div>
+										<div class="aside-lk__link">
+											<a href="/">Склады</a>
+										</div>
+										<div class="aside-lk__link">
+											<a href="/">Доставка</a>
+										</div>
+										<div class="aside-lk__link">
+											<a href="/">Смена пароля</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="aside-lk__item">
+									<a href="/" class="aside-lk__item-link">
+										<svg class="aside-lk__item-icon">
+											<use xlink:href="images/sprite.svg#ic_lk3"></use>
+										</svg>
+
+										<span class="aside-lk__item-name">Управление заказами</span>
+									</a>
+								</div>
+
+								<div class="aside-lk__item">
+									<a href="/" class="aside-lk__item-link">
+										<svg class="aside-lk__item-icon">
+											<use xlink:href="images/sprite.svg#ic_lk4"></use>
+										</svg>
+
+										<span class="aside-lk__item-name">Список заказов с рекламацией</span>
+									</a>
+								</div>
+
+								<div class="aside-lk__item">
+									<a href="/" class="aside-lk__item-link">
+										<svg class="aside-lk__item-icon">
+											<use xlink:href="images/sprite.svg#ic_download"></use>
+										</svg>
+
+										<span class="aside-lk__item-name">Банк полезных загрузок</span>
+									</a>
+								</div>
+							</aside>
+
+							<div class="content-lk">
+								<h1 class="main-title">Выполнение плана</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+
+			<footer class="footer _marg">
+				<div class="cont">
+					<div class="footer__bot">
+						<div class="footer__bot-flex _flex">
+							<div class="footer__copy">&copy; 2025 г. MIRO Company. Все права защищены.</div>
+							<div class="footer__link">
+								<a href="/">Политика обработки персональных данных</a>
+							</div>
+							<div class="footer__link">
+								<a href="/">Пользовательское соглашение</a>
+							</div>
+							<div class="footer__creator">
+								Сайт разработан в <a href="/">MWI</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<div id="" class="modal">
+			<div class="modal__title"></div>
+		</div>
+
+
+		<div class="supports-error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/jquery.rating.pack.js"></script>
+		<script src="js/dropzone.min.js"></script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
