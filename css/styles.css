@@ -1828,7 +1828,7 @@ input[type=checkbox]:checked + .checkbox__text::after
     overflow: hidden;
 
     height: 52px;
-    padding: 0 48px 0 16px;
+    padding: 0 48px 0 15px;
 
     cursor: pointer;
     white-space: nowrap;
@@ -5752,6 +5752,10 @@ button.informations__tabs-btn
     width: calc(100%/5 - 20px);
 }
 
+.aside-top{
+    display: none;
+}
+
 .aside-cats__title{
     min-height: 24px;
     display: flex;
@@ -5775,6 +5779,10 @@ button.informations__tabs-btn
     width: 24px;
     height: 24px;
     background: url(../images/ic_cats.svg) 50% no-repeat;
+}
+
+.aside-cats__title-arrow{
+    display: none;
 }
 
 .aside-cats__menu{
@@ -6174,10 +6182,44 @@ button.informations__tabs-btn
 	}
 }
 
+.categories__link.active{
+    background: #6E7277;
+    color: #fff;
+}
+
+
+.open-filter{
+    display: none;
+}
+
 
 .sorting{
 	justify-content: space-between;
+    align-items: center;
+    align-content: center;
 	width: 100%;
+}
+
+.sorting__flex{
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.sorting__name{
+    font-size: 14px;
+    line-height: 1.3;
+    color: #363B3F;
+}
+
+.sorting .select-wrap{
+    width: 250px;
+}
+
+.sorting .select-wrap .nice-select .current{
+    font-size: 14px;
+    line-height: 38px;
+    height: 40px;
 }
 
 .views{
