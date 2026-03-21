@@ -1111,6 +1111,15 @@
 	}
 
 
+	.products-list_marg{
+		margin-top: 16px;
+	}
+
+	.product-item{
+		margin-top: 16px;
+	}
+
+
 	.footer{
 		padding-top: 20px;
 		padding-bottom: 20px;

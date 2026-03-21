@@ -132,4 +132,24 @@
 	.products__grid {
 		--products_count: 3;
 	}
+
+	.products-list__head-name:nth-child(2){
+		width: 70px;
+	}
+
+	.products-list__head-name:nth-child(3){
+		width: 86px;
+	}
+
+	.product-item__flex{
+		flex-wrap: wrap;
+	}
+
+	.product-item__col:nth-child(2){
+		width: 70px;
+	}
+
+	.product-item__col:nth-child(3){
+		width: 86px;
+	}
 }

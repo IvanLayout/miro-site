@@ -584,6 +584,12 @@
 	}
 
 
+	.product-item__img {
+		width: 100px;
+		height: 100px;
+	}
+
+
 	.footer__coll{
 		width: 100%;
 	}
