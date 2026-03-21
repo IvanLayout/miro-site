@@ -5709,6 +5709,45 @@ button.informations__tabs-btn
 }
 
 
+.sorting{
+	justify-content: space-between;
+	width: 100%;
+}
+
+.views{
+	background: #fff;
+	border-radius: 6px;
+	padding: 4px;
+	gap: 10px;
+}
+
+.views__link{
+	display: block;
+	width: 24px;
+	height: 24px;
+	color: #6E7277;
+	text-decoration: none;
+	transition: color .2s linear;
+}
+
+.views__link svg{
+	display: block;
+	width: 100%;
+	height: 100%;
+	fill: currentColor;
+}
+
+@media (any-hover: hover){
+	.views__link:hover{
+		color: #F52121;
+	}
+}
+
+.views__link._active{
+	color: #F52121;
+}
+
+
 /*------------
     Footer
 ------------*/
