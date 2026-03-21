@@ -282,6 +282,22 @@
 		width: 100%;
 	}
 
+
+	.products__grid .product__pad {
+		padding: 8px 8px;
+	}
+
+	.products__grid .product__btns {
+		right: 6px;
+		top: 8px;
+	}
+
+	.products__grid .product__stickers {
+		top: 11px;
+		left: 8px;
+	}
+
+
 	.footer__menu-col{
 		width: 100%;
 	}

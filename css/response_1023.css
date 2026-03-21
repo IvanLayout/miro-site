@@ -2,12 +2,12 @@
 {
 	.wrap 
 	{
-		padding-bottom: 64px;
+		padding-bottom: 58px;
 	}
 
 	.wrap-product
 	{
-		padding-bottom: 124px;
+		padding-bottom: 130px;
 	}
 
 
@@ -830,6 +830,284 @@
 
 	.section-subscribe__box{
 		min-height: 170px;
+	}
+
+
+	.content-flex{
+		margin-left: 0;
+	}
+
+	._look-filter{
+		overflow: hidden;
+	}
+
+	.aside {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: #F5F7FA;
+		margin: 0;
+		padding: 20px 15px;
+		overflow: hidden;
+		overflow-y: auto;
+		z-index: 99;
+
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: opacity .2s linear, visibility .2s linear;
+	}
+
+	.aside._show{
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;	
+	}
+
+	.aside-top{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		background: #fff;
+		border-radius: 8px;
+		padding: 8px;
+		gap: 16px;
+		margin-bottom: 10px;
+	}
+
+	.aside-top__title{
+		font-size: 14px;
+		line-height: 1.3;
+	}
+
+	.aside-top__close{
+		width: 32px;
+		height: 32px;
+		border-radius: 6px;
+		background: #F52121;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		color: #fff;
+	}
+
+	.aside-top__close svg{
+		width: 24px;
+		height: 24px;
+		fill: currentColor;
+	}
+
+	.aside-cats__bg{
+		background: #fff;
+		border-radius: 8px;
+	}
+
+	.aside-cats__title{
+		background: #E8E8EC;
+		border-radius: 8px 8px 0 0;
+		height: 56px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		padding: 0 48px;
+		cursor: pointer;
+	}
+
+	.aside-cats__title::before{
+		top: 16px;
+		left: 16px;
+	}
+
+	.aside-cats__title-arrow{
+		position: absolute;
+		top: 50%;
+		right: 16px;
+		margin-top: -8px;
+		width: 16px;
+		height: 16px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+	}
+
+	.aside-cats__title._active .aside-cats__title-arrow{
+		transform: rotate(180deg);
+	}
+
+	.aside-cats__title-arrow svg{
+		display: block;
+		width: 14px;
+    	height: 8px;
+		fill: none;
+		stroke: currentColor;
+	}
+
+	.aside-cats__menu{
+		padding: 20px 16px 0;
+		margin-top: 0;
+		border-top: none;
+		display: none;
+	}
+
+	.filter{
+		padding: 0 16px 126px;
+	}
+
+	.range{
+		max-width: none;
+	}
+	
+	.filter-show{
+		display: none;
+	}
+
+	.filter__bot{
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		background: #F5F7FA;
+		width: 100%;
+		padding: 0 15px 20px;
+		margin-top: 0;
+		z-index: 10;
+	}
+
+	.filter__bot-btns{
+		background: #fff;
+		padding: 16px 16px 16px;
+		border-radius: 0 0 8px 8px;
+	}
+
+	.aside-info{
+		display: none;
+	}
+
+	.content {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.products_marg{
+		margin-top: 16px;
+	}
+
+	.products__grid{
+		--product_marg: 16px;
+		row-gap: 16px;
+	}
+
+	.categories{
+		flex-wrap: nowrap;
+		width: calc(100% + 30px);
+		margin-left: -15px;
+		margin-right: -15px;
+		padding-left: 15px;
+		padding-right: 15px;
+		overflow: hidden;
+		overflow-x: auto;
+		order: 3;
+	}
+
+	.categories::-webkit-scrollbar{
+		display: none;
+	}
+
+	.catalog-head__found{
+		display: none;
+	}
+
+	.catalog-head__main-title{
+		width: calc(100% - 86px);
+	}
+
+	.sorting{
+		gap: 10px;
+		width: 66px;
+		background: #fff;
+		border-radius: 6px;
+		padding: 4px;
+	}
+
+	.sorting__name{
+		display: none;
+	}
+
+	.sorting .select-wrap{
+		width: 24px;
+	}
+
+	.sorting .select-wrap .nice-select .current{
+		font-size: 0;
+		width: 100%;
+		height: 24px;
+		border-radius: 0;
+		border: none;
+		padding: 0;
+	}
+
+	.sorting .select-wrap .nice-select .current:before{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: url(../images/ic_sort.svg) 50% no-repeat;
+	}
+
+	.sorting .select-wrap .nice-select.open .current:before{
+		background-image: url(../images/ic_sort_a.svg);
+	}
+
+	.sorting .select-wrap .nice-select .current:after{
+		display: none;
+	}
+
+	.sorting .select-wrap .nice-select.open .list{
+		width: 284px;
+		left: auto;
+		right: -38px;
+	}
+
+	.open-filter{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		width: 24px;
+		height: 24px;
+		color: #363B3F;
+	}
+
+	.open-filter svg{
+		display: block;
+		width: 100%;
+		height: 100%;
+		fill: currentColor;
+	}
+
+	.views{
+		display: none;
+	}
+
+
+	.catalog-head{
+		gap: 16px;
+	}
+
+	.pagination{
+		margin-top: 16px;
 	}
 
 
