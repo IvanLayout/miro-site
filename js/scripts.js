@@ -238,7 +238,7 @@ $(() => {
 					spaceBetween: 20,
 					slidesPerView: 4,
 				},
-				'1300': {
+				'1320': {
 					spaceBetween: 20,
 					slidesPerView: 5,
 				}

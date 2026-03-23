@@ -271,6 +271,34 @@ $(() => {
 
 	// Кастомный select
 	$('select').niceSelect()
+
+	$('body').on('click', '.aside-cats__title', function(e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+			$(this).next().slideUp(300)
+		} else {
+			$(this).addClass('_active')
+			$(this).next().slideDown(300)
+		}
+	})
+
+	$('body').on('click', '.open-filter', function(e) {
+		e.preventDefault()
+
+		$('.aside').addClass('_show')
+
+		$('body').addClass('_look-filter')
+	})
+
+	$('body').on('click', '.aside-top__close', function(e) {
+		e.preventDefault()
+
+		$('.aside').removeClass('_show')
+
+		$('body').removeClass('_look-filter')
+	})
 })
 
 

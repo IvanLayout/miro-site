@@ -257,6 +257,134 @@
 	}
 
 
+	.products-list__head{
+		display: none;
+	}
+
+	.product-item{
+		align-items: stretch;
+		align-content: stretch;
+		flex-wrap: wrap;
+		padding: 16px;
+		gap: 0 10px;
+	}
+
+	.product-item__col:first-child{
+		padding-left: 0;
+	}
+
+	.product-item__flex{
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: nowrap;
+		padding-right: 115px;
+	}
+
+	.product-item__img{
+		width: 120px;
+		height: 120px;
+	}
+
+	.product-item__name{
+		max-width: none;
+	}
+
+	.product-item__btns{
+		position: absolute;
+		right: 16px;
+		top: 16px;
+		gap: 10px;
+		margin: 0;
+	}
+
+	.product-item__btns-btn,
+	.product-item__btns-btn{
+		width: 44px;
+		height: 44px;
+		border-radius: 6px;
+		background: #F5F7FA;
+	}
+
+	.product-item__price{
+		font-weight: 600;
+		font-size: 16px;
+	}
+
+	.product-item__col:first-child{
+		margin-top: 0;
+	}
+
+	.product-item__col{
+		margin-top: 10px;
+	}
+
+	.product-item__col.product-item__col_gray{
+		background: #F5F7FA;
+		padding: 10px;
+		border-radius: 6px;
+		width: auto;
+		white-space: nowrap;
+	}
+
+	.product-item__col.product-item__col_flex{
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: nowrap;
+		gap: 10px;
+		white-space: wrap;
+	}
+
+	.product-item__col_gray::before{
+		content: attr(data-label);
+		display: block;
+		margin-bottom: 4px;
+
+		font-size: 12px;
+		line-height: 1.3;
+		font-weight: 400;
+		color: #92959C;
+	}
+
+	.product-item__col_flex::before{
+		width: 55px;
+	}
+
+	.product-item__col:nth-child(6){
+		order: 9;
+		align-self: center;
+		width: auto;
+	}
+
+	.product-item__col:nth-child(7){
+		width: auto;
+		order: 8;
+		padding-right: 10px;
+		align-self: center;
+	}
+
+	.product-item__col:nth-child(8){
+		padding-right: 0;
+		width: auto;
+		margin-left: auto;
+		order: 10;
+		align-self: center;
+	}
+
+	.product-item._flex::after{
+		content: '';
+		display: block;
+		width: 100%;
+		order: 7;
+	}
+
+	.product-item__buy{
+		width: 44px;
+		height: 44px;
+	}
+
+
 	.footer__coll {
 		width: 260px;
 	}

@@ -565,6 +565,31 @@
 	}
 
 
+	.products__grid {
+		--product_marg: 8px;
+		row-gap: 8px;
+		--products_count: 2;
+	}
+
+
+	.aside{
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	.filter__bot{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+
+	.product-item__img {
+		width: 100px;
+		height: 100px;
+	}
+
+
 	.footer__coll{
 		width: 100%;
 	}
