@@ -332,6 +332,39 @@ $(() => {
 			to : $('.price_range input.do').val().replace(/\s/g,'')
 		})
 	})
+
+	// Смена пароля
+	$('body').on('submit', '.form_password', function (e) {
+		e.preventDefault()
+
+		$(this).addClass('_sended')
+	})
+
+	// Редактировать данные профиля
+	$('body').on('click', '.personal-data__edit', function(e) {
+    	e.preventDefault()
+
+    	$(this).closest('.personal-data__item').addClass('_active')
+    })
+
+	$('body').on('click', '.personal-data__cancel', function(e) {
+    	e.preventDefault()
+
+    	$(this).closest('.personal-data__item').removeClass('_active')
+    })
+
+	$('body').on('submit', '.personal-data__item-form', function(e) {
+    	e.preventDefault()
+
+    	Fancybox.close()
+
+		Fancybox.show([{
+			src: $(this).data('content'),
+			type: 'inline'
+		}])
+
+    	$(this).closest('.personal-data__item').removeClass('_active')
+    })
 });
 
 

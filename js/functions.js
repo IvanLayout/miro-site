@@ -171,6 +171,63 @@ $(() => {
 	}
 
 
+	// Fancybox
+	Fancybox.defaults.autoFocus = false
+	Fancybox.defaults.dragToClose = false
+	Fancybox.defaults.placeFocusBack = false
+
+	Fancybox.defaults.template = {
+		closeButton: '<svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L16 16" stroke-linecap="round"/><path d="M16 1L1 16" stroke-linecap="round"/></svg>',
+	}
+
+	// Всплывающие окна
+	$('body').on('click', '.modal-btn', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: $(this).data('content'),
+			type: 'inline'
+		}],
+		{
+			on: {
+				init: (fancyboxRef) => {
+					if ( $(this).attr('data-modal-big') ) {
+						$('body').addClass('_big-modal')
+					}
+				},
+				destroy: (fancyboxRef) => {
+					if ( $(this).attr('data-modal-big') ) {
+						$('body').removeClass('_big-modal')
+					}
+
+					$('.modal').find('video').each(function () {
+						this.pause()
+					})
+				},
+			},
+		})
+	})
+
+	$('body').on('click', '.modal-close', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+	})
+
+
+	// Увеличение картинки
+	Fancybox.bind('.fancy-img', {
+		Image: {
+			zoom: false,
+		},
+		Thumbs: {
+			autoStart: false,
+		}
+	})
+
+
 	// Аккордион простой моб
 	$('body').on('click', '.tabs-accord__open', function(e) {
 		e.preventDefault()
@@ -269,6 +326,15 @@ $(() => {
 		$('.filter-show').css('top', relativeOffset + heigh/2)
 	})
 
+	// Маска ввода
+	$('input[type=tel]').each(function(){
+		let datamask = $(this).data('mask');
+
+		$(this).inputmask(`${datamask}`, {
+			showMaskOnHover: false
+		})
+	})
+
 	// Кастомный select
 	$('select').niceSelect()
 
@@ -298,6 +364,40 @@ $(() => {
 		$('.aside').removeClass('_show')
 
 		$('body').removeClass('_look-filter')
+	})
+
+	//Показать пароль
+	$('body').on('click', '.view_pas', function(e) {
+    	e.preventDefault()
+
+    	if ($(this).hasClass('_active')) {
+    		$(this).removeClass('_active')
+
+			$(this).closest('.form__field').find('.form__input').prop('type', 'password')
+    	} else {
+    		$(this).addClass('_active')
+
+			$(this).closest('.form__field').find('.form__input').prop('type', 'text')
+    	}
+    })
+
+	// Выбор файла
+	$('.file-selection input[type=file]').change(function(){
+		var val = $(this).val()
+
+		var parent = $(this).closest('.file-selection')
+
+		parent.find('.file-selection__path-name').text(val)
+
+		parent.find('.file-selection__path').addClass('_active')
+
+		if(parent.find('.file-selection__path-name').text() == '') {
+			let defoultText = parent.find('.file-selection__path-name').data('text')
+			
+			parent.find('.file-selection__path-name').html(defoultText)
+
+			parent.find('.file-selection__path').removeClass('_active')
+		}
 	})
 })
 

@@ -1151,7 +1151,7 @@ button
     background: none;
     border: 2px solid #F52121;
 
-    transition: background .2s linear, color .2s linear, border .2s linear;
+    transition: background .2s linear;
 }
 
 .btn-white{
@@ -1220,8 +1220,8 @@ button
     }
 
 	.btn-white:hover{
-		color: #fff;
-		background: #D30000;
+		color: #F52121;
+		background: #FFEFEF;
 	}
 
 	.btn-bord:hover{
@@ -1229,17 +1229,8 @@ button
 	}
 
     .btn-redbord:hover{
-        color: #fff;
-        background: #D30000;
-        border-color: #D30000;
+        background: #FFEFEF;
     }
-}
-
-.btn-green:disabled
-{
-    cursor: default;
-
-    opacity: .7;
 }
 
 
@@ -1439,6 +1430,13 @@ button
     opacity: 1;
 }
 
+.form__title{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #363B3F;
+	margin-bottom: 20px;
+}
 
 .form__flex
 {
@@ -1471,6 +1469,51 @@ button
 .form__field
 {
     position: relative;
+}
+
+.view_pas{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 12px;
+	right: 16px;
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+	transition: .2s linear;
+	color: #92959C;
+}
+
+.form .form__input:focus ~ .view_pas,
+.form ._full .view_pas{
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.view_pas svg{
+	display: block;
+	width: 100%;
+	height: 100%;
+	fill: currentColor;
+}
+
+@media (any-hover: hover){
+	.view_pas:hover{
+		color: #363B3F;
+	}
+}
+
+.view_pas svg + svg{
+	display: none;
+}
+
+.view_pas._active svg{
+	display: none;
+}
+
+.view_pas._active svg + svg{
+	display: block;
 }
 
 .form .form__input
@@ -1579,6 +1622,43 @@ button
 
 .form__submit{
 	margin-top: 20px;
+}
+
+.form__done{
+	display: none;
+}
+
+.form._sended .form__submit-btn{
+	display: none;
+}
+
+.form._sended .form__done{
+	display: inline-block;
+	padding: 0 24px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 48px;
+	color: #363B3F;
+	text-align: center;
+	background: #E8E8EC;
+	border-radius: 6px;
+}
+
+.form__done span{
+	display: inline-block;
+	padding-left: 34px;
+	position: relative;
+}
+
+.form__done span::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 24px;
+	height: 24px;
+	margin-top: -12px;
+	background: url(../images/ic_done.svg) 50% no-repeat;
 }
 
 .form__agree
@@ -1964,11 +2044,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 
-.file-selection
-{
-    margin-bottom: 24px;
-}
-
 .file-selection input[type=file]
 {
     display: none;
@@ -1978,15 +2053,16 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
     position: relative;
 
-    color: #808080;
-    font-size: 13px;
-    line-height: 18px;
+    font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	color: #F52121;
 
     display: block;
     overflow: hidden;
 
     width: 100%;
-    padding-left: 28px;
+    padding-left: 30px;
 
     cursor: pointer;
     text-align: left;
@@ -2002,15 +2078,16 @@ input[type=checkbox]:checked + .checkbox__text::after
     top: 0;
     left: 0;
 
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
+	fill: currentColor;
 }
 
 @media (any-hover: hover)
 {
     .file-selection__path:hover
     {
-        color: #242828;
+        color: #D30000;
     }
 }
 
@@ -5021,11 +5098,6 @@ button.informations__tabs-btn
 	transition: background .2s linear;
 }
 
-.aside-lk__link a._active
-{
-	font-weight: 700;
-}
-
 @media (any-hover: hover)
 {
 	.aside-lk__link a:hover
@@ -5037,6 +5109,12 @@ button.informations__tabs-btn
 	{
 		background: #363B3F;
 	}
+}
+
+.aside-lk__link a.active
+{
+	font-weight: 700;
+	color: #363B3F;
 }
 /*------------
     commit
@@ -6614,7 +6692,7 @@ button.informations__tabs-btn
 	justify-content: space-between;
 	align-items: flex-start;
 	align-content: flex-start;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	gap: 0 20px;
 }
 
@@ -6639,10 +6717,142 @@ button.informations__tabs-btn
 	font-size: 32px;
 	line-height: 1.1;
 	color: currentColor;
+	white-space: nowrap;
 }
 
 .plan-details__item-block{
 	text-align: right;
+}
+
+
+.change-password{
+	margin-top: 20px;
+	background: #fff;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.change-password .form{
+	max-width: 324px;
+}
+
+.change-password .form__line{
+	margin-bottom: 10px;
+}
+
+.personal-data{
+	margin-top: 20px;
+}
+
+.personal-data__sector{
+	background: #fff;
+	padding: 16px;
+	border-radius: 8px;
+}
+
+.personal-data__sector + .personal-data__sector{
+	margin-top: 20px;
+}
+
+.personal-data__top{
+	gap: 20px;
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;
+}
+
+.personal-data__photo{
+	width: 94px;
+	height: 94px;
+	overflow: hidden;
+	border-radius: 6px;
+}
+
+.personal-data__photo img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.personal-data__item + .personal-data__item{
+	margin-top: 20px;
+	padding-top: 19px;
+	border-top: 1px solid #E8E8EC;
+}
+
+.personal-data__evidence{
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	gap: 20px;
+}
+
+.personal-data__item._active .personal-data__evidence{
+	display: none;
+}
+
+.personal-data__evidence-box{
+	width: 100%;
+}
+
+.personal-data__evidence-label{
+	font-size: 14px;
+	line-height: 1.3;
+	color: rgba(40, 40, 40, 0.5);
+	margin-bottom: 6px;
+}
+
+.personal-data__evidence-val{
+	font-size: 16px;
+	line-height: 1.3;
+	color: #282828;
+}
+
+.personal-data__edit{
+	flex-shrink: 0;
+	font-size: 14px;
+	line-height: 1.3;
+	color: #F52121;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.personal-data__edit svg{
+	display: block;
+	width: 24px;
+	height: 24px;
+	fill: currentColor;
+	flex-shrink: 0;
+}
+
+.personal-data__item-form{
+	display: none;
+}
+
+.personal-data__item._active .personal-data__item-form{
+	display: block;
+}
+
+.personal-data__line{
+	flex-wrap: nowrap;
+	gap: 20px;
+}
+
+.personal-data__line .form__line{
+	flex-grow: 1;
+	width: 180px;
+	margin: 0;
+}
+
+.personal-data__btns{
+	flex-wrap: nowrap;
+	gap: 10px;
+	flex-shrink: 0;
 }
 
 
@@ -6835,10 +7045,28 @@ button.informations__tabs-btn
     display: none;
     visibility: visible !important;
 
-    width: 659px;
+    width: 572px;
     max-width: 100%;
     padding: 50px;
 
-    border-radius: 10px;
+    border-radius: 8px;
     background: #FFF;
+}
+
+.modal__title{
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 1.1;
+	color: #363B3F;
+
+	margin-bottom: 32px;
+}
+
+.modal-save .modal__title{
+	text-align: center;
+}
+
+.modal-save__flex{
+	gap: 10px;
+	justify-content: center;
 }
