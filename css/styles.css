@@ -1720,6 +1720,10 @@ button
     margin-top: 12px;
 }
 
+.radios .radio + .radio{
+	margin-top: 16px;
+}
+
 .radio input[type=radio]
 {
     display: none;
@@ -6853,6 +6857,30 @@ button.informations__tabs-btn
 	flex-wrap: nowrap;
 	gap: 10px;
 	flex-shrink: 0;
+}
+
+
+.storage{
+	margin-top: 20px;
+}
+
+.storage__sector{
+	border-radius: 8px;
+	padding: 20px;
+	background: #fff;
+}
+
+.storage__sector + .storage__sector{
+	margin-top: 20px;
+}
+
+.storage__title{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #363B3F;
+
+	margin-bottom: 20px;
 }
 
 
