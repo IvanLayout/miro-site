@@ -10,7 +10,8 @@
 		font-size: 16px;
 	}
 
-	.header__top .header__logo a 
+	.header__top .header__logo a,
+	.header-lk__logo a
 	{
 		height: 23px;
 	}
@@ -242,6 +243,64 @@
 	.cart-empty__img img 
 	{
 		object-position: 87%;
+	}
+
+
+	.aside-lk 
+	{
+		top: 108px;
+		min-height: calc(100vh - 108px);
+	}
+
+
+	.execution-plan__circle
+	{
+		width: 121px;
+	}
+
+	.execution-plan__percent
+	{
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+
+	.plan-details__item_big
+	{
+		flex-wrap: wrap;
+	}
+
+	.plan-details__item-box
+	{
+		width: 100%;
+	}
+
+	.plan-details__title
+	{
+		font-size: 14px;
+	}
+
+	.plan-details__title b
+	{
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	.plan-details__title br
+	{
+		display: none;
+	}
+
+	.plan-details__item-block
+	{
+		width: 100%;
+		margin-top: 8px;
+		text-align: left;
+	}
+
+	.plan-details__item-block .plan-details__title
+	{
+		margin-bottom: 0;
 	}
     /*------------
 		commit
