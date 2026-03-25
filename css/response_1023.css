@@ -685,6 +685,30 @@
 	{
 		min-height: 1px;
 	}
+
+
+
+	.header-lk .header__info
+	{
+		display: block;
+	}
+	
+
+	.section-lk
+	{
+		margin-top: 20px;
+	}
+
+	.aside-lk
+	{
+		display: none;
+	}
+
+	.content-lk
+	{
+		width: 1000%;
+		margin-left: 0;
+	}
     /*------------
 		commit
 	------------*/

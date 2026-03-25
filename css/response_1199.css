@@ -187,6 +187,139 @@
 		width: calc(100%/1 - 10px);
 		margin-left: 10px;
 	}
+
+
+	.header-lk__links-wrap
+	{
+		max-width: 810px;
+	}
+
+	.header-lk__item-link + .header-lk__item-link 
+	{
+		margin-left: 15px;
+	}
+
+	.header-lk__link
+	{
+		font-size: 12px;
+	}
+
+	.header-lk__link-icon
+	{
+		display: none;
+	}
+
+	.header-lk__phone
+	{
+		padding-left: 0;
+	}
+
+	.header-lk__phone::before
+	{
+		display: none;
+	}
+
+	.header-lk__search 
+	{
+		margin-right: 10px;
+	}
+
+	.header-lk__btns
+	{
+		margin-left: 10px;
+	}
+
+
+	.section-lk 
+	{
+		margin-top: 30px;
+	}
+
+	.aside-lk
+	{
+		width: 250px;
+	}
+
+	.content-lk
+	{
+		width: calc(100% - 270px);
+	}
+
+
+	.execution-plan
+	{
+		row-gap: 10px;
+		margin-left: -10px;
+	}
+
+	.annual 
+	{
+		width: calc(100% - 10px);
+		margin-left: 10px;
+	}
+
+	.execution-plan__item 
+	{
+		width: calc(100% / 4 - 10px);
+		margin-left: 10px;
+	}
+
+	.execution-plan__percent 
+	{
+		font-size: 26px;
+	}
+
+
+	.plan-details__grid
+	{
+		row-gap: 10px;
+		margin-left: -10px;
+	}
+
+	.plan-details__item
+	{
+		width: calc(100% / 3 - 10px);
+		margin-left: 10px;
+	}
+
+	.plan-details__item_big
+	{
+		width: calc(100% / 2 - 10px);
+		gap: 0 15px;
+	}
+
+	.plan-details__title
+	{
+		font-size: 12px;
+	}
+
+	.plan-details__title b 
+	{
+		font-size: 18px;
+	}
+
+	.plan-details__price
+	{
+		font-size: 22px;
+	}
+
+
+	.footer__lk
+	{
+		margin-left: -10px;
+		margin-top: -10px;
+	}
+
+	.footer__lk > div
+	{
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+
+	.footer__links .footer__link + .footer__link
+	{
+		margin-left: 10px;
+	}
     /*------------
 		commit
 	------------*/

@@ -4,6 +4,32 @@
 	{
 		width: 340px;
 	}
+
+	.header-lk__search
+	{
+		width: 230px;
+		margin-right: 10px;
+	}
+
+	.header-lk__links-wrap
+	{
+		justify-content: space-around;
+	}
+
+	.header-lk__item-link + .header-lk__item-link 
+	{
+		margin-left: 15px;
+	}
+
+	.header-lk__btn + .header-lk__btn
+	{
+		margin-left: 10px;
+	}
+	
+	.header-lk__btns
+	{
+		margin-left: 10px;
+	}
     /*------------
 		commit
 	------------*/

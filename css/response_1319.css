@@ -118,6 +118,61 @@
 	}
 	
 
+	.header-lk__search 
+	{
+		width: 190px;
+		margin-left: 15px;
+		margin-right: 0;
+	}
+
+	.header-lk__search .header-lk__search-input
+	{
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+
+	.header-lk__search-submit
+	{
+		padding-left: 6px;
+		padding-right: 6px;
+
+		margin-left: 5px;
+	}
+
+	.header-lk__link-icon
+	{
+		width: 20px;
+		height: 20px;
+		margin-right: 5px;
+	}
+
+	.header-lk__item-link + .header-lk__item-link 
+	{
+		margin-left: 10px;
+	}
+
+	.header-lk__phone::before
+	{
+		width: 17px;
+		height: 17px;
+	}
+
+	.header-lk__btns
+	{
+		margin-left: 0;
+	}
+
+
+	.plan-details__price
+	{
+		font-size: 28px;
+	}
+
+	.execution-plan__percent
+	{
+		font-size: 30px;
+	}
+
 	/*------------
 		commit
 	------------*/

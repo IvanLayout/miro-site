@@ -500,6 +500,11 @@ button
 	margin-top: 20px;
 }
 
+.header-lk .header__info
+{
+	display: none;
+}
+
 .header__info-box
 {
     align-content: center;
@@ -2800,7 +2805,7 @@ html.with-fancybox{
 	margin: -6px 0 0 -6px;
 }
 
-.product-images .product__stickers._flex .
+.product-images .product__stickers._flex
 {
     margin-top: 6px;
 	margin-left: 6px;
@@ -4737,17 +4742,23 @@ button.informations__tabs-btn
     header-lk
 ------------*/
 
-.header-lk
+.header-lk__box
 {
 	background: #363B3F;
 	padding: 12px 0;
 }
 
-.header-lk .cont
+.header-lk__box .cont
 {
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.header-lk__logo
+{
+	flex-shrink: 0;
 }
 
 .header-lk__logo a
@@ -4765,7 +4776,9 @@ button.informations__tabs-btn
 
 .header-lk__search
 {
+	flex-shrink: 0;
 	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .header-lk__search-field 
@@ -4783,7 +4796,7 @@ button.informations__tabs-btn
     display: block;
     width: 100%;
     height: 24px;
-    padding: 0 8px;
+    padding: 0 4px;
     background: none;
     border: none;
 }
@@ -4804,6 +4817,24 @@ button.informations__tabs-btn
 .header-lk__item-link + .header-lk__item-link
 {
 	margin-left: 20px;
+}
+
+
+.header-lk__links-wrap
+{
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	margin-left: auto;
+    margin-right: auto;
+
+	width: 100%;
+    max-width: 930px;
+}
+
+.header-lk__links
+{
+	/* margin-right: auto; */
 }
 
 .header-lk__link
@@ -4862,6 +4893,12 @@ button.informations__tabs-btn
     width: 18px;
     height: 18px;
     background: url(../images/ic_phone.svg) 50% / contain no-repeat;
+}
+
+.header-lk__btns
+{
+	margin-left: 20px;
+	flex-shrink: 0;
 }
 
 .header-lk__btn + .header-lk__btn
@@ -4978,6 +5015,12 @@ button.informations__tabs-btn
 .aside-lk__top-data
 {
 	color: #6E7277;
+
+	display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 
 .aside-lk__top-data + .aside-lk__top-data
@@ -7060,6 +7103,31 @@ button.informations__tabs-btn
 	.footer__creator a:hover{
 		border-bottom-color: currentColor;
 	}
+}
+
+
+.footer_lk
+{
+	padding-top: 21px;
+	padding-bottom: 21px;
+}
+
+.footer__lk
+{
+	justify-content: space-between;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+
+.footer__lk > div
+{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.footer__links .footer__link + .footer__link
+{
+	margin-left: 20px;
 }
 
 /*------------
