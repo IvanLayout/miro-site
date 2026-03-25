@@ -139,6 +139,11 @@
 		margin-left: 5px;
 	}
 
+	.header-lk__link
+	{
+		font-size: 12px;
+	}
+
 	.header-lk__link-icon
 	{
 		width: 20px;

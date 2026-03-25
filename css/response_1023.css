@@ -264,6 +264,11 @@
 		display: none;
 	}
 
+	.header-lk__btn._pc-none
+	{
+		display: block;
+	}
+
 	.header-lk__open
 	{
 		height: 46px;

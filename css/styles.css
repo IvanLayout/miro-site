@@ -4966,6 +4966,11 @@ button.informations__tabs-btn
 	fill: #E8E8EC;
 }
 
+.header-lk__btn._pc-none
+{
+	display: none;
+}
+
 
 
 .section-lk
