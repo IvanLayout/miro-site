@@ -87,6 +87,30 @@ $(() => {
 		}
 	})
 
+	// Открываем боковое меню
+	$('body').on('click', '.aside-open', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')){
+			$(this).removeClass('_active')
+			$('.aside-lk').removeClass('_show')
+			$('.overlay-catalog').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+			$('.aside-lk').addClass('_show')
+			$('.overlay-catalog').addClass('_show')
+		}
+	})
+
+	// Закрываем всплывашку при клике за её пределами
+	$(document).click((e) => {
+		if ( !e.target.closest('.aside-lk') && !e.target.closest('.aside-open') ) {
+			$('.aside-open').removeClass('_active')
+			$('.aside-lk').removeClass('_show')
+			$('.overlay-catalog').removeClass('_show')
+		}
+	})
+
 
 	if ( $(window).width() > 1024 ) {
 		$('body').on('mousemove', '.header-menu__link', function (e) {

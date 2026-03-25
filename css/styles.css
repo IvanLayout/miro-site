@@ -1043,6 +1043,11 @@ button
     transition: color .2s linear;
 }
 
+.header__btn._active
+{
+	font-weight: 600;
+}
+
 @media (any-hover: hover)
 {
     .header__btn:hover
@@ -1075,6 +1080,11 @@ button
 
     fill: currentColor;
     stroke: none;
+}
+
+.header__btn._active .header__btn-icon svg
+{
+	color: #F52121;
 }
 
 .header__btn-name
@@ -4961,6 +4971,11 @@ button.informations__tabs-btn
 .section-lk
 {
 	margin-top: 50px;
+}
+
+.section-lk .cont
+{
+	position: static;
 }
 
 .section-lk__flex
