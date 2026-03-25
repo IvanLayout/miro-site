@@ -395,6 +395,11 @@ button
 	line-height: 1;
 }
 
+.header-lk .header__adres
+{
+	display: none;
+}
+
 .header__adres-btn 
 {
     position: relative;
@@ -4742,6 +4747,11 @@ button.informations__tabs-btn
     header-lk
 ------------*/
 
+.header-lk
+{
+	position: relative;
+}
+
 .header-lk__box
 {
 	background: #363B3F;
@@ -4754,6 +4764,8 @@ button.informations__tabs-btn
 	align-items: center;
 	align-content: center;
 	flex-wrap: nowrap;
+
+	position: static;
 }
 
 .header-lk__logo
@@ -4840,7 +4852,7 @@ button.informations__tabs-btn
 .header-lk__link
 {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	align-content: center;
 	flex-wrap: nowrap;
@@ -4860,6 +4872,11 @@ button.informations__tabs-btn
 
 	flex-shrink: 0;
 	margin-right: 8px;
+}
+
+.header-lk__link-exit .header-lk__link-icon
+{
+	display: none;
 }
 
 .header-lk__link-name
