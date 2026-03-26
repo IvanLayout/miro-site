@@ -328,6 +328,42 @@
 		padding-right: 10px;
 		font-size: 14px;
 	}
+
+
+
+	.content-lk__top
+	{
+		flex-wrap: wrap;
+	}
+
+	.content-lk__search
+	{
+		width: 100%;
+		max-width: 100%;
+		margin-top: 13px;
+		margin-left: 0;
+	}
+
+
+	.content-lk__wrap
+	{
+		flex-wrap: wrap;
+	}
+
+	.content-lk__nav
+	{
+		order: 1;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #E8E8EC;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.content-lk__chekbox-items
+	{
+		order: 2;
+		margin-top: 0;
+	}
     /*------------
 		commit
 	------------*/

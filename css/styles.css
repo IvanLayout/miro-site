@@ -5433,21 +5433,19 @@ button.informations__tabs-btn
 .content-lk__wrap
 {
 	justify-content: space-between;
-	align-items: center;
-	align-content: center;
-	margin-top: 20px;
+	margin-top: 24px;
 	flex-wrap: nowrap;
 	padding-bottom: 20px;
-	border-bottom: 1px solid #E8E8EC;
+	/* border-bottom: 1px solid #E8E8EC; */
 }
 
-.content-lk__chekbox-list
+.content-lk__chekbox-items
 {
 	margin-left: -20px;
-	margin-top: -20px;
+	margin-top: -15px;
 }
 
-.content-lk__chekbox-list .checkbox
+.content-lk__chekbox-item
 {
 	margin-top: 20px;
 	margin-left: 20px;
@@ -6551,10 +6549,16 @@ button.informations__tabs-btn
 }
 
 
+
 .pagination{
     margin-top: 32px;
     justify-content: center;
     column-gap: 13px;
+}
+
+.pagination.pagination_marg
+{
+	margin-top: 40px;
 }
 
 .pagination a{

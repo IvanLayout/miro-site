@@ -32,6 +32,18 @@
 	}
 	
 	
+
+	.lk-downloads__grid
+	{
+		margin-left: -16px;
+	}
+
+	.lk-downloads__item 
+	{
+		width: calc(100% / 4 - 16px);
+		margin-left: 16px;
+		padding: 16px;
+	}
     /*------------
 		commit
 	------------*/

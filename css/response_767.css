@@ -510,6 +510,12 @@
 	{
 		font-size: 16px;
 	}
+
+
+	.lk-downloads__item
+	{
+		width: calc(100% / 2 - 10px);
+	}
     /*------------
 		commit
 	------------*/

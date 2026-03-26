@@ -334,6 +334,36 @@
 	{
 		margin-top: 10px;
 	}
+
+
+	.content-lk__chekbox-items
+	{
+		display: block;
+		margin-left: 0;
+
+		columns: 2;
+		column-gap: 24px;
+	}
+
+	.content-lk__chekbox-item
+	{
+		margin-left: 0;
+		margin-top: 0;
+		break-inside: avoid;
+		padding-top: 20px;
+	}
+
+
+	.lk-downloads__item 
+	{
+		width: calc(100% / 1 - 10px);
+		padding: 20px;
+	}
+
+	.lk-downloads__name 
+	{
+		font-size: 16px;
+	}
     /*------------
 		commit
 	------------*/
