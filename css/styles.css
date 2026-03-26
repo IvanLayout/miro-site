@@ -341,7 +341,7 @@ button
     position: absolute;
     z-index: 80;
     top: calc(100% + 10px);
-    left: 0;
+    right: 0;
 
     visibility: hidden;
 
@@ -4928,7 +4928,7 @@ button.informations__tabs-btn
 	flex-shrink: 0;
 }
 
-.header-lk__btn + .header-lk__btn
+.header-lk__btn-item + .header-lk__btn-item
 {
 	margin-left: 16px;
 }
@@ -4966,11 +4966,95 @@ button.informations__tabs-btn
 	fill: #E8E8EC;
 }
 
-.header-lk__btn._pc-none
+.header-lk__btn-item._pc-none
 {
 	display: none;
 }
 
+
+
+.mini-modal-notif
+{
+	width: 572px;
+	background: #F5F7FA;
+	padding: 27px 36px 63px;
+	border-radius: 8px;
+}
+
+/* .mini-modal-notif__title
+{
+	font-size: 32px;
+	line-height: 1.1;
+	font-weight: 600;
+} */
+
+.mini-modal-notif__items
+{
+	margin-top: 20px;
+}
+
+.mini-modal-notif__item
+{
+	background: #fff;
+	border-radius: 8px;
+	padding: 16px;
+	position: relative;
+	margin-top: 10px;
+}
+
+.mini-modal-notif__delete
+{
+	position: absolute;
+	top: 6px;
+	right: 6px;
+
+	width: 16px;
+	height: 16px;
+}
+
+.mini-modal-notif__icon
+{
+	display: block;
+	width: 16px;
+	height: 16px;
+	fill: #6E7277;
+
+	transition: fill .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.mini-modal-notif__delete:hover .mini-modal-notif__icon
+	{
+		fill: #F52121;
+	}
+}
+
+.mini-modal-notif__date
+{
+	font-size: 12px;
+	opacity: .5;
+}
+
+.mini-modal-notif__name
+{
+	margin-top: 4px;
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.mini-modal-notif__desc
+{
+	margin-top: 20px;
+	font-size: 14px;
+}
+
+.mini-modal-notif__close
+{
+	margin-top: 20px;
+	width: 100%;
+}
 
 
 .section-lk

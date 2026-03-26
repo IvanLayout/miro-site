@@ -309,6 +309,58 @@ $(() => {
 		}
 	})
 
+
+	// Мини всплывающие окна
+	$('.mini-modal__btn').click(function (e) {
+		e.preventDefault()
+
+		const parent = $(this).closest('.mini-modal')
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+			$('.mini-modal__modal').removeClass('_active')
+
+			$('body').removeClass('_lock-mini')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		} else {
+			$('.mini-modal__btn').removeClass('_active')
+			$(this).addClass('_active')
+
+			$('.mini-modal__modal').removeClass('_active')
+			parent.find('.mini-modal__modal').addClass('_active')
+
+			if( $(this).hasClass('mini-modal__btn_look') ) {
+				$('body').addClass('_lock-mini')
+			}
+
+			if (is_touch_device()) $('body').css('cursor', 'pointer')
+		}
+	})
+
+	// Закрываем всплывашку при клике за её пределами
+	$(document).click((e) => {
+		if ( !e.target.closest('.mini-modal') ) {
+			$('.mini-modal__modal, .mini-modal__btn').removeClass('_active')
+			$('body').removeClass('_lock-mini')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		}
+	})
+	
+	// Мини всплывающие окна
+	$('.mini-modal-notif__close').click(function (e) {
+		e.preventDefault()
+
+		const parent = $(this).closest('.mini-modal')
+
+		parent.find('.mini-modal__btn').removeClass('_active')
+		parent.find('.mini-modal__modal').removeClass('_active')
+		$('body').removeClass('_lock-mini')
+
+		if (is_touch_device()) $('body').css('cursor', 'default')
+	})
+
 	// commit
 
 	$('.form__input-anim').each(function(){

@@ -314,7 +314,7 @@
 		width: 100%;
 	}
 
-	.modal
+	.modal-save
 	{
 		padding-bottom: 16px;
 	}
@@ -322,6 +322,17 @@
 	.modal-save__flex button
 	{
 		width: 100%;
+	}
+
+
+	.mini-modal-notif 
+	{
+		width: 355px;
+	}
+
+	.mini-modal-notif__close
+	{
+		margin-top: 10px;
 	}
     /*------------
 		commit

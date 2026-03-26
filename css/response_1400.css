@@ -21,15 +21,17 @@
 		margin-left: 15px;
 	}
 
-	.header-lk__btn + .header-lk__btn
-	{
-		margin-left: 10px;
-	}
-	
 	.header-lk__btns
 	{
 		margin-left: 10px;
 	}
+
+	.header-lk__btn-item + .header-lk__btn-item
+	{
+		margin-left: 10px;
+	}
+	
+	
     /*------------
 		commit
 	------------*/

@@ -259,12 +259,17 @@
 		opacity: 1;
 	}
 
-	.header-lk__btn._mob-none
+	.header-lk__btns
+	{
+		margin-left: auto;
+	}
+
+	.header-lk__btn-item._mob-none
 	{
 		display: none;
 	}
 
-	.header-lk__btn._pc-none
+	.header-lk__btn-item._pc-none
 	{
 		display: block;
 	}
@@ -345,10 +350,6 @@
 		justify-content: flex-start;
 	}
 
-	.header-lk__btns
-	{
-		margin-left: auto;
-	}
 
 	.header-lk__links
 	{
@@ -970,6 +971,12 @@
 	{
 		font-size: 24px;
 		margin-bottom: 20px;
+	}
+
+
+	.mini-modal-notif__name
+	{
+		font-size: 18px;
 	}
     /*------------
 		commit

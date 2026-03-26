@@ -491,11 +491,24 @@
 		font-size: 20px;
 	}
 
-	.modal
+	.modal-save
 	{
 		padding-left: 16px;
 		padding-right: 16px;
 		padding-bottom: 30px;
+	}
+
+
+	.mini-modal-notif 
+	{
+		width: 460px;
+		padding: 16px;
+		right: -34px;
+	}
+
+	.mini-modal-notif__name
+	{
+		font-size: 16px;
 	}
     /*------------
 		commit
