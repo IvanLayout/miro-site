@@ -320,6 +320,14 @@
 	{
 		margin-left: 10px;
 	}
+
+
+	.personal-data__btns button
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 14px;
+	}
     /*------------
 		commit
 	------------*/

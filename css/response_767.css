@@ -462,7 +462,41 @@
 	{
 		font-size: 32px;
 	}
+
+
+	.personal-data__line
+	{
+		flex-wrap: wrap;
+		gap: 20px;
+	}
 	
+	.personal-data__btns
+	{
+		width: 100%;
+	}
+
+	.personal-data__btns button
+	{
+		width: 50%;
+	}
+
+	.personal-data__edit span
+	{
+		display: none;
+	}
+
+
+	.modal__title
+	{
+		font-size: 20px;
+	}
+
+	.modal
+	{
+		padding-left: 16px;
+		padding-right: 16px;
+		padding-bottom: 30px;
+	}
     /*------------
 		commit
 	------------*/

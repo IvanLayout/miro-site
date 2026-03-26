@@ -302,6 +302,27 @@
 	{
 		margin-bottom: 0;
 	}
+
+
+	.form__title
+	{
+		font-size: 16px;
+	}
+
+	.change-password .form__submit-btn
+	{
+		width: 100%;
+	}
+
+	.modal
+	{
+		padding-bottom: 16px;
+	}
+
+	.modal-save__flex button
+	{
+		width: 100%;
+	}
     /*------------
 		commit
 	------------*/

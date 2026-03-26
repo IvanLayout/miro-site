@@ -178,6 +178,18 @@
 		font-size: 30px;
 	}
 
+
+	.personal-data__line
+	{
+		gap: 10px;
+	}
+
+	.personal-data__btns button
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
 	/*------------
 		commit
 	------------*/
