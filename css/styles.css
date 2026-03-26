@@ -1094,6 +1094,26 @@ button
     margin-top: 4px;
 }
 
+.header__btn-count
+{
+	position: absolute;
+	top: -4px;
+    right: 7px;
+
+	display: block;
+
+	width: 14px;
+	height: 14px;
+
+	background: #F52121;
+	border-radius: 50%;
+	line-height: 14px;
+	padding: 0 2px;
+	text-align: center;
+
+	font-size: 8px;
+	color: #fff;
+}
 
 
 
@@ -5406,6 +5426,102 @@ button.informations__tabs-btn
 	.lk-downloads__item:hover
 	{
 		color: #D30000;
+	}
+}
+
+
+.content-lk__wrap
+{
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	margin-top: 20px;
+	flex-wrap: nowrap;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #E8E8EC;
+}
+
+.content-lk__chekbox-list
+{
+	margin-left: -20px;
+	margin-top: -20px;
+}
+
+.content-lk__chekbox-list .checkbox
+{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+
+.content-lk__nav
+{
+	flex-wrap: nowrap;
+	flex-shrink: 0;
+	margin-left: 20px;
+}
+
+.content-lk__nav-page
+{
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.content-lk__nav-label
+{
+	color: #6E7277;
+	font-size: 14px;
+	margin-right: 10px;
+}
+
+.content-lk__nav-count
+{
+	width: 60px;
+	height: 32px;
+
+	border: 1px solid #92959C;
+	border-radius: 6px;
+}
+
+.update-link
+{
+	position: relative;
+	display: block;
+	text-decoration: none;
+	color: #6E7277;
+	font-size: 14px;
+	border-radius: 6px;
+	border: 1px solid #6E7277;
+	height: 32px;
+	line-height: 30px;
+	padding: 0 10px 0 38px;
+	transition: background .2s linear;
+	margin-left: 20px;
+}
+
+.update-link::before
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 10px;
+
+	display: block;
+
+	width: 18px;
+	height: 18px;
+
+	margin-top: -9px;
+
+	background: url(../images/ic_update.svg) 50% no-repeat;
+}
+
+@media (any-hover: hover)
+{
+	.update-link:hover
+	{
+		background: #E8E8EC;
 	}
 }
 /*------------
