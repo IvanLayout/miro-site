@@ -4981,13 +4981,6 @@ button.informations__tabs-btn
 	border-radius: 8px;
 }
 
-/* .mini-modal-notif__title
-{
-	font-size: 32px;
-	line-height: 1.1;
-	font-weight: 600;
-} */
-
 .mini-modal-notif__items
 {
 	margin-top: 20px;
@@ -5292,6 +5285,128 @@ button.informations__tabs-btn
 {
 	font-weight: 700;
 	color: #363B3F;
+}
+
+
+.content-lk__top
+{
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+.content-lk__search
+{
+    position: relative;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 547px;
+    margin-left: 30px;
+}
+
+.content-lk__search-input
+{
+    font: 16px var(--font-family);
+    display: block;
+    width: 100%;
+    height: 42px;
+    padding: 0 50px 0 16px;
+    border: 1px solid #92959C;
+    border-radius: 6px;
+	background: transparent;
+}
+
+.content-lk__search-submit
+{
+    position: relative;
+    flex-shrink: 0;
+    width: 50px;
+    height: 42px;
+    border-radius: 0 6px 6px 0;
+    margin-left: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.content-lk__search-submit svg 
+{
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: #92959C;
+    transition: fill .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.content-lk__search-submit:hover svg 
+	{
+		fill: #363B3F;
+	}
+}
+
+
+
+.lk-downloads__grid
+{
+	margin-left: -20px;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.lk-downloads__item
+{
+	width: calc(100%/4 - 20px);
+	margin-top: 20px;
+	margin-left: 20px;
+
+	background: #fff;
+	padding: 20px;
+	border-radius: 8px;
+
+	display: block;
+
+	text-decoration: none;
+	color: #363B3F;
+	transition: color .2s linear;
+}
+
+.lk-downloads__img
+{
+	display: block;
+}
+
+.lk-downloads__img img
+{
+	display: block;
+	width: 100%;
+	aspect-ratio: 228 / 324;
+	border-radius: 8px;
+}
+
+.lk-downloads__date
+{
+	display: block;
+	margin-top: 20px;
+	color: #5F6369;
+	font-size: 14px;
+}
+
+.lk-downloads__name
+{
+	display: block;
+	margin-top: 10px;
+	font-weight: 600;
+}
+
+@media (any-hover: hover)
+{
+	.lk-downloads__item:hover
+	{
+		color: #D30000;
+	}
 }
 /*------------
     commit

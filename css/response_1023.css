@@ -978,6 +978,12 @@
 	{
 		font-size: 18px;
 	}
+
+
+	.storage__sector + .storage__sector 
+	{
+		margin-top: 10px;
+	}
     /*------------
 		commit
 	------------*/
