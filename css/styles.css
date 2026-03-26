@@ -5085,13 +5085,15 @@ button.informations__tabs-btn
 	text-decoration: none;
 	position: relative;
 
+	width: 100%;
+
 	padding: 16px;
 	background: #fff;
 	color: currentColor;
 	transition: background .2s linear;
 }
 
-.aside-lk__item-link-arrow::after
+.aside-lk__open::after
 {
 	content: "";
 
@@ -5104,7 +5106,14 @@ button.informations__tabs-btn
 	width: 11px;
 	height: 7px;
 
+	transform: rotate(-90deg);
+
     background: url(../images/ic_arrow_lk.svg) 50% no-repeat;
+}
+
+.aside-lk__item._active .aside-lk__open::after
+{
+	transform: rotate(0deg);
 }
 
 .aside-lk__item-icon

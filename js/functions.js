@@ -293,6 +293,22 @@ $(() => {
 		}
 	})
 
+
+	// Аккордион простой дичный кабинет
+	$('body').on('click', '.aside-lk__open', function(e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.aside-lk__item')
+
+		if( parent.hasClass('_active') ) {
+			parent.removeClass('_active')
+			parent.find('.aside-lk__links').slideUp(300)
+		} else {
+			parent.addClass('_active')
+			parent.find('.aside-lk__links').slideDown(300)
+		}
+	})
+
 	// commit
 
 	$('.form__input-anim').each(function(){
