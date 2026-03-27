@@ -167,6 +167,8 @@ $(() => {
 			container: '#datepicker-here1',
 			autoClose: true,
 			position: 'bottom left',
+			range: true,
+    		multipleDatesSeparator: '-'
 		})
 	}
 
