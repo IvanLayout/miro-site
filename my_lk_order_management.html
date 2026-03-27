@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Переключение IE в последнию версию, на случай если в настройках пользователя стоит меньшая -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Miro</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/dropzone.min.css">
+		<link rel="stylesheet" href="css/air-datepicker.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1400.css" media="(max-width: 1400px)">
+		<link rel="stylesheet" href="css/response_1319.css" media="(max-width: 1319px)">
+		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<!-- Шапка -->
+				<header class="header-lk">
+					<div class="header-lk__box">
+						<div class="cont _flex">
+							<div class="header-lk__logo">
+								<a href="/">
+									<img src="images/logo-white.svg" alt="">
+								</a>
+							</div>
+
+							<div class="header__adres">
+								<a href="/" class="header__adres-btn"><span>Москва</span></a>
+							</div>
+	
+							<div class="header-lk__search">
+								<form action="">
+									<div class="header-lk__search-field _flex">
+										<input type="text" value="" placeholder="Введите ваш запрос" id="header-lk__search-input" class="header-lk__search-input">
+	
+										<button type="submit" class="header-lk__search-submit">Найти</button>
+									</div>
+								</form>
+							</div>
+	
+							<div class="header-lk__links-wrap _flex">
+								<div class="header-lk__links _flex">
+									<div class="header-lk__item-link">
+										<a href="/" class="header-lk__link">
+											<svg class="header-lk__link-icon">
+												<use xlink:href="images/sprite.svg#ic_cart2"></use>
+											</svg>
+											<span class="header-lk__link-name">Интернет-магазин</span>
+										</a>
+									</div>
+									<div class="header-lk__item-link">
+										<a href="/" class="header-lk__link">
+											<svg class="header-lk__link-icon">
+												<use xlink:href="images/sprite.svg#ic_price_list"></use>
+											</svg>
+											<span class="header-lk__link-name">Прайс лист</span>
+										</a>
+									</div>
+									<div class="header-lk__item-link">
+										<a href="/" class="header-lk__link">
+											<svg class="header-lk__link-icon">
+												<use xlink:href="images/sprite.svg#ic_download"></use>
+											</svg>
+											<span class="header-lk__link-name">Загрузить заказ из XLS</span>
+										</a>
+									</div>
+								</div>
+		
+								<div class="header-lk__links _flex">
+									<div class="header-lk__item-link">
+										<a href="/" class="header-lk__link header-lk__link-exit">
+											<svg class="header-lk__link-icon">
+												<use xlink:href="images/sprite.svg#ic_exit"></use>
+											</svg>
+
+											<span class="header-lk__link-name">Выйти</span>
+										</a>
+									</div>
+									<div class="header-lk__item-link">
+										<a href="/" class="header-lk__link">
+											<span class="header-lk__link-name">Отправить жалобу</span>
+										</a>
+									</div>
+									<div class="header-lk__item-link header-lk__link-phone">
+										<a href="tel:+74993941625" class="header-lk__link header-lk__phone">+7 (499) 394 16 25</a>
+									</div>
+								</div>
+							</div>
+	
+							<div class="header-lk__btns _flex">
+								<div class="header-lk__btn-item mini-modal">
+									<button type="button" class="mini-modal__btn header-lk__btn">
+										<svg class="header-lk__btn-icon">
+											<use xlink:href="images/sprite.svg#ic_notification"></use>
+										</svg>
+		
+										<span class="header-lk__btn-active"></span>
+									</button>
+
+									<div class="mini-modal__modal mini-modal-notif">
+										<div class="main-title mini-modal-notif__title">Уведомления</div>
+
+										<div class="mini-modal-notif__items">
+											<div class="mini-modal-notif__item">
+												<button type="button" class="mini-modal-notif__delete">
+													<svg class="mini-modal-notif__icon">
+														<use xlink:href="images/sprite.svg#ic_delete2"></use>
+													</svg>
+												</button>
+
+												<div class="mini-modal-notif__date">12.12.2025  11:21</div>
+
+												<div class="mini-modal-notif__name">Название договора</div>
+
+												<div class="mini-modal-notif__desc">Также как выбранный нами инновационный путь предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач.</div>
+											</div>
+											<div class="mini-modal-notif__item">
+												<button type="button" class="mini-modal-notif__delete">
+													<svg class="mini-modal-notif__icon">
+														<use xlink:href="images/sprite.svg#ic_delete2"></use>
+													</svg>
+												</button>
+
+												<div class="mini-modal-notif__date">12.12.2025  11:21</div>
+
+												<div class="mini-modal-notif__name">Название договора</div>
+
+												<div class="mini-modal-notif__desc">Также как выбранный нами инновационный путь предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач.</div>
+											</div>
+											<div class="mini-modal-notif__item">
+												<button type="button" class="mini-modal-notif__delete">
+													<svg class="mini-modal-notif__icon">
+														<use xlink:href="images/sprite.svg#ic_delete2"></use>
+													</svg>
+												</button>
+
+												<div class="mini-modal-notif__date">12.12.2025  11:21</div>
+
+												<div class="mini-modal-notif__name">Название договора</div>
+
+												<div class="mini-modal-notif__desc">Также как выбранный нами инновационный путь предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач.</div>
+											</div>
+										</div>
+
+										<button type="button" class="mini-modal-notif__close btn-red">Закрыть</button>
+									</div>
+								</div>
+
+								<div class="header-lk__btn-item _mob-none">
+									<a href="/" class="header-lk__btn">
+										<svg class="header-lk__btn-icon">
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</a>
+								</div>
+
+								<div class="header-lk__btn-item _pc-none">
+									<a href="tel:+74993941625" class="header-lk__btn">
+										<svg class="header-lk__btn-icon">
+											<use xlink:href="images/sprite.svg#ic_phone"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__info">
+						<div class="cont">
+							<div class="header__info-box _flex">
+								<button type="button" class="header-lk__open">
+									<span class="header-lk__open-btn">
+										<span></span>
+										<span></span>
+										<span></span>
+									</span>
+								</button>
+
+								<div class="header__search">
+									<form action="">
+										<div class="header__search-field _flex">
+											<input type="text" value="" placeholder="Умный поиск по названию, артикулу, свойству, производителю" id="header__search-input" class="header__search-input">
+
+											<button type="submit" class="header__search-submit">Найти</button>
+										</div>
+									</form>
+								</div>
+
+								<div class="header__btns _flex">
+									<button type="button" class="header__btn aside-open">
+										<span class="header__btn-icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#menu"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Меню</span>
+									</button>
+									<a href="/" class="header__btn _active">
+										<span class="header__btn-icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#ic_main"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Главная</span>
+									</a>
+									<a href="/" class="header__btn">
+										<span class="header__btn-icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#orders2"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Заказы</span>
+									</a>
+									<a href="/" class="header__btn">
+										<span class="header__btn-icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#cart"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Корзина</span>
+									</a>
+									<a href="/" class="header__btn">
+										<span class="header__btn-icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#user"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Профиль</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<div class="overlay-catalog"></div>
+
+				<!-- End Шапка -->
+
+				<section class="section-lk">
+					<div class="cont">
+						<div class="section-lk__flex _flex">
+							<aside class="aside-lk">
+								<div class="aside-lk__top">
+									<div class="aside-lk__top-flex _flex">
+										<div class="aside-lk__foto">
+											<img src="images/ic_foto_user.svg" alt="">
+										</div>
+
+										<div class="aside-lk__name">Константин Константинопольский</div>
+									</div>
+
+									<div class="aside-lk__top-data">infomail123@gmail.com</div>
+									<div class="aside-lk__top-data">+7 963 923-45-88</div>
+								</div>
+
+								<div class="aside-lk__menu">
+									<div class="aside-lk__item">
+										<a href="/" class="aside-lk__item-link">
+											<svg class="aside-lk__item-icon">
+												<use xlink:href="images/sprite.svg#ic_lk1"></use>
+											</svg>
+	
+											<span class="aside-lk__item-name">Главная</span>
+										</a>
+									</div>
+	
+									<div class="aside-lk__item _active">
+										<button type="button" class="aside-lk__item-link aside-lk__open">
+											<svg class="aside-lk__item-icon">
+												<use xlink:href="images/sprite.svg#ic_lk2"></use>
+											</svg>
+	
+											<span class="aside-lk__item-name">Личная информация</span>
+										</button>
+	
+										<div class="aside-lk__links">
+											<div class="aside-lk__link">
+												<a href="/">Личная информация</a>
+											</div>
+											<div class="aside-lk__link">
+												<a href="/">Список пользователей</a>
+											</div>
+											<div class="aside-lk__link">
+												<a href="/">График оплат</a>
+											</div>
+											<div class="aside-lk__link">
+												<a href="/">Договоры и условия</a>
+											</div>
+											<div class="aside-lk__link">
+												<a href="/">Склады</a>
+											</div>
+											<div class="aside-lk__link">
+												<a href="/">Доставка</a>
+											</div>
+											<div class="aside-lk__link">
+												<a href="/">Смена пароля</a>
+											</div>
+										</div>
+									</div>
+	
+									<div class="aside-lk__item">
+										<a href="/" class="aside-lk__item-link _active">
+											<svg class="aside-lk__item-icon">
+												<use xlink:href="images/sprite.svg#ic_lk3"></use>
+											</svg>
+	
+											<span class="aside-lk__item-name">Управление заказами</span>
+										</a>
+									</div>
+	
+									<div class="aside-lk__item">
+										<a href="/" class="aside-lk__item-link">
+											<svg class="aside-lk__item-icon">
+												<use xlink:href="images/sprite.svg#ic_lk4"></use>
+											</svg>
+	
+											<span class="aside-lk__item-name">Список заказов с рекламацией</span>
+										</a>
+									</div>
+	
+									<div class="aside-lk__item">
+										<a href="/" class="aside-lk__item-link">
+											<svg class="aside-lk__item-icon">
+												<use xlink:href="images/sprite.svg#ic_download"></use>
+											</svg>
+	
+											<span class="aside-lk__item-name">Банк полезных загрузок</span>
+										</a>
+									</div>
+								</div>
+							</aside>
+
+							<div class="content-lk">
+								<div class="content-lk__top _flex">
+									<h1 class="main-title">Управление заказами</h1>
+
+									<div class="content-lk__search">
+										<div class="inner-search">
+											<div class="inner-search__wrap">
+												<form action="">
+													<div class="inner-search__field _flex">
+														<input type="text" value="" placeholder="Поиск" id="inner-search__input" class="inner-search__input">
+					
+														<button type="submit" class="inner-search__submit">
+															<svg>
+																<use xlink:href="images/sprite.svg#ic_lupa"></use>
+															</svg>
+														</button>
+													</div>
+												</form>
+		
+												<div class="inner-search__bord">
+													<div class="inner-search__products">
+														<div class="inner-search__product">
+															<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
+														</div>
+														<div class="inner-search__product">
+															<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
+														</div>
+														<div class="inner-search__product">
+															<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
+														</div>
+														<div class="inner-search__product">
+															<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="content-lk__wrap _border-bot _flex">
+									<div class="content-lk__choice-items _flex">
+										<div class="content-lk__choice-item">
+											<div class="datepicker__field" id="datepicker-here1">
+												<input type="text" value="" placeholder="Выберите период" id="datepicker" class="datepicker__input datepicker-input">
+											</div>
+										</div>
+	
+										<div class="content-lk__choice-item">
+											<div class="select-wrap content-lk-select">
+												<select>
+													<option value="1">Статус</option>
+													<option value="2">Доставлен</option>
+													<option value="3">В пути</option>
+												</select>
+											</div>
+										</div>
+									</div>
+
+									<div class="content-lk__nav _flex">
+										<div class="content-lk__nav-page _flex">
+											<div class="content-lk__nav-label">На странице</div>
+
+											<div class="content-lk__nav-count"></div>
+										</div>
+
+										<a href="/" class="update-link">Обновить</a>
+									</div>
+								</div>
+
+								<div class="content-lk__table">
+									<table class="lk-table">
+										<thead>
+											<tr>
+												<th class="lk-table__checkbox-th">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</th>
+												<th class="lk-table__number-th">Номер заказа</th>
+												<th>Дата заказа</th>
+												<th>Состав заказа</th>
+												<th>Сумма</th>
+												<th>Статус</th>
+												<th>Действия</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="lk-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td data-label="Номер заказа" class="lk-table__number-td">
+													<div class="lk-table__number-order">Nº 1423/9F</div>
+												</td>
+												<td data-label="Дата заказа">
+													<div class="lk-table__date">23.10.2023</div>
+												</td>
+												<td data-label="Состав заказа" class="lk-table__details-td">
+													<div class="lk-table__details-items">
+														<div class="lk-table__details-item">
+															<a href="/">Товар 1</a>
+														</div>
+														<div class="lk-table__details-item">
+															<a href="/">Товар 2</a>
+														</div>
+														<div class="lk-table__details-item">
+															<a href="/">Товар 3</a>
+														</div>
+														<div class="lk-table__details-item">
+															<a href="/">Товар 4</a>
+														</div>
+														<div class="lk-table__details-item _hide">
+															<a href="/">Товар 5</a>
+														</div>
+														<div class="lk-table__details-item _hide">
+															<a href="/">Товар 6</a>
+														</div>
+														<div class="lk-table__details-item _hide">
+															<a href="/">Товар 7</a>
+														</div>
+														<div class="lk-table__details-item _hide">
+															<a href="/">Товар 8</a>
+														</div>
+														<div class="lk-table__details-item _hide">
+															<a href="/">Товар 9</a>
+														</div>
+														<div class="lk-table__details-item _hide">
+															<a href="/">Товар 10</a>
+														</div>
+														<div class="lk-table__details-item _hide">
+															<a href="/">Товар 11</a>
+														</div>
+														<div class="lk-table__details-item _hide">
+															<a href="/">Товар 12</a>
+														</div>
+														<div class="lk-table__details-item _hide">
+															<a href="/">Товар 13</a>
+														</div>
+														<div class="lk-table__details-item _hide">
+															<a href="/">Товар 14</a>
+														</div>
+													</div>
+
+													<button type="button" class="lk-table__details-btn">
+														<span>еще 10</span>
+														<span>скрыть</span>
+													</button>
+												</td>
+												<td data-label="Сумма">
+													<div class="lk-table__price">
+														23 000 000 ₽ 
+													</div>
+												</td>
+												<td data-label="Статус">
+													<div class="lk-table__status _completed">
+														<span>Завершено</span>
+													</div>
+												</td>
+												<td class="lk-table__actions-td">
+													<div class="lk-table__actions-btns">
+														<a href="/" class="btn-red">Скачать</a>
+
+														<a href="/" class="btn-redbord">Рекламация</a>
+													</div>
+												</td>
+												<td class="lk-table__show-td">
+													<button type="button" class="lk-table__show-btn">
+														<svg>
+															<use xlink:href="images/sprite.svg#eye"></use>
+														</svg>
+													</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<section class="pagination _flex">
+									<a href="/" class="prev">
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow3"></use>
+										</svg>
+									</a>
+									<a class="active">1</a>
+									<a href="/">2</a>
+									<a href="/">3</a>
+									<span class="dot">...</span>
+									<a href="/">16</a>
+									<a href="/" class="next">
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow3"></use>
+										</svg>
+									</a>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+
+			<footer class="footer footer_lk _marg">
+				<div class="cont">
+					<div class="footer__lk _flex">
+						<div class="footer__copy">&copy; 2025 г. MIRO Company. Все права защищены.</div>
+
+						<div class="footer__link">
+							<a href="/">Сертификат дилера</a>
+						</div>
+
+						<div class="footer__links _flex">
+							<div class="footer__link">
+								<a href="/">Политика конфиденциальности</a>
+							</div>
+							<div class="footer__link">
+								<a href="/">Политика персональных данных</a>
+							</div>
+						</div>
+
+						<div class="footer__creator">
+							Сайт разработан в <a href="/">MWI</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<div id="" class="modal">
+			<div class="modal__title"></div>
+		</div>
+
+
+		<div class="supports-error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/jquery.rating.pack.js"></script>
+		<script src="js/dropzone.min.js"></script>
+		<script src="js/air-datepicker.js"></script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
