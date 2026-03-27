@@ -5476,7 +5476,7 @@ button.informations__tabs-btn
 	position: relative;
 }
 
-.datepicker__input
+.datepicker__field .datepicker__input
 {
 	color: #363B3F;
     font: 14px var(--font-family);
