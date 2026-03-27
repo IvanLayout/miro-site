@@ -350,7 +350,7 @@
 		flex-wrap: wrap;
 	}
 
-	.content-lk__nav
+	.content-lk__wrap._var2 .content-lk__nav
 	{
 		order: 1;
 		padding-bottom: 20px;
@@ -363,6 +363,20 @@
 	{
 		order: 2;
 		margin-top: 0;
+	}
+
+
+	
+	.lk-table th,
+	.lk-table td.lk-table__number-td,
+	.lk-table td
+	{
+		padding-left: 15px;
+	}
+
+	.lk-table__details-td 
+	{
+		width: 200px;
 	}
     /*------------
 		commit

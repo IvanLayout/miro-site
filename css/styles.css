@@ -5619,6 +5619,7 @@ button.informations__tabs-btn
 .lk-table th.lk-table__number-th
 {
 	padding-left: 20px;
+	padding-top: 3px;
 }
 
 .lk-table__checkbox-th,
@@ -5677,7 +5678,8 @@ button.informations__tabs-btn
 
 .lk-table__details-td
 {
-	width: 320px;
+	table-layout: fixed;
+	width: 370px;
 }
 
 .lk-table__details-item + .lk-table__details-item

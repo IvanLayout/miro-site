@@ -44,6 +44,22 @@
 		margin-left: 16px;
 		padding: 16px;
 	}
+
+
+	.lk-table th
+	{
+		padding-left: 20px;
+	}
+
+	.lk-table td
+	{
+		padding-left: 20px;
+	}
+
+	.lk-table__details-td
+	{
+		width: 280px;
+	}
     /*------------
 		commit
 	------------*/

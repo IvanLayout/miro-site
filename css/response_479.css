@@ -364,6 +364,12 @@
 	{
 		font-size: 16px;
 	}
+
+
+	.content-lk__choice-item
+	{
+		width: calc(100%/2 - 20px);
+	}
     /*------------
 		commit
 	------------*/
