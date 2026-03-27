@@ -516,6 +516,13 @@
 	{
 		width: calc(100% / 2 - 10px);
 	}
+
+
+	.inner-search__bord
+	{
+		min-width: 1px;
+		width: 100%;
+	}
     /*------------
 		commit
 	------------*/

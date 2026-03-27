@@ -361,6 +361,40 @@ $(() => {
 		if (is_touch_device()) $('body').css('cursor', 'default')
 	})
 
+
+
+
+	// Выпадающее меню в поиске
+	$('body').on('focus', '.inner-search__input', function(e) {
+		e.preventDefault()
+
+		$('.inner-search__bord').addClass('_show')
+	})
+
+
+	$('.inner-search__input').keydown(function() {
+		let thisEl = $(this)
+		setTimeout( function() {
+			let value = thisEl.val()
+
+			if ( value != '' ) {
+				$('.inner-search__bord').addClass('_show')
+			} else {
+				$('.inner-search__bord').removeClass('_show')
+			}
+		}, 10)
+	})
+
+	// Закрываем выпадающее меню в поиске при клике за её пределами
+	$(document).click((e) => {
+		if ( !e.target.closest('.inner-search') ) {
+			$('.inner-search__bord').removeClass('_show')
+			$('.inner-search__input').val('')
+
+			if (is_touch_device()) $('body').css('cursor', 'default')
+		}
+	})
+
 	// commit
 
 	$('.form__input-anim').each(function(){
