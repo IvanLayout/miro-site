@@ -86,81 +86,89 @@ $(() => {
 		})
 	}
 
-		//
-		$('body').on('click', '.amount__btn_minus', function (e) {
-			e.preventDefault()
-	
-			let parent = $(this).closest('.amount')
-	
-			if ( $(this).closest('.product-global-added').hasClass('product-global-added') ) {
-				parent = $('.product-global-added')
-			}
-	
-			let input = parent.find('input')
-			let inputVal = parseFloat(input.val())
-			let minimum = parseFloat(input.data('minimum'))
-			let step = parseFloat(input.data('step'))
-	
-			if (inputVal > minimum) {
-				input.val(inputVal - step)
-	
-				parent.find('.amount__btn_plus').prop("disabled", false)
-			}
-	
-			if (inputVal-1 == minimum) {
-				if ( !parent.hasClass('product__amount') && !parent.closest('.product-global-added').hasClass('product-global-added') ){
-					$(this).prop("disabled", true)
-				}
-			}
-	
-			if (inputVal == minimum) {
-				if ( parent.hasClass('product__amount') ){
-					$(this).closest('.product').find('.product__added').removeClass('_show')
-					$(this).closest('.product').find('.product__bot').removeClass('_hide')
-				}
-	
-				if ( parent.closest('.product-global-added').hasClass('product-global-added') ){
-					$('.product-global-added').removeClass('_show')
-					$('.product-global-btns').removeClass('_hide')
-				}
-			}
-		})
-		
-		$('body').on('click', '.amount__btn_plus', function (e) {
-			e.preventDefault()
-	
-			let parent = $(this).closest('.amount')
-	
-			if ( $(this).closest('.product-global-added').hasClass('product-global-added') ) {
-				parent = $('.product-global-added')
-			}
-	
-			let input = parent.find('input')
-			let inputVal = parseFloat(input.val())
-			let maximum = parseFloat(input.data('maximum'))
-			let step = parseFloat(input.data('step'))
-	
-			if (inputVal < maximum) {
-				input.val(inputVal + step)
-	
-				parent.find('.amount__btn_minus').prop("disabled", false)
-			}
-	
-			if (inputVal+1 == maximum) {
+	//
+	$('body').on('click', '.amount__btn_minus', function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.amount')
+
+		if ( $(this).closest('.product-global-added').hasClass('product-global-added') ) {
+			parent = $('.product-global-added')
+		}
+
+		let input = parent.find('input')
+		let inputVal = parseFloat(input.val())
+		let minimum = parseFloat(input.data('minimum'))
+		let step = parseFloat(input.data('step'))
+
+		if (inputVal > minimum) {
+			input.val(inputVal - step)
+
+			parent.find('.amount__btn_plus').prop("disabled", false)
+		}
+
+		if (inputVal-1 == minimum) {
+			if ( !parent.hasClass('product__amount') && !parent.closest('.product-global-added').hasClass('product-global-added') ){
 				$(this).prop("disabled", true)
 			}
-		})
-	
-		$('.amount__input').keydown(function () {
-			const _self = $(this),
-				maximum = parseInt(_self.data('maximum'))
-	
-			setTimeout(() => {
-				if (_self.val() == '' || _self.val() == 0) _self.val(parseInt(_self.data('minimum')))
-				if (_self.val() > maximum) _self.val(maximum)
-			})
-		})
+		}
 
+		if (inputVal == minimum) {
+			if ( parent.hasClass('product__amount') ){
+				$(this).closest('.product').find('.product__added').removeClass('_show')
+				$(this).closest('.product').find('.product__bot').removeClass('_hide')
+			}
+
+			if ( parent.closest('.product-global-added').hasClass('product-global-added') ){
+				$('.product-global-added').removeClass('_show')
+				$('.product-global-btns').removeClass('_hide')
+			}
+		}
+	})
+	
+	$('body').on('click', '.amount__btn_plus', function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.amount')
+
+		if ( $(this).closest('.product-global-added').hasClass('product-global-added') ) {
+			parent = $('.product-global-added')
+		}
+
+		let input = parent.find('input')
+		let inputVal = parseFloat(input.val())
+		let maximum = parseFloat(input.data('maximum'))
+		let step = parseFloat(input.data('step'))
+
+		if (inputVal < maximum) {
+			input.val(inputVal + step)
+
+			parent.find('.amount__btn_minus').prop("disabled", false)
+		}
+
+		if (inputVal+1 == maximum) {
+			$(this).prop("disabled", true)
+		}
+	})
+
+	$('.amount__input').keydown(function () {
+		const _self = $(this),
+			maximum = parseInt(_self.data('maximum'))
+
+		setTimeout(() => {
+			if (_self.val() == '' || _self.val() == 0) _self.val(parseInt(_self.data('minimum')))
+			if (_self.val() > maximum) _self.val(maximum)
+		})
+	})
+
+
+	if ($('#datepicker').length) {
+		new AirDatepicker('#datepicker', {
+			container: '#datepicker-here1',
+			autoClose: true,
+			position: 'bottom left',
+		})
+	}
 
 
 	// commit

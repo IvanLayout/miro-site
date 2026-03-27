@@ -5439,7 +5439,11 @@ button.informations__tabs-btn
 	margin-top: 24px;
 	flex-wrap: nowrap;
 	padding-bottom: 20px;
-	/* border-bottom: 1px solid #E8E8EC; */
+}
+
+.content-lk__wrap._border-bot
+{
+	border-bottom: 1px solid #E8E8EC;
 }
 
 .content-lk__chekbox-items
@@ -5453,6 +5457,64 @@ button.informations__tabs-btn
 	margin-top: 20px;
 	margin-left: 20px;
 }
+
+
+.content-lk__choice-items
+{
+	margin-left: -20px;
+	margin-top: -20px;
+}
+
+.content-lk__choice-item
+{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.datepicker__field
+{
+	position: relative;
+}
+
+.datepicker__input
+{
+	color: #363B3F;
+    font: 14px var(--font-family);
+    display: block;
+    width: 100%;
+	max-width: 238px;
+    height: 32px;
+    padding: 0 44px 0 10px;
+    border: 1px solid #6E7277;
+    border-radius: 6px;
+    background: transparent;
+
+	background-image: url(../images/ic_calendar.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) 50%;
+}
+
+.select-wrap.content-lk-select .nice-select .current 
+{
+    line-height: 30px;
+    height: 32px;
+	padding-right: 36px;
+	padding-left: 10px;
+    background: transparent;
+	min-width: 132px;
+}
+
+.select-wrap.content-lk-select .nice-select .current:after
+{
+	right: 10px;
+}
+
+.select-wrap.content-lk-select .nice-select .list
+{
+	top: calc(100% + 10px);
+	width: 162px;
+}
+
 
 
 .content-lk__nav
@@ -5523,6 +5585,223 @@ button.informations__tabs-btn
 	.update-link:hover
 	{
 		background: #E8E8EC;
+	}
+}
+
+
+.content-lk__table
+{
+	margin-top: 10px;
+}
+
+.lk-table
+{
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0 10px;
+}
+
+.lk-table th
+{
+	font-size: 12px;
+	font-weight: 600;
+	padding-left: 50px;
+
+	vertical-align: top;
+	text-align: left;
+}
+
+.lk-table th:first-child
+{
+	padding-left: 16px;
+}
+
+.lk-table th.lk-table__number-th
+{
+	padding-left: 20px;
+}
+
+.lk-table__checkbox-th,
+.lk-table__checkbox-td
+{
+	width: 36px;
+	table-layout: fixed;
+}
+
+.lk-table .checkbox__text
+{
+	width: 20px;
+	height: 20px;
+	padding-left: 0;
+}
+
+.lk-table td:first-child
+{
+	padding-left: 16px;
+	border-radius: 8px 0 0 8px;
+}
+
+.lk-table td:last-child
+{
+	padding-right: 16px;
+	border-radius: 0 8px 8px 0;
+}
+
+.lk-table td
+{
+	padding-left: 50px;
+	background: #fff;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	vertical-align: top;
+
+	font-size: 14px;
+}
+
+.lk-table td.lk-table__number-td
+{
+	padding-left: 20px;
+}
+
+.lk-table__number-order
+{
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.lk-table__date
+{
+	white-space: nowrap;
+}
+
+
+.lk-table__details-td
+{
+	width: 320px;
+}
+
+.lk-table__details-item + .lk-table__details-item
+{
+	margin-top: 6px;
+}
+
+.lk-table__details-item
+{
+	padding-bottom: 6px;
+	border-bottom: 1px solid #E8E8EC;
+}
+
+.lk-table__details-item._hide
+{
+	display: none;
+}
+
+.lk-table__details-item._hide._show 
+{
+    display: block;
+}
+
+.lk-table__details-item a
+{
+	text-decoration: none;
+	color: #363B3F;
+	transition: color .2s linear;
+}
+
+.lk-table__details-btn
+{
+	margin-top: 6px;
+	font: 14px var(--font-family);
+	color: #0064B5;
+	border-bottom: 1px solid #0064B5;
+	transition: border .2s linear;
+}
+
+.lk-table__details-btn span + span 
+{
+    display: none;
+}
+
+.lk-table__details-btn._active span 
+{
+    display: none;
+}
+
+.lk-table__details-btn._active span + span 
+{
+    display: block;
+}
+
+@media (any-hover: hover) 
+{
+    .lk-table__details-item a:hover 
+	{
+        color: #D30000;
+    }
+
+	.lk-table__details-btn:hover
+	{
+		border-color: transparent;
+	}
+}
+
+
+.lk-table__status span
+{
+	position: relative;
+	display: block;
+	padding-left: 12px;
+}
+
+.lk-table__status span::before
+{
+	position: absolute;
+	content: '';
+	top: 6px;
+	left: 0;
+
+	display: block;
+
+	width: 6px;
+	height: 6px;
+
+	border-radius: 50%;
+	background: #363B3F;
+}
+
+.lk-table__status._completed span::before
+{
+	background: #5FA800;
+}
+
+
+.lk-table__show-td
+{
+	width: 56px;
+	table-layout: fixed;
+}
+
+.lk-table__show-btn
+{
+	width: 24px;
+	height: 24px;
+}
+
+.lk-table__show-btn svg
+{
+	display: block;
+	width: 24px;
+	height: 24px;
+
+	fill: #363B3F;
+	transition: fill .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.lk-table__show-btn:hover svg
+	{
+		fill: #D30000;
 	}
 }
 /*------------

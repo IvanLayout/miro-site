@@ -395,6 +395,23 @@ $(() => {
 		}
 	})
 
+
+
+	// Показать все
+	$('body').on('click', '.lk-table__details-btn', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.lk-table__details-td').find('._hide').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.lk-table__details-td').find('._hide').addClass('_show')
+		}
+	})
+
 	// commit
 
 	$('.form__input-anim').each(function(){
