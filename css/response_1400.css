@@ -56,9 +56,24 @@
 		padding-left: 20px;
 	}
 
+	.lk-table td.lk-table__number-td
+	{
+		width: 140px;
+	}
+
 	.lk-table__details-td
 	{
 		width: 280px;
+	}
+
+	.lk-table__actions-td 
+	{
+		width: 160px;
+	}
+
+	.lk-table__show-td 
+	{
+		width: 60px;
 	}
     /*------------
 		commit

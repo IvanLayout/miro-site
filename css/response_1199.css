@@ -368,15 +368,45 @@
 
 	
 	.lk-table th,
+	.lk-table th.lk-table__number-th,
 	.lk-table td.lk-table__number-td,
 	.lk-table td
 	{
 		padding-left: 15px;
 	}
 
+	.lk-table th,
+	.lk-table td
+	{
+		font-size: 12px;
+	}
+
 	.lk-table__details-td 
 	{
 		width: 200px;
+	}
+	
+
+	.lk-table__actions-td 
+	{
+		width: 116px;
+	}
+
+	.lk-table__actions-btn a
+	{
+		font-size: 12px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.lk-table__show-td 
+	{
+		width: 55px;
+	}
+
+	.lk-table__repeat-link svg
+	{
+		margin-right: 5px;
 	}
     /*------------
 		commit

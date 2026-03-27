@@ -5605,7 +5605,8 @@ button.informations__tabs-btn
 {
 	font-size: 12px;
 	font-weight: 600;
-	padding-left: 50px;
+	/* padding-left: 50px; */
+	padding-left: 26px;
 
 	vertical-align: top;
 	text-align: left;
@@ -5650,7 +5651,8 @@ button.informations__tabs-btn
 
 .lk-table td
 {
-	padding-left: 50px;
+	/* padding-left: 50px; */
+	padding-left: 26px;
 	background: #fff;
 	padding-top: 16px;
 	padding-bottom: 16px;
@@ -5662,6 +5664,8 @@ button.informations__tabs-btn
 .lk-table td.lk-table__number-td
 {
 	padding-left: 20px;
+	table-layout: fixed;
+	width: 160px;
 }
 
 .lk-table__number-order
@@ -5779,7 +5783,7 @@ button.informations__tabs-btn
 
 .lk-table__show-td
 {
-	width: 56px;
+	width: 66px;
 	table-layout: fixed;
 }
 
@@ -5802,6 +5806,81 @@ button.informations__tabs-btn
 @media (any-hover: hover)
 {
 	.lk-table__show-btn:hover svg
+	{
+		fill: #D30000;
+	}
+}
+
+
+.lk-table__price
+{
+	white-space: nowrap;
+}
+
+
+.lk-table__actions-td
+{
+	width: 190px;
+	table-layout: fixed;
+}
+
+.lk-table__actions-btn + .lk-table__actions-btn
+{
+	margin-top: 10px;
+}
+
+.lk-table__actions-btn a
+{
+	width: 100%;
+	line-height: 32px;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.lk-table__actions-btn .btn-redbord
+{
+	line-height: 30px;
+	border: 1px solid #F52121;
+}
+
+.lk-table__repeat-link
+{
+	position: relative;
+
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+
+    text-decoration: none;
+    color: #363B3F;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 16px;
+    transition: color .2s linear;
+}
+
+.lk-table__repeat-link svg
+{
+	display: block;
+	width: 24px;
+	height: 24px;
+
+	fill: #363B3F;
+	transition: fill .2s linear;
+	margin-right: 10px;
+}
+
+@media (any-hover: hover)
+{
+	.lk-table__repeat-link:hover
+	{
+		color: #D30000;
+	}
+
+	.lk-table__repeat-link:hover svg
 	{
 		fill: #D30000;
 	}

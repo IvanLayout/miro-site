@@ -555,6 +555,11 @@
 		display: none;
 	}
 
+	.lk-table th
+	{
+		font-size: 14px;
+	}
+
 	.lk-table tr + tr
 	{
 		margin-top: 10px;
@@ -575,6 +580,7 @@
 
 	.lk-table td 
 	{
+		font-size: 14px;
 		display: block;
 		height: auto;
 		padding: 0;
@@ -620,6 +626,7 @@
 	.lk-table td.lk-table__number-td
 	{
 		padding-left: 0;
+		width: 100%;
 	}
 
 	.lk-table td::before 
@@ -635,9 +642,43 @@
 	}
 
 	.lk-table td.lk-table__checkbox-td::before,
-	.lk-table td.lk-table__show-td::before
+	.lk-table td.lk-table__show-td::before,
+	.lk-table td.lk-table__actions-td::before
 	{
 		display: none;
+	}
+
+	.lk-table__actions-btn a
+	{
+		line-height: 48px;
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	.lk-table__actions-btn .btn-redbord
+	{
+		line-height: 44px;
+		border: 2px solid #F52121;
+	}
+
+	.lk-table__actions-btn a.lk-table__repeat-link
+	{
+		line-height: 32px;
+		font-weight: 400;
+		color: #F52121;
+	}
+
+	.lk-table__repeat-link svg
+	{
+		fill: #F52121;
+		margin-right: 10px;
+	}
+
+	.lk-table td.lk-table__actions-td,
+	.lk-table td.lk-table__borderNone-mob
+	{
+		border-top: none;
+		margin-top: 0;
 	}
     /*------------
 		commit

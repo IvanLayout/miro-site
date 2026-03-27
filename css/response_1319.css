@@ -216,6 +216,12 @@
 		font-size: 14px;
 	}
 
+	.lk-table__actions-btn a
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
 	/*------------
 		commit
 	------------*/
