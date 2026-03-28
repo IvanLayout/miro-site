@@ -5278,11 +5278,39 @@ button.informations__tabs-btn
 	flex-wrap: nowrap;
 }
 
+.content-lk__subtitle
+{
+	margin-top: 4px;
+	font-size: 14px;
+	color: #6E7277;
+}
+
+.content-lk__top-boxr
+{
+	flex-wrap: nowrap;
+	gap: 20px
+}
+
+.content-lk__top-boxr .inner-search
+{
+	width: 100%;
+}
+
+.content-lk__top-boxr .datepicker-field
+{
+	flex-shrink: 0;
+}
+
 .content-lk__search
 {
     width: 100%;
     max-width: 547px;
-    margin-left: 30px;
+    margin-left: 20px;
+}
+
+.content-lk__search-w
+{
+	max-width: 660px;
 }
 
 .inner-search__wrap
@@ -5488,12 +5516,12 @@ button.informations__tabs-btn
 	margin-left: 20px;
 }
 
-.datepicker__field
+.datepicker-field
 {
 	position: relative;
 }
 
-.datepicker__field .datepicker__input
+.datepicker-field .datepicker__input
 {
 	color: #363B3F;
     font: 14px var(--font-family);
@@ -5509,6 +5537,14 @@ button.informations__tabs-btn
 	background-image: url(../images/ic_calendar.svg);
     background-repeat: no-repeat;
     background-position: calc(100% - 10px) 50%;
+}
+
+.content-lk__search .datepicker-field .datepicker__input
+{
+	font: 16px var(--font-family);
+	height: 42px;
+	padding-left: 16px;
+	padding-right: 56px;
 }
 
 .select-wrap.content-lk-select .nice-select .current 
@@ -6191,7 +6227,9 @@ button.informations__tabs-btn
 	}
 }
 
-.list-table td.list-table__name-td
+.list-table th.list-table__agreement-th,
+.list-table td.list-table__name-td,
+.list-table td.list-table__agreement-td
 {
 	padding-left: 20px;
 	/* table-layout: fixed;
@@ -6204,6 +6242,27 @@ button.informations__tabs-btn
 	text-decoration: none;
 	color: #282828;
 	white-space: nowrap;
+}
+
+.list-table__number,
+.list-table__owing,
+.list-table__date
+{
+	white-space: nowrap;
+}
+
+.list-table__expiration
+{
+	padding-right: 10px;
+	white-space: nowrap;
+}
+
+.list-table__expiration-flex
+{
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
 }
 
 .list-table__edit-td
