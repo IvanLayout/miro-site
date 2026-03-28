@@ -5519,11 +5519,17 @@ button.informations__tabs-btn
 	padding-left: 10px;
     background: transparent;
 	min-width: 132px;
+	font-size: 14px;
 }
 
 .select-wrap.content-lk-select .nice-select .current:after
 {
 	right: 10px;
+}
+
+.select-wrap.content-lk-select .nice-select .list .list_item
+{
+	font-size: 14px;
 }
 
 .select-wrap.content-lk-select .nice-select .list
@@ -5555,13 +5561,35 @@ button.informations__tabs-btn
 	margin-right: 10px;
 }
 
-.content-lk__nav-count
-{
-	width: 60px;
-	height: 32px;
 
-	border: 1px solid #92959C;
-	border-radius: 6px;
+.content-lk__nav-count .select-wrap .nice-select .current 
+{
+    line-height: 30px;
+    height: 32px;
+	padding-right: 20px;
+	padding-left: 10px;
+	min-width: 60px;
+	font-size: 14px;
+}
+
+.select-wrap.select-wrap_double-arrow .nice-select .current:after
+{
+	right: 8px;
+	width: 8px;
+    height: 12px;
+	margin-top: -6px;
+    background: url(../images/ic_double_arrow.svg) 50% no-repeat;
+}
+
+.content-lk__nav-count .select-wrap .nice-select .list
+{
+	top: calc(100% + 10px);
+	min-width: 72px;
+}
+
+.content-lk__nav-count .select-wrap .nice-select .list .list_item
+{
+	font-size: 14px;
 }
 
 .update-link
