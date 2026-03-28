@@ -370,6 +370,10 @@
 	{
 		width: calc(100%/2 - 20px);
 	}
+
+	.content-lk__choice-item_big{
+		width: calc(100% - 20px);
+	}
     /*------------
 		commit
 	------------*/

@@ -5436,6 +5436,8 @@ button.informations__tabs-btn
 .content-lk__wrap
 {
 	justify-content: space-between;
+	align-items: center;
+	align-content: center;
 	margin-top: 24px;
 	flex-wrap: nowrap;
 	padding-bottom: 20px;
@@ -5647,6 +5649,14 @@ button.informations__tabs-btn
 {
 	padding-right: 16px;
 	border-radius: 0 8px 8px 0;
+}
+
+.lk-table__nowrap{
+	white-space: nowrap;
+}
+
+.lk-table__comment{
+	width: 19%;
 }
 
 .lk-table td
@@ -7652,6 +7662,32 @@ button.informations__tabs-btn
 	color: #363B3F;
 
 	margin-bottom: 20px;
+}
+
+
+.add-adres{
+	font-size: 14px;
+	line-height: 24px;
+	color: #F52121;
+	text-decoration: none;
+	padding-left: 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.add-adres svg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	fill: currentColor;
+}
+
+@media (any-hover: hover){
+	.add-adres:hover{
+		color: #D30000;
+	}
 }
 
 
