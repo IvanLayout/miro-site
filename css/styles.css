@@ -5740,6 +5740,35 @@ button.informations__tabs-btn
 	width: 19%;
 }
 
+.lk-table__edit-td{
+	width: 66px;
+}
+
+.lk-table__edit{
+	display: block;
+	width: 24px;
+	height: 24px;
+	color: #F52121;
+	transition: color .2s linear;
+}
+
+.lk-table__edit svg{
+	display: block;
+	width: 24px;
+	height: 24px;
+	fill: currentColor;
+}
+
+.lk-table__edit span{
+	display: none;
+}
+
+@media (any-hover: hover){
+	.lk-table__edit:hover{
+		color: #D30000;
+	}
+}
+
 .lk-table td
 {
 	/* padding-left: 50px; */

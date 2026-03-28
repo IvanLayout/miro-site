@@ -872,6 +872,41 @@
 	}
 
 
+	.lk-table td.lk-table__edit-td{
+		border-top: none;
+	}
+
+	.lk-table td.lk-table__edit-td::before{
+		display: none;
+	}
+
+	.lk-table__edit{
+		display: inline-block;
+		width: auto;
+		height: 48px;
+		color: #F52121;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 44px;
+		border: 2px solid currentColor;
+		transition: color .2s linear;
+		padding: 0 22px 0 56px;
+		position: relative;
+		border-radius: 6px;
+	}
+
+	.lk-table__edit svg{
+		position: absolute;
+		left: 22px;
+		top: 50%;
+		margin-top: -12px;
+	}
+
+	.lk-table__edit span{
+		display: block;
+	}
+
+
 	.footer__coll{
 		width: 100%;
 	}
