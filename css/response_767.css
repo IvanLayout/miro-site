@@ -680,6 +680,27 @@
 		border-top: none;
 		margin-top: 0;
 	}
+
+
+	.modal-order
+	{
+		padding: 16px;
+	}
+
+	.modal-order__title
+	{
+		font-weight: 700;
+	}
+
+	.modal-order__val
+	{
+		font-size: 24px;
+	}
+
+	.modal-order__table td.modal-order__table-name
+	{
+		width: 200px;
+	}
     /*------------
 		commit
 	------------*/

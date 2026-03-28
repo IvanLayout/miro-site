@@ -3474,6 +3474,12 @@ html.with-fancybox{
 	margin-bottom: 10px;
 }
 
+.modal-order .informations__tabs
+{
+	margin-bottom: 0;
+	display: inline-block;
+}
+
 .tabs__wrap
 {
 	display: flex;
@@ -3568,6 +3574,11 @@ button.informations__tabs-btn
 	padding: 40px;
 }
 
+.documentation_modal
+{
+	width: 100%;
+    max-width: 443px;
+}
 
 .documentation__wrap
 {
@@ -3592,6 +3603,13 @@ button.informations__tabs-btn
 	width: calc(100%/6 - 20px);
 
 	transition: border .2s linear;
+}
+
+.documentation_modal .documentation__download
+{
+	width: calc(100%/3 - 20px);
+	padding-top: 28px;
+	padding-bottom: 23px;
 }
 
 @media (any-hover: hover)
@@ -3625,7 +3643,6 @@ button.informations__tabs-btn
 	text-align: center;
 	margin-top: 25px;
 }
-
 
 /*------------
     contacts
@@ -5884,6 +5901,193 @@ button.informations__tabs-btn
 	{
 		fill: #D30000;
 	}
+}
+
+
+.modal-order__item
+{
+	margin-top: 32px;
+}
+
+.modal-order__item._flex
+{
+	align-items: stretch;
+	align-content: stretch;
+	flex-wrap: nowrap;
+}
+
+.modal-order__subtitle
+{
+	font-size: 14px;
+	color: #6E7277;
+}
+
+.modal-order__status
+{
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 700;
+	margin-top: 6px;
+}
+
+.modal-order__status._completed
+{
+	color: #5FA800;
+}
+
+.modal-order__item._border-bot
+{
+	padding-bottom: 32px;
+	border-bottom: 1px solid #E8E8EC;
+}
+
+.modal-order__box:first-child
+{
+	padding-right: 26px;
+	border-right: 1px solid #E8E8EC;
+}
+
+.modal-order__box:last-child
+{
+	padding-left: 26px;
+}
+
+.modal-order__val
+{
+	white-space: nowrap;
+	font-size: 32px;
+	line-height: 1.1;
+	font-weight: 600;
+	margin-top: 8px;
+}
+
+
+.modal-order__table
+{
+	width: 100%;
+    border-collapse: collapse;
+}
+
+.modal-order__table th
+{
+	text-align: left;
+	font-weight: 400;
+	color: #6E7277;
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+.modal-order__table th:last-child,
+.modal-order__table td:last-child
+{
+	text-align: right;
+}
+
+.modal-order__table th:first-child,
+.modal-order__table td:first-child
+{
+	padding-left: 0;
+}
+
+.modal-order__table tr._hide 
+{
+    display: none;
+}
+
+.modal-order__table tr._hide._show 
+{
+	display: table-row;
+}
+
+.modal-order__table td
+{
+	padding: 6px 0 6px 20px;
+	border-top: 1px solid #E8E8EC;
+	border-bottom: 1px solid #E8E8EC;
+	white-space: nowrap;
+	font-size: 14px;
+}
+
+.modal-order__table tr:first-child td
+{
+	border-top: none;
+}
+
+.modal-order__table td.modal-order__table-name
+{
+	white-space: inherit;
+	width: 230px;
+	table-layout: fixed;
+}
+
+.modal-order__table td a
+{
+	text-decoration: none;
+	color: #363B3F;
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover) 
+{
+    .modal-order__table td a:hover 
+	{
+        color: #D30000;
+    }
+}
+
+
+.modal-order__details-btn
+{
+	margin-top: 6px;
+	font: 14px var(--font-family);
+	color: #0064B5;
+	border-bottom: 1px solid #0064B5;
+	transition: border .2s linear;
+}
+
+.modal-order__details-btn span + span 
+{
+    display: none;
+}
+
+.modal-order__details-btn._active span 
+{
+    display: none;
+}
+
+.modal-order__details-btn._active span + span 
+{
+    display: block;
+}
+
+@media (any-hover: hover) 
+{
+	.modal-order__details-btn:hover
+	{
+		border-color: transparent;
+	}
+}
+
+
+.modal-order__bot
+{
+	margin-top: 32px;
+}
+
+.modal-order__btns
+{
+	margin: -10px 0 0 -10px;
+}
+
+.modal-order__btns a
+{
+	margin: 10px 0 0 10px;
+}
+
+
+.modal-order__item .checkbox + .checkbox
+{
+	margin-top: 16px;
 }
 /*------------
     commit
