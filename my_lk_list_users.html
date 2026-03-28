@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Переключение IE в последнию версию, на случай если в настройках пользователя стоит меньшая -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Miro</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/dropzone.min.css">
+		<link rel="stylesheet" href="css/air-datepicker.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1400.css" media="(max-width: 1400px)">
+		<link rel="stylesheet" href="css/response_1319.css" media="(max-width: 1319px)">
+		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<!-- Шапка -->
+				<header class="header-lk">
+					<div class="header-lk__box">
+						<div class="cont _flex">
+							<div class="header-lk__logo">
+								<a href="/">
+									<img src="images/logo-white.svg" alt="">
+								</a>
+							</div>
+
+							<div class="header__adres">
+								<a href="/" class="header__adres-btn"><span>Москва</span></a>
+							</div>
+	
+							<div class="header-lk__search">
+								<form action="">
+									<div class="header-lk__search-field _flex">
+										<input type="text" value="" placeholder="Введите ваш запрос" id="header-lk__search-input" class="header-lk__search-input">
+	
+										<button type="submit" class="header-lk__search-submit">Найти</button>
+									</div>
+								</form>
+							</div>
+	
+							<div class="header-lk__links-wrap _flex">
+								<div class="header-lk__links _flex">
+									<div class="header-lk__item-link">
+										<a href="/" class="header-lk__link">
+											<svg class="header-lk__link-icon">
+												<use xlink:href="images/sprite.svg#ic_cart2"></use>
+											</svg>
+											<span class="header-lk__link-name">Интернет-магазин</span>
+										</a>
+									</div>
+									<div class="header-lk__item-link">
+										<a href="/" class="header-lk__link">
+											<svg class="header-lk__link-icon">
+												<use xlink:href="images/sprite.svg#ic_price_list"></use>
+											</svg>
+											<span class="header-lk__link-name">Прайс лист</span>
+										</a>
+									</div>
+									<div class="header-lk__item-link">
+										<a href="/" class="header-lk__link">
+											<svg class="header-lk__link-icon">
+												<use xlink:href="images/sprite.svg#ic_download"></use>
+											</svg>
+											<span class="header-lk__link-name">Загрузить заказ из XLS</span>
+										</a>
+									</div>
+								</div>
+		
+								<div class="header-lk__links _flex">
+									<div class="header-lk__item-link">
+										<a href="/" class="header-lk__link header-lk__link-exit">
+											<svg class="header-lk__link-icon">
+												<use xlink:href="images/sprite.svg#ic_exit"></use>
+											</svg>
+
+											<span class="header-lk__link-name">Выйти</span>
+										</a>
+									</div>
+									<div class="header-lk__item-link">
+										<a href="/" class="header-lk__link">
+											<span class="header-lk__link-name">Отправить жалобу</span>
+										</a>
+									</div>
+									<div class="header-lk__item-link header-lk__link-phone">
+										<a href="tel:+74993941625" class="header-lk__link header-lk__phone">+7 (499) 394 16 25</a>
+									</div>
+								</div>
+							</div>
+	
+							<div class="header-lk__btns _flex">
+								<div class="header-lk__btn-item mini-modal">
+									<button type="button" class="mini-modal__btn header-lk__btn">
+										<svg class="header-lk__btn-icon">
+											<use xlink:href="images/sprite.svg#ic_notification"></use>
+										</svg>
+		
+										<span class="header-lk__btn-active"></span>
+									</button>
+
+									<div class="mini-modal__modal mini-modal-notif">
+										<div class="main-title mini-modal-notif__title">Уведомления</div>
+
+										<div class="mini-modal-notif__items">
+											<div class="mini-modal-notif__item">
+												<button type="button" class="mini-modal-notif__delete">
+													<svg class="mini-modal-notif__icon">
+														<use xlink:href="images/sprite.svg#ic_delete2"></use>
+													</svg>
+												</button>
+
+												<div class="mini-modal-notif__date">12.12.2025  11:21</div>
+
+												<div class="mini-modal-notif__name">Название договора</div>
+
+												<div class="mini-modal-notif__desc">Также как выбранный нами инновационный путь предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач.</div>
+											</div>
+											<div class="mini-modal-notif__item">
+												<button type="button" class="mini-modal-notif__delete">
+													<svg class="mini-modal-notif__icon">
+														<use xlink:href="images/sprite.svg#ic_delete2"></use>
+													</svg>
+												</button>
+
+												<div class="mini-modal-notif__date">12.12.2025  11:21</div>
+
+												<div class="mini-modal-notif__name">Название договора</div>
+
+												<div class="mini-modal-notif__desc">Также как выбранный нами инновационный путь предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач.</div>
+											</div>
+											<div class="mini-modal-notif__item">
+												<button type="button" class="mini-modal-notif__delete">
+													<svg class="mini-modal-notif__icon">
+														<use xlink:href="images/sprite.svg#ic_delete2"></use>
+													</svg>
+												</button>
+
+												<div class="mini-modal-notif__date">12.12.2025  11:21</div>
+
+												<div class="mini-modal-notif__name">Название договора</div>
+
+												<div class="mini-modal-notif__desc">Также как выбранный нами инновационный путь предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач.</div>
+											</div>
+										</div>
+
+										<button type="button" class="mini-modal-notif__close btn-red">Закрыть</button>
+									</div>
+								</div>
+
+								<div class="header-lk__btn-item _mob-none">
+									<a href="/" class="header-lk__btn">
+										<svg class="header-lk__btn-icon">
+											<use xlink:href="images/sprite.svg#cart"></use>
+										</svg>
+									</a>
+								</div>
+
+								<div class="header-lk__btn-item _pc-none">
+									<a href="tel:+74993941625" class="header-lk__btn">
+										<svg class="header-lk__btn-icon">
+											<use xlink:href="images/sprite.svg#ic_phone"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__info">
+						<div class="cont">
+							<div class="header__info-box _flex">
+								<button type="button" class="header-lk__open">
+									<span class="header-lk__open-btn">
+										<span></span>
+										<span></span>
+										<span></span>
+									</span>
+								</button>
+
+								<div class="header__search">
+									<form action="">
+										<div class="header__search-field _flex">
+											<input type="text" value="" placeholder="Умный поиск по названию, артикулу, свойству, производителю" id="header__search-input" class="header__search-input">
+
+											<button type="submit" class="header__search-submit">Найти</button>
+										</div>
+									</form>
+								</div>
+
+								<div class="header__btns _flex">
+									<button type="button" class="header__btn aside-open">
+										<span class="header__btn-icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#menu"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Меню</span>
+									</button>
+									<a href="/" class="header__btn _active">
+										<span class="header__btn-icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#ic_main"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Главная</span>
+									</a>
+									<a href="/" class="header__btn">
+										<span class="header__btn-icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#orders2"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Заказы</span>
+									</a>
+									<a href="/" class="header__btn">
+										<span class="header__btn-icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#cart"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Корзина</span>
+									</a>
+									<a href="/" class="header__btn">
+										<span class="header__btn-icon">
+											<svg>
+												<use xlink:href="images/sprite.svg#user"></use>
+											</svg>
+										</span>
+										<span class="header__btn-name">Профиль</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<div class="overlay-catalog"></div>
+
+				<!-- End Шапка -->
+
+				<section class="section-lk">
+					<div class="cont">
+						<div class="section-lk__flex _flex">
+							<aside class="aside-lk">
+								<div class="aside-lk__top">
+									<div class="aside-lk__top-flex _flex">
+										<div class="aside-lk__foto">
+											<img src="images/ic_foto_user.svg" alt="">
+										</div>
+
+										<div class="aside-lk__name">Константин Константинопольский</div>
+									</div>
+
+									<div class="aside-lk__top-data">infomail123@gmail.com</div>
+									<div class="aside-lk__top-data">+7 963 923-45-88</div>
+								</div>
+
+								<div class="aside-lk__menu">
+									<div class="aside-lk__item">
+										<a href="/" class="aside-lk__item-link">
+											<svg class="aside-lk__item-icon">
+												<use xlink:href="images/sprite.svg#ic_lk1"></use>
+											</svg>
+	
+											<span class="aside-lk__item-name">Главная</span>
+										</a>
+									</div>
+	
+									<div class="aside-lk__item _active">
+										<button type="button" class="aside-lk__item-link aside-lk__open _active">
+											<svg class="aside-lk__item-icon">
+												<use xlink:href="images/sprite.svg#ic_lk2"></use>
+											</svg>
+	
+											<span class="aside-lk__item-name">Личная информация</span>
+										</button>
+	
+										<div class="aside-lk__links">
+											<div class="aside-lk__link">
+												<a href="/">Личная информация</a>
+											</div>
+											<div class="aside-lk__link">
+												<a href="/" class="active">Список пользователей</a>
+											</div>
+											<div class="aside-lk__link">
+												<a href="/">График оплат</a>
+											</div>
+											<div class="aside-lk__link">
+												<a href="/">Договоры и условия</a>
+											</div>
+											<div class="aside-lk__link">
+												<a href="/">Склады</a>
+											</div>
+											<div class="aside-lk__link">
+												<a href="/">Доставка</a>
+											</div>
+											<div class="aside-lk__link">
+												<a href="/">Смена пароля</a>
+											</div>
+										</div>
+									</div>
+	
+									<div class="aside-lk__item">
+										<a href="/" class="aside-lk__item-link">
+											<svg class="aside-lk__item-icon">
+												<use xlink:href="images/sprite.svg#ic_lk3"></use>
+											</svg>
+	
+											<span class="aside-lk__item-name">Управление заказами</span>
+										</a>
+									</div>
+	
+									<div class="aside-lk__item">
+										<a href="/" class="aside-lk__item-link">
+											<svg class="aside-lk__item-icon">
+												<use xlink:href="images/sprite.svg#ic_lk4"></use>
+											</svg>
+	
+											<span class="aside-lk__item-name">Список заказов с рекламацией</span>
+										</a>
+									</div>
+	
+									<div class="aside-lk__item">
+										<a href="/" class="aside-lk__item-link">
+											<svg class="aside-lk__item-icon">
+												<use xlink:href="images/sprite.svg#ic_download"></use>
+											</svg>
+	
+											<span class="aside-lk__item-name">Банк полезных загрузок</span>
+										</a>
+									</div>
+								</div>
+							</aside>
+
+							<div class="content-lk">
+								<div class="content-lk__top _flex">
+									<h1 class="main-title">Список пользователей</h1>
+
+									<div class="content-lk__search">
+										<div class="inner-search">
+											<div class="inner-search__wrap">
+												<form action="">
+													<div class="inner-search__field _flex">
+														<input type="text" value="" placeholder="Поиск" id="inner-search__input" class="inner-search__input">
+					
+														<button type="submit" class="inner-search__submit">
+															<svg>
+																<use xlink:href="images/sprite.svg#ic_lupa"></use>
+															</svg>
+														</button>
+													</div>
+												</form>
+		
+												<div class="inner-search__bord">
+													<div class="inner-search__products">
+														<div class="inner-search__product">
+															<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
+														</div>
+														<div class="inner-search__product">
+															<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
+														</div>
+														<div class="inner-search__product">
+															<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
+														</div>
+														<div class="inner-search__product">
+															<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="content-lk__wrap _border-bot _flex">
+									<div></div>
+
+									<div class="content-lk__nav _flex">
+										<div class="content-lk__nav-page _flex">
+											<div class="content-lk__nav-label">На странице</div>
+
+											<div class="content-lk__nav-count">
+												<div class="select-wrap select-wrap_double-arrow">
+													<select>
+														<option value="1">10</option>
+														<option value="2">20</option>
+														<option value="3">30</option>
+														<option value="4">40</option>
+													</select>
+												</div>
+											</div>
+										</div>
+
+										<a href="/" class="update-link">Обновить</a>
+									</div>
+								</div>
+
+								<div class="content-lk__table">
+									<table class="list-table">
+										<tbody>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__name-td">
+													<div class="list-table__name-user">Константин Константинович Константинопольский</div>
+												</td>
+												<td>
+													<a href="tel:+79639234588" class="list-table__phone">+7 963 923-45-88</a>
+												</td>
+												<td>
+													<a href="mailto:infomail123@gmail.com" class="list-table__mail">infomail123@gmail.com</a>
+												</td>
+												<td class="list-table__edit-td">
+													<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+														<svg>
+															<use xlink:href="images/sprite.svg#edit"></use>
+														</svg>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__name-td">
+													<div class="list-table__name-user">Александр Сергеевич Пушкин</div>
+												</td>
+												<td>
+													<a href="tel:+79123456789" class="list-table__phone">+7 912 345-67-89</a>
+												</td>
+												<td>
+													<a href="mailto:infomail123@gmail.com" class="list-table__mail">pushkin.alex@gmail.com</a>
+												</td>
+												<td class="list-table__edit-td">
+													<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+														<svg>
+															<use xlink:href="images/sprite.svg#edit"></use>
+														</svg>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__name-td">
+													<div class="list-table__name-user">Мария Александровна Цветкова</div>
+												</td>
+												<td>
+													<a href="tel:+79114567890" class="list-table__phone">+7 911 456-78-90</a>
+												</td>
+												<td>
+													<a href="mailto:infomail123@gmail.com" class="list-table__mail">maria.cvetkova@mail.ru</a>
+												</td>
+												<td class="list-table__edit-td">
+													<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+														<svg>
+															<use xlink:href="images/sprite.svg#edit"></use>
+														</svg>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__name-td">
+													<div class="list-table__name-user">Дмитрий Валерьевич Смирнов</div>
+												</td>
+												<td>
+													<a href="tel:+79201234567" class="list-table__phone">+7 920 123-45-67</a>
+												</td>
+												<td>
+													<a href="mailto:infomail123@gmail.com" class="list-table__mail">d.smirnov@yahoo.com</a>
+												</td>
+												<td class="list-table__edit-td">
+													<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+														<svg>
+															<use xlink:href="images/sprite.svg#edit"></use>
+														</svg>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__name-td">
+													<div class="list-table__name-user">Елена Викторовна Кузнецова</div>
+												</td>
+												<td>
+													<a href="tel:+7923987-65-43" class="list-table__phone">+7 923 987-65-43</a>
+												</td>
+												<td>
+													<a href="mailto:elena.kuznetsova@gmail.com" class="list-table__mail">elena.kuznetsova@gmail.com</a>
+												</td>
+												<td class="list-table__edit-td">
+													<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+														<svg>
+															<use xlink:href="images/sprite.svg#edit"></use>
+														</svg>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__name-td">
+													<div class="list-table__name-user">Иван Павлович Гоголь</div>
+												</td>
+												<td>
+													<a href="tel:+79512345678" class="list-table__phone">+7 951 234-56-78</a>
+												</td>
+												<td>
+													<a href="mailto:ivan.gogol@mail.com" class="list-table__mail">ivan.gogol@mail.com</a>
+												</td>
+												<td class="list-table__edit-td">
+													<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+														<svg>
+															<use xlink:href="images/sprite.svg#edit"></use>
+														</svg>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__name-td">
+													<div class="list-table__name-user">София Михайловна Лермонтова</div>
+												</td>
+												<td>
+													<a href="tel:+79038765432" class="list-table__phone">+7 903 876-54-32</a>
+												</td>
+												<td>
+													<a href="mailto:sofia.lermontova@gmail.com" class="list-table__mail">sofia.lermontova@gmail.com</a>
+												</td>
+												<td class="list-table__edit-td">
+													<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+														<svg>
+															<use xlink:href="images/sprite.svg#edit"></use>
+														</svg>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__name-td">
+													<div class="list-table__name-user">Анатолий Сергеевич Чехов</div>
+												</td>
+												<td>
+													<a href="tel:+7955654-32-10" class="list-table__phone">+7 955 654-32-10</a>
+												</td>
+												<td>
+													<a href="mailto:an.chakov@mail.ru" class="list-table__mail">an.chakov@mail.ru</a>
+												</td>
+												<td class="list-table__edit-td">
+													<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+														<svg>
+															<use xlink:href="images/sprite.svg#edit"></use>
+														</svg>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__name-td">
+													<div class="list-table__name-user">Наталья Владиславовна Толстая</div>
+												</td>
+												<td>
+													<a href="tel:+79587654321" class="list-table__phone">+7 958 765-43-21</a>
+												</td>
+												<td>
+													<a href="mailto:natasha.tolstaya@gmail.com" class="list-table__mail">natasha.tolstaya@gmail.com</a>
+												</td>
+												<td class="list-table__edit-td">
+													<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+														<svg>
+															<use xlink:href="images/sprite.svg#edit"></use>
+														</svg>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__name-td">
+													<div class="list-table__name-user">Максим Андреевич Горький</div>
+												</td>
+												<td>
+													<a href="tel:+79601238901" class="list-table__phone">+7 960 123-89-01</a>
+												</td>
+												<td>
+													<a href="mailto:max.gorky@mail.ru" class="list-table__mail">max.gorky@mail.ru</a>
+												</td>
+												<td class="list-table__edit-td">
+													<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+														<svg>
+															<use xlink:href="images/sprite.svg#edit"></use>
+														</svg>
+													</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<section class="pagination _flex">
+									<a href="/" class="prev">
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow3"></use>
+										</svg>
+									</a>
+									<a class="active">1</a>
+									<a href="/">2</a>
+									<a href="/">3</a>
+									<span class="dot">...</span>
+									<a href="/">16</a>
+									<a href="/" class="next">
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow3"></use>
+										</svg>
+									</a>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+
+			<footer class="footer footer_lk _marg">
+				<div class="cont">
+					<div class="footer__lk _flex">
+						<div class="footer__copy">&copy; 2025 г. MIRO Company. Все права защищены.</div>
+
+						<div class="footer__link">
+							<a href="/">Сертификат дилера</a>
+						</div>
+
+						<div class="footer__links _flex">
+							<div class="footer__link">
+								<a href="/">Политика конфиденциальности</a>
+							</div>
+							<div class="footer__link">
+								<a href="/">Политика персональных данных</a>
+							</div>
+						</div>
+
+						<div class="footer__creator">
+							Сайт разработан в <a href="/">MWI</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<div id="modal-order" class="modal modal-order">
+			<div class="modal__title modal-order__title">Заказ Nº 1423/9F</div>
+
+			<div class="tabs-container">
+				<div class="informations__tabs tabs">
+					<div class="tabs__wrap">
+						<button type="button" data-content="#tab1" data-level="level1" class="informations__tabs-btn tabs__button_js _active">Данные</button>
+						<button type="button" data-content="#tab2" data-level="level1" class="informations__tabs-btn tabs__button_js">Склады</button>
+						<button type="button" data-content="#tab3" data-level="level1" class="informations__tabs-btn tabs__button_js">Коммплект</button>
+						<button type="button" data-content="#tab4" data-level="level1" class="informations__tabs-btn tabs__button_js">Документы</button>
+					</div>
+				</div>
+
+				<div class="tab-content level1 _active" id="tab1">
+					<div class="modal-order__data">
+						<div class="modal-order__item">
+							<div class="modal-order__subtitle">Статус</div>
+
+							<div class="modal-order__status _completed">Доставлен</div>
+						</div>
+
+						<div class="modal-order__item _border-bot _flex">
+							<div class="modal-order__box">
+								<div class="modal-order__subtitle">Дата заказа</div>
+
+								<div class="modal-order__val">23.10.2023</div>
+							</div>
+
+							<div class="modal-order__box">
+								<div class="modal-order__subtitle">Сумма заказа</div>
+
+								<div class="modal-order__val">23 000 000 ₽</div>
+							</div>
+						</div>
+
+						<div class="modal-order__item">
+							<table class="modal-order__table">
+								<thead>
+									<tr>
+										<th>Состав заказа</th>
+										<th>Кол-во</th>
+										<th>Цена</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="modal-order__table-name">
+											<a href="/">Товар 1</a>
+										</td>
+										<td>55</td>
+										<td>100 000 ₽</td>
+									</tr>
+									<tr>
+										<td class="modal-order__table-name">
+											<a href="/">Товар 1</a>
+										</td>
+										<td>55</td>
+										<td>100 000 000 ₽</td>
+									</tr>
+									<tr>
+										<td class="modal-order__table-name">
+											<a href="/">Товар 1</a>
+										</td>
+										<td>55</td>
+										<td>5 000 ₽</td>
+									</tr>
+									<tr>
+										<td class="modal-order__table-name">
+											<a href="/">Товар 1</a>
+										</td>
+										<td>55</td>
+										<td>100 000 ₽</td>
+									</tr>
+									<tr class="_hide">
+										<td class="modal-order__table-name">
+											<a href="/">Товар 1</a>
+										</td>
+										<td>55</td>
+										<td>100 000 ₽</td>
+									</tr>
+									<tr class="_hide">
+										<td class="modal-order__table-name">
+											<a href="/">Товар 1</a>
+										</td>
+										<td>55</td>
+										<td>100 000 000 ₽</td>
+									</tr>
+									<tr class="_hide">
+										<td class="modal-order__table-name">
+											<a href="/">Товар 1</a>
+										</td>
+										<td>55</td>
+										<td>5 000 ₽</td>
+									</tr>
+									<tr class="_hide">
+										<td class="modal-order__table-name">
+											<a href="/">Товар 1</a>
+										</td>
+										<td>55</td>
+										<td>100 000 ₽</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<button type="button" class="modal-order__details-btn">
+								<span>еще 10</span>
+								<span>скрыть</span>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-content level1" id="tab2">
+					<div class="modal-order__data">
+						<div class="modal-order__item">
+							<div class="checkbox">
+								<label class="checkbox__label">
+									<input type="checkbox" name="" checked>
+
+									<span class="checkbox__text">Склад в Екатеринбурге</span>
+								</label>
+							</div>
+							<div class="checkbox">
+								<label class="checkbox__label">
+									<input type="checkbox" name="">
+
+									<span class="checkbox__text">Склад в Москве</span>
+								</label>
+							</div>
+							<div class="checkbox">
+								<label class="checkbox__label">
+									<input type="checkbox" name="" checked>
+
+									<span class="checkbox__text">Склад в Новосибирске</span>
+								</label>
+							</div>
+							<div class="checkbox">
+								<label class="checkbox__label">
+									<input type="checkbox" name="">
+
+									<span class="checkbox__text">Склад в Ростове-на-Дону</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-content level1" id="tab3">
+					<div class="modal-order__data"></div>
+				</div>
+
+				<div class="tab-content level1" id="tab4">
+					<div class="modal-order__data">
+						<div class="modal-order__item">
+							<div class="documentation documentation_modal">
+								<div class="documentation__wrap _flex">
+									<a href="/" class="documentation__download">
+										<span class="documentation__icon">
+											<img data-src="images/ic_file.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+	
+										<span class="documentation__name">Накладная.pdf</span>
+									</a>
+									<a href="/" class="documentation__download">
+										<span class="documentation__icon">
+											<img data-src="images/ic_file.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</span>
+	
+										<span class="documentation__name">Счет.doc</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-order__bot">
+				<div class="modal-save__flex _flex">
+					<button type="button" class="modal-save__btn btn-red modal-close">Сохранить</button>
+					<button type="button" class="modal-save__btn btn-redbord modal-close">Выйти без сохранения</button>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="supports-error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/jquery.rating.pack.js"></script>
+		<script src="js/dropzone.min.js"></script>
+		<script src="js/air-datepicker.js"></script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

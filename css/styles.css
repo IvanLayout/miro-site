@@ -6112,6 +6112,117 @@ button.informations__tabs-btn
 {
 	margin-top: 16px;
 }
+
+
+.list-table
+{
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0 10px;
+}
+
+.list-table th
+{
+	font-size: 12px;
+	font-weight: 600;
+	padding-left: 26px;
+
+	vertical-align: top;
+	text-align: left;
+}
+
+.list-table th:first-child
+{
+	padding-left: 16px;
+}
+
+.list-table th.list-table__name-td
+{
+	padding-left: 20px;
+}
+
+.list-table__checkbox-th,
+.list-table__checkbox-td
+{
+	width: 36px;
+	table-layout: fixed;
+}
+
+.list-table .checkbox__text
+{
+	width: 20px;
+	height: 20px;
+	padding-left: 0;
+}
+
+.list-table td:first-child
+{
+	padding-left: 16px;
+	border-radius: 8px 0 0 8px;
+}
+
+.list-table td:last-child
+{
+	padding-right: 16px;
+	border-radius: 0 8px 8px 0;
+}
+
+.list-table td
+{
+	/* padding-left: 50px; */
+	padding-left: 26px;
+	background: #fff;
+	padding-top: 16px;
+	padding-bottom: 16px;
+
+	font-size: 14px;
+	border: 1px solid #fff;
+}
+
+.list-table td.list-table__name-td
+{
+	padding-left: 20px;
+	/* table-layout: fixed;
+	width: 160px; */
+}
+
+.list-table__phone,
+.list-table__mail
+{
+	text-decoration: none;
+	color: #282828;
+	white-space: nowrap;
+}
+
+.list-table__edit-td
+{
+	width: 66px;
+	table-layout: fixed;
+}
+
+.list-table__edit-btn
+{
+	width: 24px;
+	height: 24px;
+}
+
+.list-table__edit-btn svg
+{
+	display: block;
+	width: 24px;
+	height: 24px;
+
+	fill: #F52121;
+	transition: fill .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.list-table__edit-btn:hover svg
+	{
+		fill: #D30000;
+	}
+}
 /*------------
     commit
 ------------*/
