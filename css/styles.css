@@ -5495,6 +5495,9 @@ button.informations__tabs-btn
 {
 	margin-left: -20px;
 	margin-top: -15px;
+
+	align-items: center;
+	align-content: center;
 }
 
 .content-lk__chekbox-item
@@ -5574,6 +5577,121 @@ button.informations__tabs-btn
 	width: 162px;
 }
 
+
+.content-lk__save-link
+{
+	display: block;
+	text-decoration: none;
+	font-size: 14px;
+	color: #6E7277;
+	border-radius: 6px;
+	border: 1px solid #6E7277;
+	padding: 0 10px 0 44px;
+	position: relative;
+	line-height: 30px;
+	background: transparent;
+	transition: background .2s linear;
+}
+
+.content-lk__save-link svg
+{
+	position: absolute;
+	top: 50%;
+	left: 10px;
+
+	display: block;
+
+	width: 24px;
+	height: 24px;
+
+	fill: #6E7277;
+
+	margin-top: -12px;
+}
+
+@media (any-hover: hover)
+{
+	.content-lk__save-link:hover
+	{
+		background: #E8E8EC;
+	}
+}
+
+
+.content-lk__wrap-items
+{
+	margin-left: -40px;
+	margin-top: -16px;
+}
+
+.content-lk__wrap-item
+{
+	margin-top: 20px;
+	margin-left: 40px;
+}
+
+.content-lk-link
+{
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+
+	font: 16px var(--font-family);
+	color: #F52121;
+
+	transition: color .2s linear;
+}
+
+.content-lk-link._dark
+{
+	color: #363B3F;
+}
+
+.content-lk-link._non-active
+{
+	color: #92959C;
+	pointer-events: none;
+}
+
+.content-lk-link svg
+{
+	flex-shrink: 0;
+	display: block;
+
+	width: 24px;
+	height: 24px;
+
+	margin-right: 6px;
+
+	fill: #F52121;
+	transition: fill .2s linear;
+}
+
+.content-lk-link._dark svg
+{
+	fill: #363B3F;
+}
+
+.content-lk-link._non-active svg
+{
+	fill: #92959C;
+}
+
+@media (any-hover: hover)
+{
+	.content-lk-link:hover
+	{
+		color: #D30000;
+	}
+
+	.content-lk-link:hover svg
+	{
+		fill: #D30000;
+	}
+}
 
 
 .content-lk__nav
