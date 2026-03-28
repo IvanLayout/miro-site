@@ -371,8 +371,59 @@
 		width: calc(100%/2 - 20px);
 	}
 
+
 	.content-lk__choice-item_big{
 		width: calc(100% - 20px);
+	}
+	
+
+	.modal-order .informations__tabs
+    {
+        overflow: hidden;
+        overflow-x: auto;
+
+        width: calc(100% + 32px);
+        margin-right: -16px;
+        margin-left: -16px;
+        padding-right: 16px;
+        padding-left: 16px;
+
+        white-space: nowrap;
+		display: block;
+    }
+
+    .modal-order .informations__tabs::-webkit-scrollbar
+    {
+        /* display: none; */
+    }
+
+	.modal-order .tabs__wrap
+	{
+		width: calc(100% + 32px);
+	}
+
+	.modal-order__val
+	{
+		font-size: 20px;
+	}
+
+	.modal-order__table th,
+	.modal-order__table td
+	{
+		padding-left: 15px;
+	}
+
+	.modal-order__table td.modal-order__table-name 
+	{
+		width: 135px;
+	}
+
+
+	.documentation_modal .documentation__download 
+	{
+		width: calc(100% / 2 - 20px);
+		padding-top: 37px;
+		padding-bottom: 30px;
 	}
     /*------------
 		commit

@@ -412,6 +412,21 @@ $(() => {
 		}
 	})
 
+	// Показать все модальном окне
+	$('body').on('click', '.modal-order__details-btn', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.modal-order__item').find('._hide').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.modal-order__item').find('._hide').addClass('_show')
+		}
+	})
+
 	// commit
 
 	$('.form__input-anim').each(function(){

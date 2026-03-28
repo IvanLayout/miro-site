@@ -298,7 +298,7 @@
 									</div>
 	
 									<div class="aside-lk__item _active">
-										<button type="button" class="aside-lk__item-link aside-lk__open">
+										<button type="button" class="aside-lk__item-link aside-lk__open _active">
 											<svg class="aside-lk__item-icon">
 												<use xlink:href="images/sprite.svg#ic_lk2"></use>
 											</svg>
@@ -314,7 +314,7 @@
 												<a href="/">Список пользователей</a>
 											</div>
 											<div class="aside-lk__link">
-												<a href="/">График оплат</a>
+												<a class="active">График оплат</a>
 											</div>
 											<div class="aside-lk__link">
 												<a href="/">Договоры и условия</a>
@@ -332,7 +332,7 @@
 									</div>
 	
 									<div class="aside-lk__item">
-										<a href="/" class="aside-lk__item-link _active">
+										<a href="/" class="aside-lk__item-link">
 											<svg class="aside-lk__item-icon">
 												<use xlink:href="images/sprite.svg#ic_lk3"></use>
 											</svg>
@@ -365,62 +365,56 @@
 
 							<div class="content-lk">
 								<div class="content-lk__top _flex">
-									<h1 class="main-title">Управление заказами</h1>
+									<div class="content-lk__top-boxl">
+										<h1 class="main-title">График оплат</h1>
 
-									<div class="content-lk__search">
-										<div class="inner-search">
-											<div class="inner-search__wrap">
-												<form action="">
-													<div class="inner-search__field _flex">
-														<input type="text" value="" placeholder="Поиск" id="inner-search__input" class="inner-search__input">
-					
-														<button type="submit" class="inner-search__submit">
-															<svg>
-																<use xlink:href="images/sprite.svg#ic_lupa"></use>
-															</svg>
-														</button>
-													</div>
-												</form>
-		
-												<div class="inner-search__bord">
-													<div class="inner-search__products">
-														<div class="inner-search__product">
-															<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
+										<div class="content-lk__subtitle">Внимание! Актуальная информация ежедневно в 15:00</div>
+									</div>
+
+									<div class="content-lk__search content-lk__search-w">
+										<div class="content-lk__top-boxr _flex">
+											<div class="inner-search">
+												<div class="inner-search__wrap">
+													<form action="">
+														<div class="inner-search__field _flex">
+															<input type="text" value="" placeholder="Поиск" id="inner-search__input" class="inner-search__input">
+						
+															<button type="submit" class="inner-search__submit">
+																<svg>
+																	<use xlink:href="images/sprite.svg#ic_lupa"></use>
+																</svg>
+															</button>
 														</div>
-														<div class="inner-search__product">
-															<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
-														</div>
-														<div class="inner-search__product">
-															<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
-														</div>
-														<div class="inner-search__product">
-															<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
+													</form>
+			
+													<div class="inner-search__bord">
+														<div class="inner-search__products">
+															<div class="inner-search__product">
+																<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
+															</div>
+															<div class="inner-search__product">
+																<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
+															</div>
+															<div class="inner-search__product">
+																<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
+															</div>
+															<div class="inner-search__product">
+																<a href="/" class="inner-search__product-name">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</a>
+															</div>
 														</div>
 													</div>
 												</div>
+											</div>
+
+											<div class="datepicker-field" id="datepicker-here1">
+												<input type="text" value="" placeholder="Выберите период" id="datepicker" class="datepicker__input datepicker-input">
 											</div>
 										</div>
 									</div>
 								</div>
 
 								<div class="content-lk__wrap _border-bot _flex">
-									<div class="content-lk__choice-items _flex">
-										<div class="content-lk__choice-item">
-											<div class="datepicker-field" id="datepicker-here1">
-												<input type="text" value="" placeholder="Выберите период" id="datepicker" class="datepicker__input datepicker-input">
-											</div>
-										</div>
-	
-										<div class="content-lk__choice-item">
-											<div class="select-wrap content-lk-select">
-												<select>
-													<option value="1">Статус</option>
-													<option value="2">Доставлен</option>
-													<option value="3">В пути</option>
-												</select>
-											</div>
-										</div>
-									</div>
+									<div></div>
 
 									<div class="content-lk__nav _flex">
 										<div class="content-lk__nav-page _flex">
@@ -443,10 +437,10 @@
 								</div>
 
 								<div class="content-lk__table">
-									<table class="lk-table">
+									<table class="list-table">
 										<thead>
 											<tr>
-												<th class="lk-table__checkbox-th">
+												<th class="list-table__checkbox-th">
 													<div class="checkbox">
 														<label class="checkbox__label">
 															<input type="checkbox" name="">
@@ -455,18 +449,16 @@
 														</label>
 													</div>
 												</th>
-												<th class="lk-table__number-th">Номер заказа</th>
-												<th>Дата заказа</th>
-												<th>Состав заказа</th>
-												<th>Сумма</th>
-												<th>Статус</th>
-												<th>Действия</th>
-												<th></th>
+												<th class="list-table__agreement-th">Договор</th>
+												<th>Номер <br>реализации</th>
+												<th>Сумма долга, ₽</th>
+												<th>Дата оплаты</th>
+												<th>Дней <br>просрочки</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<td class="lk-table__checkbox-td">
+												<td class="list-table__checkbox-td">
 													<div class="checkbox">
 														<label class="checkbox__label">
 															<input type="checkbox" name="">
@@ -475,102 +467,32 @@
 														</label>
 													</div>
 												</td>
-												<td data-label="Номер заказа" class="lk-table__number-td">
-													<div class="lk-table__number-order">Nº 1423/9F</div>
+												<td class="list-table__agreement-td">
+													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
 												</td>
-												<td data-label="Дата заказа">
-													<div class="lk-table__date">23.10.2023</div>
+												<td class="list-table__number-td">
+													<div class="list-table__number">3Р00913987</div>
 												</td>
-												<td data-label="Состав заказа" class="lk-table__details-td">
-													<div class="lk-table__details-items">
-														<div class="lk-table__details-item">
-															<a href="/">Товар 1</a>
-														</div>
-														<div class="lk-table__details-item">
-															<a href="/">Товар 2</a>
-														</div>
-														<div class="lk-table__details-item">
-															<a href="/">Товар 3</a>
-														</div>
-														<div class="lk-table__details-item">
-															<a href="/">Товар 4</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 5</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 6</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 7</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 8</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 9</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 10</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 11</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 12</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 13</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 14</a>
-														</div>
-													</div>
+												<td class="list-table__owing-td">
+													<div class="list-table__owing">41 275.03</div>
+												</td>
+												<td class="list-table__date-td">
+													<div class="list-table__date">23.10.2023</div>
+												</td>
+												<td class="list-table__expiration-td">
+													<div class="list-table__expiration-flex _flex">
+														<div class="list-table__expiration">10</div>
 
-													<button type="button" class="lk-table__details-btn">
-														<span>еще 10</span>
-														<span>скрыть</span>
-													</button>
-												</td>
-												<td data-label="Сумма">
-													<div class="lk-table__price">
-														23 000 000 ₽ 
+														<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+															<svg>
+																<use xlink:href="images/sprite.svg#edit"></use>
+															</svg>
+														</button>
 													</div>
-												</td>
-												<td data-label="Статус" class="lk-table__borderNone-mob">
-													<div class="lk-table__status _completed">
-														<span>Доставлен</span>
-													</div>
-												</td>
-												<td class="lk-table__actions-td">
-													<div class="lk-table__actions-btns">
-														<div class="lk-table__actions-btn">
-															<a href="/" class="btn-red">Скачать</a>
-														</div>
-														<div class="lk-table__actions-btn">
-															<a href="/" class="btn-redbord">Рекламация</a>
-														</div>
-														<div class="lk-table__actions-btn">
-															<a href="/" class="lk-table__repeat-link">
-																<svg>
-																	<use xlink:href="images/sprite.svg#ic_repeat"></use>
-																</svg>
-
-																<span>Повторить</span>
-															</a>
-														</div>
-													</div>
-												</td>
-												<td class="lk-table__show-td">
-													<button type="button" data-content="#modal-order" class="lk-table__show-btn modal-btn">
-														<svg>
-															<use xlink:href="images/sprite.svg#eye"></use>
-														</svg>
-													</button>
 												</td>
 											</tr>
 											<tr>
-												<td class="lk-table__checkbox-td">
+												<td class="list-table__checkbox-td">
 													<div class="checkbox">
 														<label class="checkbox__label">
 															<input type="checkbox" name="">
@@ -579,102 +501,32 @@
 														</label>
 													</div>
 												</td>
-												<td data-label="Номер заказа" class="lk-table__number-td">
-													<div class="lk-table__number-order">Nº 1423/9F</div>
+												<td class="list-table__agreement-td">
+													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
 												</td>
-												<td data-label="Дата заказа">
-													<div class="lk-table__date">23.10.2023</div>
+												<td class="list-table__number-td">
+													<div class="list-table__number">3Р00913987</div>
 												</td>
-												<td data-label="Состав заказа" class="lk-table__details-td">
-													<div class="lk-table__details-items">
-														<div class="lk-table__details-item">
-															<a href="/">Товар 1</a>
-														</div>
-														<div class="lk-table__details-item">
-															<a href="/">Товар 2</a>
-														</div>
-														<div class="lk-table__details-item">
-															<a href="/">Товар 3</a>
-														</div>
-														<div class="lk-table__details-item">
-															<a href="/">Товар 4</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 5</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 6</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 7</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 8</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 9</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 10</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 11</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 12</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 13</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 14</a>
-														</div>
-													</div>
+												<td class="list-table__owing-td">
+													<div class="list-table__owing">41 275.03</div>
+												</td>
+												<td class="list-table__date-td">
+													<div class="list-table__date">23.10.2023</div>
+												</td>
+												<td class="list-table__expiration-td">
+													<div class="list-table__expiration-flex _flex">
+														<div class="list-table__expiration">-</div>
 
-													<button type="button" class="lk-table__details-btn">
-														<span>еще 10</span>
-														<span>скрыть</span>
-													</button>
-												</td>
-												<td data-label="Сумма">
-													<div class="lk-table__price">
-														23 000 000 ₽ 
+														<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+															<svg>
+																<use xlink:href="images/sprite.svg#edit"></use>
+															</svg>
+														</button>
 													</div>
-												</td>
-												<td data-label="Статус">
-													<div class="lk-table__status">
-														<span>В пути</span>
-													</div>
-												</td>
-												<td class="lk-table__actions-td">
-													<div class="lk-table__actions-btns">
-														<div class="lk-table__actions-btn">
-															<a href="/" class="btn-red">Скачать</a>
-														</div>
-														<div class="lk-table__actions-btn">
-															<a href="/" class="btn-redbord">Рекламация</a>
-														</div>
-														<div class="lk-table__actions-btn">
-															<a href="/" class="lk-table__repeat-link">
-																<svg>
-																	<use xlink:href="images/sprite.svg#ic_repeat"></use>
-																</svg>
-
-																<span>Повторить</span>
-															</a>
-														</div>
-													</div>
-												</td>
-												<td class="lk-table__show-td">
-													<button type="button" class="lk-table__show-btn">
-														<svg>
-															<use xlink:href="images/sprite.svg#eye"></use>
-														</svg>
-													</button>
 												</td>
 											</tr>
 											<tr>
-												<td class="lk-table__checkbox-td">
+												<td class="list-table__checkbox-td">
 													<div class="checkbox">
 														<label class="checkbox__label">
 															<input type="checkbox" name="">
@@ -683,102 +535,32 @@
 														</label>
 													</div>
 												</td>
-												<td data-label="Номер заказа" class="lk-table__number-td">
-													<div class="lk-table__number-order">Nº 1423/9F</div>
+												<td class="list-table__agreement-td">
+													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
 												</td>
-												<td data-label="Дата заказа">
-													<div class="lk-table__date">23.10.2023</div>
+												<td class="list-table__number-td">
+													<div class="list-table__number">3Р00913987</div>
 												</td>
-												<td data-label="Состав заказа" class="lk-table__details-td">
-													<div class="lk-table__details-items">
-														<div class="lk-table__details-item">
-															<a href="/">Товар 1</a>
-														</div>
-														<div class="lk-table__details-item">
-															<a href="/">Товар 2</a>
-														</div>
-														<div class="lk-table__details-item">
-															<a href="/">Товар 3</a>
-														</div>
-														<div class="lk-table__details-item">
-															<a href="/">Товар 4</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 5</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 6</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 7</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 8</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 9</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 10</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 11</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 12</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 13</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 14</a>
-														</div>
-													</div>
+												<td class="list-table__owing-td">
+													<div class="list-table__owing">41 275.03</div>
+												</td>
+												<td class="list-table__date-td">
+													<div class="list-table__date">23.10.2023</div>
+												</td>
+												<td class="list-table__expiration-td">
+													<div class="list-table__expiration-flex _flex">
+														<div class="list-table__expiration">-</div>
 
-													<button type="button" class="lk-table__details-btn">
-														<span>еще 10</span>
-														<span>скрыть</span>
-													</button>
-												</td>
-												<td data-label="Сумма">
-													<div class="lk-table__price">
-														23 000 000 ₽ 
+														<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+															<svg>
+																<use xlink:href="images/sprite.svg#edit"></use>
+															</svg>
+														</button>
 													</div>
-												</td>
-												<td data-label="Статус" class="lk-table__borderNone-mob">
-													<div class="lk-table__status _completed">
-														<span>Доставлен</span>
-													</div>
-												</td>
-												<td class="lk-table__actions-td">
-													<div class="lk-table__actions-btns">
-														<div class="lk-table__actions-btn">
-															<a href="/" class="btn-red">Скачать</a>
-														</div>
-														<div class="lk-table__actions-btn">
-															<a href="/" class="btn-redbord">Рекламация</a>
-														</div>
-														<div class="lk-table__actions-btn">
-															<a href="/" class="lk-table__repeat-link">
-																<svg>
-																	<use xlink:href="images/sprite.svg#ic_repeat"></use>
-																</svg>
-
-																<span>Повторить</span>
-															</a>
-														</div>
-													</div>
-												</td>
-												<td class="lk-table__show-td">
-													<button type="button" class="lk-table__show-btn">
-														<svg>
-															<use xlink:href="images/sprite.svg#eye"></use>
-														</svg>
-													</button>
 												</td>
 											</tr>
 											<tr>
-												<td class="lk-table__checkbox-td">
+												<td class="list-table__checkbox-td">
 													<div class="checkbox">
 														<label class="checkbox__label">
 															<input type="checkbox" name="">
@@ -787,98 +569,266 @@
 														</label>
 													</div>
 												</td>
-												<td data-label="Номер заказа" class="lk-table__number-td">
-													<div class="lk-table__number-order">Nº 1423/9F</div>
+												<td class="list-table__agreement-td">
+													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
 												</td>
-												<td data-label="Дата заказа">
-													<div class="lk-table__date">23.10.2023</div>
+												<td class="list-table__number-td">
+													<div class="list-table__number">3Р00913987</div>
 												</td>
-												<td data-label="Состав заказа" class="lk-table__details-td">
-													<div class="lk-table__details-items">
-														<div class="lk-table__details-item">
-															<a href="/">Товар 1</a>
-														</div>
-														<div class="lk-table__details-item">
-															<a href="/">Товар 2</a>
-														</div>
-														<div class="lk-table__details-item">
-															<a href="/">Товар 3</a>
-														</div>
-														<div class="lk-table__details-item">
-															<a href="/">Товар 4</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 5</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 6</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 7</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 8</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 9</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 10</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 11</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 12</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 13</a>
-														</div>
-														<div class="lk-table__details-item _hide">
-															<a href="/">Товар 14</a>
-														</div>
-													</div>
+												<td class="list-table__owing-td">
+													<div class="list-table__owing">41 275.03</div>
+												</td>
+												<td class="list-table__date-td">
+													<div class="list-table__date">23.10.2023</div>
+												</td>
+												<td class="list-table__expiration-td">
+													<div class="list-table__expiration-flex _flex">
+														<div class="list-table__expiration">-</div>
 
-													<button type="button" class="lk-table__details-btn">
-														<span>еще 10</span>
-														<span>скрыть</span>
-													</button>
-												</td>
-												<td data-label="Сумма">
-													<div class="lk-table__price">
-														23 000 000 ₽ 
+														<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+															<svg>
+																<use xlink:href="images/sprite.svg#edit"></use>
+															</svg>
+														</button>
 													</div>
 												</td>
-												<td data-label="Статус" class="lk-table__borderNone-mob">
-													<div class="lk-table__status _completed">
-														<span>Доставлен</span>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
 													</div>
 												</td>
-												<td class="lk-table__actions-td">
-													<div class="lk-table__actions-btns">
-														<div class="lk-table__actions-btn">
-															<a href="/" class="btn-red">Скачать</a>
-														</div>
-														<div class="lk-table__actions-btn">
-															<a href="/" class="btn-redbord">Рекламация</a>
-														</div>
-														<div class="lk-table__actions-btn">
-															<a href="/" class="lk-table__repeat-link">
-																<svg>
-																	<use xlink:href="images/sprite.svg#ic_repeat"></use>
-																</svg>
+												<td class="list-table__agreement-td">
+													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
+												</td>
+												<td class="list-table__number-td">
+													<div class="list-table__number">3Р00913987</div>
+												</td>
+												<td class="list-table__owing-td">
+													<div class="list-table__owing">41 275.03</div>
+												</td>
+												<td class="list-table__date-td">
+													<div class="list-table__date">23.10.2023</div>
+												</td>
+												<td class="list-table__expiration-td">
+													<div class="list-table__expiration-flex _flex">
+														<div class="list-table__expiration">-</div>
 
-																<span>Повторить</span>
-															</a>
-														</div>
+														<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+															<svg>
+																<use xlink:href="images/sprite.svg#edit"></use>
+															</svg>
+														</button>
 													</div>
 												</td>
-												<td class="lk-table__show-td">
-													<button type="button" class="lk-table__show-btn">
-														<svg>
-															<use xlink:href="images/sprite.svg#eye"></use>
-														</svg>
-													</button>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__agreement-td">
+													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
+												</td>
+												<td class="list-table__number-td">
+													<div class="list-table__number">3Р00913987</div>
+												</td>
+												<td class="list-table__owing-td">
+													<div class="list-table__owing">41 275.03</div>
+												</td>
+												<td class="list-table__date-td">
+													<div class="list-table__date">23.10.2023</div>
+												</td>
+												<td class="list-table__expiration-td">
+													<div class="list-table__expiration-flex _flex">
+														<div class="list-table__expiration">-</div>
+
+														<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+															<svg>
+																<use xlink:href="images/sprite.svg#edit"></use>
+															</svg>
+														</button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__agreement-td">
+													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
+												</td>
+												<td class="list-table__number-td">
+													<div class="list-table__number">3Р00913987</div>
+												</td>
+												<td class="list-table__owing-td">
+													<div class="list-table__owing">41 275.03</div>
+												</td>
+												<td class="list-table__date-td">
+													<div class="list-table__date">23.10.2023</div>
+												</td>
+												<td class="list-table__expiration-td">
+													<div class="list-table__expiration-flex _flex">
+														<div class="list-table__expiration">-</div>
+
+														<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+															<svg>
+																<use xlink:href="images/sprite.svg#edit"></use>
+															</svg>
+														</button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__agreement-td">
+													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
+												</td>
+												<td class="list-table__number-td">
+													<div class="list-table__number">3Р00913987</div>
+												</td>
+												<td class="list-table__owing-td">
+													<div class="list-table__owing">41 275.03</div>
+												</td>
+												<td class="list-table__date-td">
+													<div class="list-table__date">23.10.2023</div>
+												</td>
+												<td class="list-table__expiration-td">
+													<div class="list-table__expiration-flex _flex">
+														<div class="list-table__expiration">-</div>
+
+														<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+															<svg>
+																<use xlink:href="images/sprite.svg#edit"></use>
+															</svg>
+														</button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__agreement-td">
+													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
+												</td>
+												<td class="list-table__number-td">
+													<div class="list-table__number">3Р00913987</div>
+												</td>
+												<td class="list-table__owing-td">
+													<div class="list-table__owing">41 275.03</div>
+												</td>
+												<td class="list-table__date-td">
+													<div class="list-table__date">23.10.2023</div>
+												</td>
+												<td class="list-table__expiration-td">
+													<div class="list-table__expiration-flex _flex">
+														<div class="list-table__expiration">-</div>
+
+														<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+															<svg>
+																<use xlink:href="images/sprite.svg#edit"></use>
+															</svg>
+														</button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__agreement-td">
+													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
+												</td>
+												<td class="list-table__number-td">
+													<div class="list-table__number">3Р00913987</div>
+												</td>
+												<td class="list-table__owing-td">
+													<div class="list-table__owing">41 275.03</div>
+												</td>
+												<td class="list-table__date-td">
+													<div class="list-table__date">23.10.2023</div>
+												</td>
+												<td class="list-table__expiration-td">
+													<div class="list-table__expiration-flex _flex">
+														<div class="list-table__expiration">-</div>
+
+														<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+															<svg>
+																<use xlink:href="images/sprite.svg#edit"></use>
+															</svg>
+														</button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="list-table__checkbox-td">
+													<div class="checkbox">
+														<label class="checkbox__label">
+															<input type="checkbox" name="">
+			
+															<span class="checkbox__text"></span>
+														</label>
+													</div>
+												</td>
+												<td class="list-table__agreement-td">
+													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
+												</td>
+												<td class="list-table__number-td">
+													<div class="list-table__number">3Р00913987</div>
+												</td>
+												<td class="list-table__owing-td">
+													<div class="list-table__owing">41 275.03</div>
+												</td>
+												<td class="list-table__date-td">
+													<div class="list-table__date">23.10.2023</div>
+												</td>
+												<td class="list-table__expiration-td">
+													<div class="list-table__expiration-flex _flex">
+														<div class="list-table__expiration">-</div>
+
+														<button type="button" data-content="#modal-order" class="list-table__edit-btn modal-btn">
+															<svg>
+																<use xlink:href="images/sprite.svg#edit"></use>
+															</svg>
+														</button>
+													</div>
 												</td>
 											</tr>
 										</tbody>
