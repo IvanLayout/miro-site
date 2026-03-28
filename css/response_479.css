@@ -414,10 +414,6 @@
 		width: 135px;
 	}
 
-	.modal-order__btns a
-	{
-		width: calc(100%/1 - 10px);
-	}
 
 	.documentation_modal .documentation__download 
 	{

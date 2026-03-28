@@ -6102,14 +6102,9 @@ button.informations__tabs-btn
 	margin-top: 32px;
 }
 
-.modal-order__btns
+.modal-order__bot .modal-save__flex
 {
-	margin: -10px 0 0 -10px;
-}
-
-.modal-order__btns a
-{
-	margin: 10px 0 0 10px;
+	justify-content: flex-start;
 }
 
 
