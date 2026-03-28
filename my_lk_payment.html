@@ -413,9 +413,9 @@
 									</div>
 								</div>
 
-								<div class="content-lk__wrap _border-bot _flex">
-									<div class="content-lk__chekbox-items _flex">
-										<div class="content-lk__chekbox-item">
+								<div class="content-lk__wrap _var2 _border-bot _flex">
+									<div class="content-lk__info-items _flex">
+										<div class="content-lk__info-item">
 											<div class="checkbox">
 												<label class="checkbox__label">
 													<input type="checkbox" name="">
@@ -425,7 +425,7 @@
 											</div>
 										</div>
 
-										<div class="content-lk__chekbox-item">
+										<div class="content-lk__info-item">
 											<div class="checkbox">
 												<label class="checkbox__label">
 													<input type="checkbox" name="">
@@ -435,7 +435,7 @@
 											</div>
 										</div>
 
-										<div class="content-lk__chekbox-item">
+										<div class="content-lk__info-item">
 											<a href="/" class="content-lk__save-link">
 												<svg>
 													<use xlink:href="images/sprite.svg#ic_download"></use>
@@ -480,7 +480,7 @@
 												</th>
 												<th class="list-table__agreement-th">Договор</th>
 												<th>Номер <br>реализации</th>
-												<th>Сумма долга, ₽</th>
+												<th class="list-table__owing-th">Сумма долга, ₽</th>
 												<th>Дата оплаты</th>
 												<th>Дней <br>просрочки</th>
 											</tr>
@@ -496,19 +496,19 @@
 														</label>
 													</div>
 												</td>
-												<td class="list-table__agreement-td">
+												<td data-label="Договор" class="list-table__agreement-td">
 													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
 												</td>
-												<td class="list-table__number-td">
+												<td data-label="Номер реализации" class="list-table__number-td">
 													<div class="list-table__number">3Р00913987</div>
 												</td>
-												<td class="list-table__owing-td">
+												<td data-label="Сумма долга, ₽" class="list-table__owing-td">
 													<div class="list-table__owing">41 275.03</div>
 												</td>
-												<td class="list-table__date-td">
+												<td data-label="Дата оплаты" class="list-table__date-td">
 													<div class="list-table__date">23.10.2023</div>
 												</td>
-												<td class="list-table__expiration-td">
+												<td data-label="Дней просрочки" class="list-table__expiration-td">
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">10</div>
 
@@ -516,6 +516,8 @@
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
+
+															<span>Редактировать</span>
 														</button>
 													</div>
 												</td>
@@ -530,19 +532,19 @@
 														</label>
 													</div>
 												</td>
-												<td class="list-table__agreement-td">
+												<td data-label="Договор" class="list-table__agreement-td">
 													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
 												</td>
-												<td class="list-table__number-td">
+												<td data-label="Номер реализации" class="list-table__number-td">
 													<div class="list-table__number">3Р00913987</div>
 												</td>
-												<td class="list-table__owing-td">
+												<td data-label="Сумма долга, ₽" class="list-table__owing-td">
 													<div class="list-table__owing">41 275.03</div>
 												</td>
-												<td class="list-table__date-td">
+												<td data-label="Дата оплаты" class="list-table__date-td">
 													<div class="list-table__date">23.10.2023</div>
 												</td>
-												<td class="list-table__expiration-td">
+												<td data-label="Дней просрочки" class="list-table__expiration-td">
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
@@ -550,6 +552,8 @@
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
+
+															<span>Редактировать</span>
 														</button>
 													</div>
 												</td>
@@ -564,19 +568,19 @@
 														</label>
 													</div>
 												</td>
-												<td class="list-table__agreement-td">
+												<td data-label="Договор" class="list-table__agreement-td">
 													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
 												</td>
-												<td class="list-table__number-td">
+												<td data-label="Номер реализации" class="list-table__number-td">
 													<div class="list-table__number">3Р00913987</div>
 												</td>
-												<td class="list-table__owing-td">
+												<td data-label="Сумма долга, ₽" class="list-table__owing-td">
 													<div class="list-table__owing">41 275.03</div>
 												</td>
-												<td class="list-table__date-td">
+												<td data-label="Дата оплаты" class="list-table__date-td">
 													<div class="list-table__date">23.10.2023</div>
 												</td>
-												<td class="list-table__expiration-td">
+												<td data-label="Дней просрочки" class="list-table__expiration-td">
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
@@ -584,6 +588,8 @@
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
+
+															<span>Редактировать</span>
 														</button>
 													</div>
 												</td>
@@ -598,19 +604,19 @@
 														</label>
 													</div>
 												</td>
-												<td class="list-table__agreement-td">
+												<td data-label="Договор" class="list-table__agreement-td">
 													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
 												</td>
-												<td class="list-table__number-td">
+												<td data-label="Номер реализации" class="list-table__number-td">
 													<div class="list-table__number">3Р00913987</div>
 												</td>
-												<td class="list-table__owing-td">
+												<td data-label="Сумма долга, ₽" class="list-table__owing-td">
 													<div class="list-table__owing">41 275.03</div>
 												</td>
-												<td class="list-table__date-td">
+												<td data-label="Дата оплаты" class="list-table__date-td">
 													<div class="list-table__date">23.10.2023</div>
 												</td>
-												<td class="list-table__expiration-td">
+												<td data-label="Дней просрочки" class="list-table__expiration-td">
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
@@ -618,6 +624,8 @@
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
+
+															<span>Редактировать</span>
 														</button>
 													</div>
 												</td>
@@ -632,19 +640,19 @@
 														</label>
 													</div>
 												</td>
-												<td class="list-table__agreement-td">
+												<td data-label="Договор" class="list-table__agreement-td">
 													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
 												</td>
-												<td class="list-table__number-td">
+												<td data-label="Номер реализации" class="list-table__number-td">
 													<div class="list-table__number">3Р00913987</div>
 												</td>
-												<td class="list-table__owing-td">
+												<td data-label="Сумма долга, ₽" class="list-table__owing-td">
 													<div class="list-table__owing">41 275.03</div>
 												</td>
-												<td class="list-table__date-td">
+												<td data-label="Дата оплаты" class="list-table__date-td">
 													<div class="list-table__date">23.10.2023</div>
 												</td>
-												<td class="list-table__expiration-td">
+												<td data-label="Дней просрочки" class="list-table__expiration-td">
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
@@ -652,6 +660,8 @@
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
+
+															<span>Редактировать</span>
 														</button>
 													</div>
 												</td>
@@ -666,19 +676,19 @@
 														</label>
 													</div>
 												</td>
-												<td class="list-table__agreement-td">
+												<td data-label="Договор" class="list-table__agreement-td">
 													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
 												</td>
-												<td class="list-table__number-td">
+												<td data-label="Номер реализации" class="list-table__number-td">
 													<div class="list-table__number">3Р00913987</div>
 												</td>
-												<td class="list-table__owing-td">
+												<td data-label="Сумма долга, ₽" class="list-table__owing-td">
 													<div class="list-table__owing">41 275.03</div>
 												</td>
-												<td class="list-table__date-td">
+												<td data-label="Дата оплаты" class="list-table__date-td">
 													<div class="list-table__date">23.10.2023</div>
 												</td>
-												<td class="list-table__expiration-td">
+												<td data-label="Дней просрочки" class="list-table__expiration-td">
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
@@ -686,6 +696,8 @@
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
+
+															<span>Редактировать</span>
 														</button>
 													</div>
 												</td>
@@ -700,19 +712,19 @@
 														</label>
 													</div>
 												</td>
-												<td class="list-table__agreement-td">
+												<td data-label="Договор" class="list-table__agreement-td">
 													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
 												</td>
-												<td class="list-table__number-td">
+												<td data-label="Номер реализации" class="list-table__number-td">
 													<div class="list-table__number">3Р00913987</div>
 												</td>
-												<td class="list-table__owing-td">
+												<td data-label="Сумма долга, ₽" class="list-table__owing-td">
 													<div class="list-table__owing">41 275.03</div>
 												</td>
-												<td class="list-table__date-td">
+												<td data-label="Дата оплаты" class="list-table__date-td">
 													<div class="list-table__date">23.10.2023</div>
 												</td>
-												<td class="list-table__expiration-td">
+												<td data-label="Дней просрочки" class="list-table__expiration-td">
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
@@ -720,6 +732,8 @@
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
+
+															<span>Редактировать</span>
 														</button>
 													</div>
 												</td>
@@ -734,19 +748,19 @@
 														</label>
 													</div>
 												</td>
-												<td class="list-table__agreement-td">
+												<td data-label="Договор" class="list-table__agreement-td">
 													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
 												</td>
-												<td class="list-table__number-td">
+												<td data-label="Номер реализации" class="list-table__number-td">
 													<div class="list-table__number">3Р00913987</div>
 												</td>
-												<td class="list-table__owing-td">
+												<td data-label="Сумма долга, ₽" class="list-table__owing-td">
 													<div class="list-table__owing">41 275.03</div>
 												</td>
-												<td class="list-table__date-td">
+												<td data-label="Дата оплаты" class="list-table__date-td">
 													<div class="list-table__date">23.10.2023</div>
 												</td>
-												<td class="list-table__expiration-td">
+												<td data-label="Дней просрочки" class="list-table__expiration-td">
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
@@ -754,6 +768,8 @@
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
+
+															<span>Редактировать</span>
 														</button>
 													</div>
 												</td>
@@ -768,19 +784,19 @@
 														</label>
 													</div>
 												</td>
-												<td class="list-table__agreement-td">
+												<td data-label="Договор" class="list-table__agreement-td">
 													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
 												</td>
-												<td class="list-table__number-td">
+												<td data-label="Номер реализации" class="list-table__number-td">
 													<div class="list-table__number">3Р00913987</div>
 												</td>
-												<td class="list-table__owing-td">
+												<td data-label="Сумма долга, ₽" class="list-table__owing-td">
 													<div class="list-table__owing">41 275.03</div>
 												</td>
-												<td class="list-table__date-td">
+												<td data-label="Дата оплаты" class="list-table__date-td">
 													<div class="list-table__date">23.10.2023</div>
 												</td>
-												<td class="list-table__expiration-td">
+												<td data-label="Дней просрочки" class="list-table__expiration-td">
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
@@ -788,6 +804,8 @@
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
+
+															<span>Редактировать</span>
 														</button>
 													</div>
 												</td>
@@ -802,19 +820,19 @@
 														</label>
 													</div>
 												</td>
-												<td class="list-table__agreement-td">
+												<td data-label="Договор" class="list-table__agreement-td">
 													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
 												</td>
-												<td class="list-table__number-td">
+												<td data-label="Номер реализации" class="list-table__number-td">
 													<div class="list-table__number">3Р00913987</div>
 												</td>
-												<td class="list-table__owing-td">
+												<td data-label="Сумма долга, ₽" class="list-table__owing-td">
 													<div class="list-table__owing">41 275.03</div>
 												</td>
-												<td class="list-table__date-td">
+												<td data-label="Дата оплаты" class="list-table__date-td">
 													<div class="list-table__date">23.10.2023</div>
 												</td>
-												<td class="list-table__expiration-td">
+												<td data-label="Дней просрочки" class="list-table__expiration-td">
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
@@ -822,6 +840,8 @@
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
+
+															<span>Редактировать</span>
 														</button>
 													</div>
 												</td>
@@ -836,19 +856,19 @@
 														</label>
 													</div>
 												</td>
-												<td class="list-table__agreement-td">
+												<td data-label="Договор" class="list-table__agreement-td">
 													<div class="list-table__agreement">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
 												</td>
-												<td class="list-table__number-td">
+												<td data-label="Номер реализации" class="list-table__number-td">
 													<div class="list-table__number">3Р00913987</div>
 												</td>
-												<td class="list-table__owing-td">
+												<td data-label="Сумма долга, ₽" class="list-table__owing-td">
 													<div class="list-table__owing">41 275.03</div>
 												</td>
-												<td class="list-table__date-td">
+												<td data-label="Дата оплаты" class="list-table__date-td">
 													<div class="list-table__date">23.10.2023</div>
 												</td>
-												<td class="list-table__expiration-td">
+												<td data-label="Дней просрочки" class="list-table__expiration-td">
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
@@ -856,6 +876,8 @@
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
+
+															<span>Редактировать</span>
 														</button>
 													</div>
 												</td>

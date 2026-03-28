@@ -75,6 +75,12 @@
 	{
 		width: 60px;
 	}
+
+
+	.content-lk__search-w 
+	{
+		max-width: 600px;
+	}
     /*------------
 		commit
 	------------*/

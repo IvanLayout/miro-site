@@ -359,12 +359,22 @@
 		width: 100%;
 	}
 
-	.content-lk__chekbox-items
+	.content-lk__chekbox-items,
+	.content-lk__info-items
 	{
 		order: 2;
 		margin-top: 0;
+		width: calc(100% + 20px);
 	}
 
+
+	.content-lk__wrap-items
+	{
+		order: 2;
+		margin-top: 0;
+		width: calc(100% + 40px);
+	}
+	
 
 	
 	.lk-table th,
@@ -407,6 +417,12 @@
 	.lk-table__repeat-link svg
 	{
 		margin-right: 5px;
+	}
+
+
+	.content-lk__top-boxr
+	{
+		flex-wrap: nowrap;
 	}
     /*------------
 		commit
