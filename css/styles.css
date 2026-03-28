@@ -6159,12 +6159,14 @@ button.informations__tabs-btn
 {
 	padding-left: 16px;
 	border-radius: 8px 0 0 8px;
+	border-left: 1px solid #fff;
 }
 
 .list-table td:last-child
 {
 	padding-right: 16px;
 	border-radius: 0 8px 8px 0;
+	border-right: 1px solid #fff;
 }
 
 .list-table td
@@ -6176,7 +6178,17 @@ button.informations__tabs-btn
 	padding-bottom: 16px;
 
 	font-size: 14px;
-	border: 1px solid #fff;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.list-table tr:hover td
+	{
+		border-color: #F52121;
+	}
 }
 
 .list-table td.list-table__name-td
