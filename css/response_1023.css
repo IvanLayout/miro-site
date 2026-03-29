@@ -535,6 +535,11 @@
 		padding: 20px;
 	}
 
+	.documentation__download 
+	{
+		width: calc(100% / 5 - 20px);
+	}
+
 
 	.contacts__info 
 	{

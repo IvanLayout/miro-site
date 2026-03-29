@@ -50,6 +50,12 @@
 	}
 
 
+	.documentation__download
+	{
+		width: calc(100% / 4 - 20px);
+	}
+
+
 	.contacts__info
 	{
 		padding: 25px;
