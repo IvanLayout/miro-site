@@ -1070,6 +1070,9 @@ button
     flex-wrap: wrap;
 
     height: 24px;
+	width: 24px;
+	position: relative;
+	margin: 0 auto;
 }
 
 .header__btn-icon svg
@@ -1085,6 +1088,21 @@ button
 .header__btn._active .header__btn-icon svg
 {
 	color: #F52121;
+}
+
+.header__btn-icon img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+	border-radius: 4px;
 }
 
 .header__btn-name
@@ -1113,6 +1131,7 @@ button
 
 	font-size: 8px;
 	color: #fff;
+	z-index: 1;
 }
 
 
