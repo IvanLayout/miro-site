@@ -5677,6 +5677,7 @@ button.informations__tabs-btn
 	align-items: center;
 	align-content: center;
 	flex-wrap: nowrap;
+	text-decoration: none;
 
 	font: 14px var(--font-family);
 	color: #F52121;
@@ -6343,6 +6344,12 @@ button.informations__tabs-btn
 .modal-info__item .checkbox + .checkbox
 {
 	margin-top: 16px;
+}
+
+
+.change-password-link
+{
+
 }
 
 
