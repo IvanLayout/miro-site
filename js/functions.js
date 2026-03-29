@@ -608,17 +608,17 @@ $(() => {
 
 		const isChecked = $(this).find('input[type="checkbox"]').prop('checked');
 	
-		const table = $(this).closest('.content-lk_check').find('.lk-table_check');
+		const table = $(this).closest('.content-lk_check').find('.table-check');
 
 		table.find('input[type="checkbox"]').not(this).prop('checked', isChecked);
 	});
 
-	$(document).on('change', '.lk-table_check td input[type="checkbox"]', function() {
+	$(document).on('change', '.table-check td input[type="checkbox"]', function() {
 		const table = $(this).closest('.content-lk_check');
 
 		const masterCheckbox = table.find('.checkbox__label_all input[type="checkbox"]');
 		
-		const rowCheckboxes = table.find('.lk-table_check td input[type="checkbox"]');
+		const rowCheckboxes = table.find('.table-check td input[type="checkbox"]');
 
 		const totalCount = rowCheckboxes.length;
 		const checkedCount = rowCheckboxes.filter(':checked').length;
@@ -641,7 +641,7 @@ $(() => {
 	$(document).on('click', '.content-lk__link_clear', function() {
 		const table = $(this).closest('.content-lk_check');
 		const masterCheckbox = table.find('.checkbox__label_all input[type="checkbox"]');
-		const tableChek = table.find('.lk-table_check td input[type="checkbox"]');
+		const tableChek = table.find('.table-check td input[type="checkbox"]');
 
 		masterCheckbox.prop('checked', false);
 		tableChek.prop('checked', false);

@@ -345,6 +345,11 @@
 		column-gap: 24px;
 	}
 
+	.content-lk__chekbox-items::before{
+		width: 100%;
+		left: 0;
+	}
+
 	.content-lk__chekbox-item
 	{
 		margin-left: 0;

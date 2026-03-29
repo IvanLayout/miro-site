@@ -5407,7 +5407,7 @@ button.informations__tabs-btn
 .content-lk__chekbox-items
 {
 	margin-left: -20px;
-	margin-top: -15px;
+	margin-top: -20px;
 
 	align-items: center;
 	align-content: center;
@@ -5461,7 +5461,7 @@ button.informations__tabs-btn
     width: 100%;
 	max-width: 238px;
     height: 32px;
-    padding: 0 44px 0 10px;
+    padding: 0 36px 0 9px;
     border: 1px solid #6E7277;
     border-radius: 6px;
     background: transparent;
@@ -5484,7 +5484,7 @@ button.informations__tabs-btn
     line-height: 30px;
     height: 32px;
 	padding-right: 36px;
-	padding-left: 10px;
+	padding-left: 9px;
     background: transparent;
 	min-width: 132px;
 	font-size: 14px;
@@ -5611,11 +5611,6 @@ button.informations__tabs-btn
 	{
 		color: #D30000;
 	}
-
-	.content-lk__link:hover svg
-	{
-		fill: #D30000;
-	}
 }
 
 .content-lk__link:disabled{
@@ -5723,6 +5718,10 @@ button.informations__tabs-btn
 .content-lk__table
 {
 	margin-top: 10px;
+}
+
+.content-lk__table_no-marg{
+	margin-top: -10px;
 }
 
 .lk-table
