@@ -317,13 +317,13 @@
 												<a href="/">График оплат</a>
 											</div>
 											<div class="aside-lk__link">
-												<a href="/">Договоры и условия</a>
+												<a class="active">Договоры и условия</a>
 											</div>
 											<div class="aside-lk__link">
 												<a href="/">Склады</a>
 											</div>
 											<div class="aside-lk__link">
-												<a class="active">Доставка</a>
+												<a href="/">Доставка</a>
 											</div>
 											<div class="aside-lk__link">
 												<a href="/">Смена пароля</a>
@@ -408,10 +408,10 @@
 										<div class="content-lk__choice-item content-lk__choice-item_big">
 											<button type="button" class="add-adres">
 												<svg>
-													<use xlink:href="images/sprite.svg#marker"></use>
+													<use xlink:href="images/sprite.svg#agreement"></use>
 												</svg>
 
-												<span>Добавить адрес доставки</span>
+												<span>Добавить договор</span>
 											</button>
 										</div>
 									</div>
@@ -449,10 +449,9 @@
 														</label>
 													</div>
 												</th>
-												<th>Адрес</th>
-												<th>ФИО</th>
-												<th>Телефон</th>
-												<th>Комментарий к адресу</th>
+												<th>Договор</th>
+												<th>Стороны</th>
+												<th>Условия</th>
 												<th></th>
 											</tr>
 										</thead>
@@ -462,29 +461,36 @@
 													<div class="checkbox">
 														<label class="checkbox__label">
 															<input type="checkbox" name="">
-			
+
 															<span class="checkbox__text"></span>
 														</label>
 													</div>
 												</td>
-												<td data-label="Адрес">
-													Московская обл., г.о.Люберцы, Проектируемый проезд 40, ЖК 1-й Лермонтовский
+												<td data-label="Договор">
+													<div class="agreement">
+														<div class="agreement__title">Д/с Nº 32 договору Nº 1423/9F от 09.01.2020 г.</div>
+														<div class="agreement__desc">Действителен: с 31.03.2025 по 31.12.2025</div>
+														<div class="agreement__items _flex">
+															<div class="agreement__item">Организация: ООО “Аноним”</div>
+															<div class="agreement__item">Валютный расчет: Российский рубль</div>
+														</div>
+													</div>
 												</td>
-												<td data-label="ФИО">
-													Константин Константинович Константинопольский
+												<td data-label="Стороны">
+													<div class="lk-table__info">
+														<div class="lk-table__info-item">Отстрочка - 90&nbsp;дней</div>
+														<div class="lk-table__info-item">50 %</div>
+													</div>
 												</td>
-												<td data-label="Телефон" class="lk-table__nowrap">
-													+7 963 923-45-88
-												</td>
-												<td data-label="Комментарий к адресу" class="lk-table__comment">
+												<td data-label="Условия" class="lk-table__conditions">
 													Также как выбранный нами инновационный путь предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач.
 												</td>
 												<td class="lk-table__last-td">
 													<button type="button" class="lk-table__btn">
 														<svg>
-															<use xlink:href="images/sprite.svg#edit"></use>
+															<use xlink:href="images/sprite.svg#ic_download"></use>
 														</svg>
-														<span>Редактировать</span>
+														<span>Скачать</span>
 													</button>
 												</td>
 											</tr>
@@ -498,24 +504,31 @@
 														</label>
 													</div>
 												</td>
-												<td data-label="Адрес">
-													Санкт-Петербург, ул. Невский пр., д. 10
+												<td data-label="Договор">
+													<div class="agreement">
+														<div class="agreement__title">Д/с Nº 33 договору Nº 1424/9F от 10.02.2020 г.</div>
+														<div class="agreement__desc">Действителен: с 01.04.2025 по 31.12.2025</div>
+														<div class="agreement__items _flex">
+															<div class="agreement__item">Организация: ООО “Технология”</div>
+															<div class="agreement__item">Валютный расчет: Евро</div>
+														</div>
+													</div>
 												</td>
-												<td data-label="ФИО">
-													Алексей Сергеевич Петров
+												<td data-label="Стороны">
+													<div class="lk-table__info">
+														<div class="lk-table__info-item">Отстрочка - 60&nbsp;дней</div>
+														<div class="lk-table__info-item">40 %</div>
+													</div>
 												</td>
-												<td data-label="Телефон" class="lk-table__nowrap">
-													+7 911 654-32-10
-												</td>
-												<td data-label="Комментарий к адресу" class="lk-table__comment">
-													В результате глубокого анализа, мы пришли к выводу, что необходимо усилить наши позиции на рынке.
+												<td data-label="Условия" class="lk-table__conditions">
+													Постоянное стремление к совершенствованию процессов способствует укреплению отношений со всеми заинтересованными сторонами.
 												</td>
 												<td class="lk-table__last-td">
 													<button type="button" class="lk-table__btn">
 														<svg>
-															<use xlink:href="images/sprite.svg#edit"></use>
+															<use xlink:href="images/sprite.svg#ic_download"></use>
 														</svg>
-														<span>Редактировать</span>
+														<span>Скачать</span>
 													</button>
 												</td>
 											</tr>
@@ -529,24 +542,31 @@
 														</label>
 													</div>
 												</td>
-												<td data-label="Адрес">
-													Калуга, ул. Мира, д. 5
+												<td data-label="Договор">
+													<div class="agreement">
+														<div class="agreement__title">Д/с Nº 34 договору Nº 1425/9F от 15.03.2020 г.</div>
+														<div class="agreement__desc">Действителен: с 15.04.2025 по 30.11.2025</div>
+														<div class="agreement__items _flex">
+															<div class="agreement__item">Организация: ЗАО “Инновации”</div>
+															<div class="agreement__item">Валютный расчет: Доллар США</div>
+														</div>
+													</div>
 												</td>
-												<td data-label="ФИО">
-													Мария Ивановна Сидорова
+												<td data-label="Стороны">
+													<div class="lk-table__info">
+														<div class="lk-table__info-item">Отстрочка - 30&nbsp;дней</div>
+														<div class="lk-table__info-item">30 %</div>
+													</div>
 												</td>
-												<td data-label="Телефон" class="lk-table__nowrap">
-													+7 495 123-45-67
-												</td>
-												<td data-label="Комментарий к адресу" class="lk-table__comment">
-													Обсуждая новые подходы, мы заметили, что креативность становится ключевым фактором успеха.
+												<td data-label="Условия" class="lk-table__conditions">
+													Наша команда активно исследует новые горизонты, что позволяет нам оставаться конкурентоспособными на рынке.
 												</td>
 												<td class="lk-table__last-td">
 													<button type="button" class="lk-table__btn">
 														<svg>
-															<use xlink:href="images/sprite.svg#edit"></use>
+															<use xlink:href="images/sprite.svg#ic_download"></use>
 														</svg>
-														<span>Редактировать</span>
+														<span>Скачать</span>
 													</button>
 												</td>
 											</tr>
@@ -560,24 +580,31 @@
 														</label>
 													</div>
 												</td>
-												<td data-label="Адрес">
-													Новосибирск, проспект Дзержинского, д. 8
+												<td data-label="Договор">
+													<div class="agreement">
+														<div class="agreement__title">Д/с Nº 35 договору Nº 1426/9F от 20.04.2020 г.</div>
+														<div class="agreement__desc">Действителен: с 01.05.2025 по 31.10.2025</div>
+														<div class="agreement__items _flex">
+															<div class="agreement__item">Организация: ИП “Партнер”</div>
+															<div class="agreement__item">Валютный расчет: Российский рубль</div>
+														</div>
+													</div>
 												</td>
-												<td data-label="ФИО">
-													Дмитрий Андреевич Ковалев
+												<td data-label="Стороны">
+													<div class="lk-table__info">
+														<div class="lk-table__info-item">Отстрочка - 45&nbsp;дней</div>
+														<div class="lk-table__info-item">60 %</div>
+													</div>
 												</td>
-												<td data-label="Телефон" class="lk-table__nowrap">
-													+7 923 456-78-90
-												</td>
-												<td data-label="Комментарий к адресу" class="lk-table__comment">
-													Необходимо учитывать, что инновации открывают новые горизонты и возможности для бизнеса.
+												<td data-label="Условия" class="lk-table__conditions">
+													Эффективное взаимодействие и прозрачность в процессах создают долгосрочные преимущества для всех участников.
 												</td>
 												<td class="lk-table__last-td">
 													<button type="button" class="lk-table__btn">
 														<svg>
-															<use xlink:href="images/sprite.svg#edit"></use>
+															<use xlink:href="images/sprite.svg#ic_download"></use>
 														</svg>
-														<span>Редактировать</span>
+														<span>Скачать</span>
 													</button>
 												</td>
 											</tr>
@@ -591,24 +618,31 @@
 														</label>
 													</div>
 												</td>
-												<td data-label="Адрес">
-													Екатеринбург, ул. Ленина, д. 12
+												<td data-label="Договор">
+													<div class="agreement">
+														<div class="agreement__title">Д/с Nº 36 договору Nº 1427/9F от 25.05.2020 г.</div>
+														<div class="agreement__desc">Действителен: с 15.06.2025 по 31.12.2025</div>
+														<div class="agreement__items _flex">
+															<div class="agreement__item">Организация: ООО “Будущее”</div>
+															<div class="agreement__item">Валютный расчет: Евро</div>
+														</div>
+													</div>
 												</td>
-												<td data-label="ФИО">
-													Ольга Николаевна Федорова
+												<td data-label="Стороны">
+													<div class="lk-table__info">
+														<div class="lk-table__info-item">Отстрочка - 75&nbsp;дней</div>
+														<div class="lk-table__info-item">55 %</div>
+													</div>
 												</td>
-												<td data-label="Телефон" class="lk-table__nowrap">
-													+7 912 345-67-89
-												</td>
-												<td data-label="Комментарий к адресу" class="lk-table__comment">
-													Важно отметить, что знания и опыт команды играют решающую роль в достижении поставленных целей.
+												<td data-label="Условия" class="lk-table__conditions">
+													Инновационные решения, которые мы внедряем, направлены на создание более устойчивой и эффективной бизнес-среды.
 												</td>
 												<td class="lk-table__last-td">
 													<button type="button" class="lk-table__btn">
 														<svg>
-															<use xlink:href="images/sprite.svg#edit"></use>
+															<use xlink:href="images/sprite.svg#ic_download"></use>
 														</svg>
-														<span>Редактировать</span>
+														<span>Скачать</span>
 													</button>
 												</td>
 											</tr>

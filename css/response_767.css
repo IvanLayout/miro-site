@@ -1103,15 +1103,15 @@
 	}
 
 
-	.lk-table td.lk-table__edit-td{
+	.lk-table td.lk-table__last-td{
 		border-top: none;
 	}
 
-	.lk-table td.lk-table__edit-td::before{
+	.lk-table td.lk-table__last-td::before{
 		display: none;
 	}
 
-	.lk-table__edit{
+	.lk-table__btn{
 		display: inline-block;
 		width: auto;
 		height: 48px;
@@ -1126,14 +1126,14 @@
 		border-radius: 6px;
 	}
 
-	.lk-table__edit svg{
+	.lk-table__btn svg{
 		position: absolute;
 		left: 22px;
 		top: 50%;
 		margin-top: -12px;
 	}
 
-	.lk-table__edit span{
+	.lk-table__btn span{
 		display: block;
 	}
 

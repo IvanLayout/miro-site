@@ -105,6 +105,12 @@
 		margin-left: 20px;
 	}
 
+
+	.lk-table__last-td {
+		width: 60px;
+	}
+
+
 	.footer__coll {
 		width: 332px;
 	}

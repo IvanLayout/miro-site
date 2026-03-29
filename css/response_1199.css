@@ -304,6 +304,15 @@
 	}
 
 
+	.agreement__desc{
+		margin-top: 8px;
+	}
+
+	.agreement__items{
+		margin-top: 2px;
+	}
+
+
 	.footer__lk
 	{
 		margin-left: -10px;

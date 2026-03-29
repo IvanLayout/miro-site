@@ -5857,11 +5857,15 @@ button.informations__tabs-btn
 	width: 19%;
 }
 
-.lk-table__edit-td{
+.lk-table__conditions{
+	width: 27%;
+}
+
+.lk-table__last-td{
 	width: 66px;
 }
 
-.lk-table__edit{
+.lk-table__btn{
 	display: block;
 	width: 24px;
 	height: 24px;
@@ -5869,19 +5873,19 @@ button.informations__tabs-btn
 	transition: color .2s linear;
 }
 
-.lk-table__edit svg{
+.lk-table__btn svg{
 	display: block;
 	width: 24px;
 	height: 24px;
 	fill: currentColor;
 }
 
-.lk-table__edit span{
+.lk-table__btn span{
 	display: none;
 }
 
 @media (any-hover: hover){
-	.lk-table__edit:hover{
+	.lk-table__btn:hover{
 		color: #D30000;
 	}
 }
@@ -8259,6 +8263,35 @@ button.informations__tabs-btn
 	.add-adres:hover{
 		color: #D30000;
 	}
+}
+
+
+.lk-table__info-item + .lk-table__info-item{
+	margin-top: 6px;
+}
+
+.agreement__desc{
+	margin-top: 10px;
+
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.3;
+	color: #6E7277;
+}
+
+.agreement__items{
+	margin: 4px 0 0 -6px;
+}
+
+.agreement__item{
+	margin: 6px 0 0 6px;
+	background: #EFEFF2;
+	border-radius: 4px;
+
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.3;
+	padding: 2px 4px;
 }
 
 
