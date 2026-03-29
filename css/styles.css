@@ -5549,7 +5549,7 @@ button.informations__tabs-btn
 
 .content-lk__wrap-items
 {
-	margin-left: -40px;
+	margin-left: -20px;
 	margin-top: -20px;
 }
 
@@ -5562,7 +5562,7 @@ button.informations__tabs-btn
 .content-lk__wrap-item
 {
 	margin-top: 20px;
-	margin-left: 40px;
+	margin-left: 20px;
 }
 
 .content-lk__wrap-item._pc-none
@@ -5570,7 +5570,7 @@ button.informations__tabs-btn
 	display: none;
 }
 
-.content-lk-link
+.content-lk__link
 {
 	position: relative;
 	display: flex;
@@ -5586,18 +5586,12 @@ button.informations__tabs-btn
 	transition: color .2s linear;
 }
 
-.content-lk-link._dark
+.content-lk__link._dark
 {
 	color: #363B3F;
 }
 
-.content-lk-link._non-active
-{
-	color: #92959C;
-	pointer-events: none;
-}
-
-.content-lk-link svg
+.content-lk__link svg
 {
 	flex-shrink: 0;
 	display: block;
@@ -5607,31 +5601,26 @@ button.informations__tabs-btn
 
 	margin-right: 6px;
 
-	fill: #F52121;
+	fill: currentColor;
 	transition: fill .2s linear;
-}
-
-.content-lk-link._dark svg
-{
-	fill: #363B3F;
-}
-
-.content-lk-link._non-active svg
-{
-	fill: #92959C;
 }
 
 @media (any-hover: hover)
 {
-	.content-lk-link:hover
+	.content-lk__link:hover
 	{
 		color: #D30000;
 	}
 
-	.content-lk-link:hover svg
+	.content-lk__link:hover svg
 	{
 		fill: #D30000;
 	}
+}
+
+.content-lk__link:disabled{
+	color: #92959C;
+	cursor: default;
 }
 
 
@@ -8182,32 +8171,6 @@ button.informations__tabs-btn
 }
 
 
-.add-adres{
-	font-size: 14px;
-	line-height: 24px;
-	color: #F52121;
-	text-decoration: none;
-	padding-left: 30px;
-	display: inline-block;
-	position: relative;
-}
-
-.add-adres svg{
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 24px;
-	height: 24px;
-	fill: currentColor;
-}
-
-@media (any-hover: hover){
-	.add-adres:hover{
-		color: #D30000;
-	}
-}
-
-
 .lk-table__info-item + .lk-table__info-item{
 	margin-top: 6px;
 }
@@ -8234,6 +8197,19 @@ button.informations__tabs-btn
 	font-size: 12px;
 	line-height: 1.3;
 	padding: 2px 4px;
+}
+
+
+.choice-action{
+	display: none;
+}
+
+.choice-action._show{
+	display: block;
+}
+
+.choice-action._pc-none{
+	display: none;
 }
 
 

@@ -354,10 +354,10 @@
 	}
 
 
-	.content-lk__wrap
+	/* .content-lk__wrap
 	{
 		flex-wrap: wrap;
-	}
+	} */
 
 	.content-lk__wrap._var2 .content-lk__nav
 	{
@@ -377,12 +377,12 @@
 	}
 
 
-	.content-lk__wrap-items
+	/* .content-lk__wrap-items
 	{
 		order: 2;
 		margin-top: 0;
 		width: calc(100% + 40px);
-	}
+	} */
 	
 
 	

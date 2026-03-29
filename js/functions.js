@@ -595,6 +595,60 @@ $(() => {
 			parent.find('.file-selection__path').removeClass('_active')
 		}
 	})
+
+	// Выбор всех чекбоксов
+	$(document).on('change', '.checkbox__label_all', function() {
+		if ($(this).find('input[type="checkbox"]').prop('checked')) {
+			$('.choice-action').addClass('_show')
+			$('.content-lk__link_add').prop('disabled', true)
+		} else {
+			$('.choice-action').removeClass('_show')
+			$('.content-lk__link_add').prop('disabled', false)
+		}
+
+		const isChecked = $(this).find('input[type="checkbox"]').prop('checked');
+	
+		const table = $(this).closest('.content-lk_check').find('.lk-table_check');
+
+		table.find('input[type="checkbox"]').not(this).prop('checked', isChecked);
+	});
+
+	$(document).on('change', '.lk-table_check td input[type="checkbox"]', function() {
+		const table = $(this).closest('.content-lk_check');
+
+		const masterCheckbox = table.find('.checkbox__label_all input[type="checkbox"]');
+		
+		const rowCheckboxes = table.find('.lk-table_check td input[type="checkbox"]');
+
+		const totalCount = rowCheckboxes.length;
+		const checkedCount = rowCheckboxes.filter(':checked').length;
+
+		if (checkedCount > 0) {
+			$('.choice-action').addClass('_show')
+			$('.content-lk__link_add').prop('disabled', true)
+		} else {
+			$('.choice-action').removeClass('_show')
+			$('.content-lk__link_add').prop('disabled', false)
+		}
+
+		if (totalCount === checkedCount) {
+			masterCheckbox.prop('checked', true);
+		} else {
+			masterCheckbox.prop('checked', false);
+		}
+	});
+
+	$(document).on('click', '.content-lk__link_clear', function() {
+		const table = $(this).closest('.content-lk_check');
+		const masterCheckbox = table.find('.checkbox__label_all input[type="checkbox"]');
+		const tableChek = table.find('.lk-table_check td input[type="checkbox"]');
+
+		masterCheckbox.prop('checked', false);
+		tableChek.prop('checked', false);
+
+		$('.choice-action').removeClass('_show')
+		$('.content-lk__link_add').prop('disabled', false)
+	});
 })
 
 

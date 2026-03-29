@@ -363,7 +363,7 @@
 								</div>
 							</aside>
 
-							<div class="content-lk">
+							<div class="content-lk content-lk_check">
 								<div class="content-lk__top _flex">
 									<h1 class="main-title">Управление заказами</h1>
 
@@ -404,9 +404,39 @@
 								</div>
 
 								<div class="content-lk__wrap _border-bot _flex">
-									<div class="content-lk__choice-items _flex">
+									<div class="content-lk__wrap-items _flex">
+										<div class="content-lk__wrap-item _delete-item choice-action">
+											<button type="button" data-content="#modal-add-user" class="content-lk__link modal-btn">
+												<svg>
+													<use xlink:href="images/sprite.svg#ic_delete"></use>
+												</svg>
+
+												<span>Удалить выбранные</span>
+											</button>
+										</div>
+
+										<div class="content-lk__wrap-item _item-wl choice-action _pc-none">
+											<div class="checkbox">
+												<label class="checkbox__label checkbox__label_all">
+													<input type="checkbox" name="">
+
+													<span class="checkbox__text">Выбрать все</span>
+												</label>
+											</div>
+										</div>
+
+										<div class="content-lk__wrap-item _item-wr choice-action">
+											<button type="button" class="content-lk__link content-lk__link_clear _dark">
+												<svg>
+													<use xlink:href="images/sprite.svg#ic_clear"></use>
+												</svg>
+
+												<span>Очистить выбор</span>
+											</button>
+										</div>
+
 										<div class="content-lk__choice-item content-lk__choice-item_big">
-											<button type="button" class="add-adres">
+											<button type="button" class="content-lk__link content-lk__link_add">
 												<svg>
 													<use xlink:href="images/sprite.svg#agreement"></use>
 												</svg>
@@ -437,12 +467,12 @@
 								</div>
 
 								<div class="content-lk__table">
-									<table class="lk-table">
+									<table class="lk-table lk-table_check">
 										<thead>
 											<tr>
 												<th class="lk-table__checkbox-th">
 													<div class="checkbox">
-														<label class="checkbox__label">
+														<label class="checkbox__label checkbox__label_all">
 															<input type="checkbox" name="">
 			
 															<span class="checkbox__text"></span>
