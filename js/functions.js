@@ -327,7 +327,7 @@ $(() => {
 
 	// Закрываем всплывашку при клике за её пределами
 	$(document).click((e) => {
-		if ( !e.target.closest('.mini-modal') ) {
+		if ( !e.target.closest('.mini-modal') || $(e.target).hasClass('mini-modal-notif') ) {
 			$('.mini-modal__modal, .mini-modal__btn').removeClass('_active')
 			$('body').removeClass('_lock-mini')
 
