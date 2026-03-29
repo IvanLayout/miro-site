@@ -486,16 +486,14 @@
 	}
 
 
+	.modal
+	{
+		padding: 50px 16px 16px;
+	}
+
 	.modal__title
 	{
 		font-size: 20px;
-	}
-
-	.modal-save
-	{
-		padding-left: 16px;
-		padding-right: 16px;
-		padding-bottom: 30px;
 	}
 
 
@@ -775,24 +773,32 @@
 	}
 
 
-	.modal-order
-	{
-		padding: 16px;
-	}
 
-	.modal-order__title
+	.modal-info__title
 	{
 		font-weight: 700;
 	}
 
-	.modal-order__val
+	.modal-info__val
 	{
 		font-size: 24px;
 	}
 
-	.modal-order__table td.modal-order__table-name
+	.modal-info__table td.modal-info__table-name
 	{
 		width: 200px;
+	}
+
+	.modal .form__line 
+	{
+		margin-bottom: 10px;
+	}
+
+
+	.fancybox__content > .carousel__button.is-close
+	{
+		top: 15px;
+		right: 15px;
 	}
 
 

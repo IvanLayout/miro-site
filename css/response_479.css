@@ -377,7 +377,7 @@
 	}
 	
 
-	.modal-order .informations__tabs
+	.modal-info .informations__tabs
     {
         overflow: hidden;
         overflow-x: auto;
@@ -392,30 +392,42 @@
 		display: block;
     }
 
-    .modal-order .informations__tabs::-webkit-scrollbar
+    .modal-info .informations__tabs::-webkit-scrollbar
     {
         /* display: none; */
     }
 
-	.modal-order .tabs__wrap
+	.modal-info .tabs__wrap
 	{
 		width: calc(100% + 32px);
 	}
 
-	.modal-order__val
+	.modal-info__val
 	{
 		font-size: 20px;
 	}
 
-	.modal-order__table th,
-	.modal-order__table td
+	.modal-info__table th,
+	.modal-info__table td
 	{
 		padding-left: 15px;
 	}
 
-	.modal-order__table td.modal-order__table-name 
+	.modal-info__table td.modal-info__table-name 
 	{
 		width: 135px;
+	}
+
+
+	.fancybox__slide
+	{
+		padding: 10px;
+	}
+
+	.modal-edit .informations__tabs-btn 
+	{
+		padding-left: 6px;
+		padding-right: 6px;
 	}
 
 
