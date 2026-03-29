@@ -81,6 +81,11 @@
 	{
 		max-width: 600px;
 	}
+
+	.content-lk__top-boxr .inner-search__bord
+	{
+		min-width: 100%;
+	}
     /*------------
 		commit
 	------------*/

@@ -565,10 +565,16 @@
 		width: calc(100% - 20px);
 		background: none;
 		margin-top: 36px;
-		margin-bottom: 20px;
+		/* margin-bottom: 20px; */
 		padding-top: 0;
 		padding: 0;
 	}
+
+	.content-lk__wrap-item + .content-lk__wrap-item._add-user
+	{
+		margin-bottom: 20px;
+	}
+
 
 	.content-lk__wrap-item
 	{
