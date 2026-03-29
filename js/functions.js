@@ -626,7 +626,7 @@ $(() => {
 		}
 	});
 
-	$(document).on('click', '.content-lk__link_clear', function() {
+	$('body').on('click', '.content-lk__link_clear', function() {
 		const table = $(this).closest('.content-lk_check');
 		const masterCheckbox = table.find('.checkbox__label_all input[type="checkbox"]');
 		const tableChek = table.find('.table-check td input[type="checkbox"]');
@@ -637,6 +637,15 @@ $(() => {
 		$('.choice-action').removeClass('_show')
 		$('.content-lk__link_add').prop('disabled', false)
 	});
+
+
+	$('body').on('click', '.mini-modal-notif__delete', function(e) {
+		e.preventDefault()
+
+		setTimeout(() => {
+			$(this).closest('.mini-modal-notif__item').remove()
+		}, 10);
+	})
 })
 
 
