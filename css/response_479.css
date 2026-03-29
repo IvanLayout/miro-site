@@ -437,6 +437,12 @@
 		padding-top: 37px;
 		padding-bottom: 30px;
 	}
+
+
+	.main-slider__slide img
+	{
+		aspect-ratio: 355 / 575;
+	}
     /*------------
 		commit
 	------------*/
