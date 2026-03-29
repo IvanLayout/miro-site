@@ -3283,28 +3283,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-left: 10px;
 }
 
-.product-info__cart button
-{
-	min-width: 128px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-.product-info__cart button span + span 
-{
-    display: none;
-}
-
-.product-info__cart button._active span 
-{
-    display: none;
-}
-
-.product-info__cart button._active span + span 
-{
-    display: block;
-}
-
 .product-info__cart svg
 {
 	display: none;
