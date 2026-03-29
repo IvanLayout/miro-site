@@ -2242,11 +2242,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 /*--------------
     Fancybox
 --------------*/
-.compensate-for-scrollbar
-{
-    padding-right: var(--scroll_width) !important;
-}
-
 .fancybox__backdrop
 {
     background: rgba(0, 0, 0, .6);
@@ -2257,50 +2252,26 @@ input[type=checkbox]:checked + .checkbox__text::after
     color: #282828;
 }
 
-.fancybox__slide
+.fancybox__slide.has-html
 {
     padding: 16px;
+	scrollbar-width: thin;
 }
 
-.fancybox__slide.has-video
+.fancybox__slide.has-close-btn{
+	padding: 16px;
+}
+
+.f-html{
+	font: inherit;
+}
+
+.f-button.is-close-button
 {
-    padding-top: 60px;
-}
+    top: 10px;
+    right: 10px;
 
-html.with-fancybox{
-	overflow: hidden;
-}
-
-.carousel__button.is-prev,
-.carousel__button.is-next{
-	top: 0;
-	transform: none;
-	height: 50%;
-	top: 0;
-	height: 100%;
-	width: 20%;
-}
-
-.fancybox__nav .carousel__button.is-prev{
-	left: 0;
-	text-align: left;
-	justify-content: flex-start;
-	padding-left: 40px;
-}
-
-.fancybox__nav .carousel__button.is-next{
-	right: 0;
-	text-align: right;
-	justify-content: flex-end;
-	padding-right: 40px;
-}
-
-.fancybox__content > .carousel__button.is-close
-{
-    top: 25px;
-    right: 25px;
-
-    color: #282828;
+    color: #6E7277;
 
     display: flex;
     justify-content: center;
@@ -2308,8 +2279,8 @@ html.with-fancybox{
     align-items: center;
     flex-wrap: wrap;
 
-    width: 21px;
-    height: 21px;
+    width: 24px;
+    height: 24px;
     padding: 0;
 
     border: none;
@@ -2322,50 +2293,21 @@ html.with-fancybox{
 
 @media (any-hover: hover)
 {
-    .fancybox__content > .carousel__button.is-close:hover
+    .f-button.is-close-button:hover
     {
-        color: #00684D;
+        color: #363B3F;
     }
 }
 
-.fancybox__content > .carousel__button.is-close svg
+.f-button.is-close-button svg
 {
-    width: 17px;
-    height: 17px;
+    width: 21px;
+    height: 21px;
 
     outline: none !important;
 
-    fill: none;
-    filter: none;
-    stroke: currentColor;
-    stroke-width: 1px;
+    fill: currentColor;
 }
-
-.has-video .fancybox__content > .carousel__button.is-close
-{
-    top: -26px;
-    right: 0;
-
-    color: #FFF;
-}
-
-.fancybox__content :focus
-{
-    outline: none !important;
-    box-shadow: none !important;
-}
-
-.fancybox__button--thumbs,
-.fancybox__button--zoom
-{
-    display: none;
-}
-
-.fancybox__thumbs
-{
-    display: none;
-}
-
 
 
 /*------------------------
@@ -8515,6 +8457,10 @@ button.informations__tabs-btn
 
     border-radius: 8px;
     background: #FFF;
+}
+
+.modal__box{
+	width: 100%;
 }
 
 .modal__title{

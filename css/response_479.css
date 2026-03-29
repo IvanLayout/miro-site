@@ -389,17 +389,17 @@
         padding-left: 16px;
 
         white-space: nowrap;
-		display: block;
+		display: flex;
     }
 
     .modal-info .informations__tabs::-webkit-scrollbar
     {
-        /* display: none; */
+        display: none;
     }
 
 	.modal-info .tabs__wrap
 	{
-		width: calc(100% + 32px);
+		flex-shrink: 0;
 	}
 
 	.modal-info__val

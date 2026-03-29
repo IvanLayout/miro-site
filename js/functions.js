@@ -221,60 +221,73 @@ $(() => {
 
 
 	// Fancybox
-	Fancybox.defaults.autoFocus = false
-	Fancybox.defaults.dragToClose = false
-	Fancybox.defaults.placeFocusBack = false
+	const myCloseBtn = '<button data-fancybox-close class="f-button is-close-button" title="Close"><svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L16 16" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/><path d="M16 1L1 16" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/></svg></button>';
 
-	Fancybox.defaults.template = {
-		closeButton: '<svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L16 16" stroke-linecap="round"/><path d="M16 1L1 16" stroke-linecap="round"/></svg>',
-	}
-
-	// Всплывающие окна
-	$('body').on('click', '.modal-btn', function (e) {
-		e.preventDefault()
-
-		Fancybox.close()
-
-		Fancybox.show([{
-			src: $(this).data('content'),
-			type: 'inline'
-		}],
-		{
-			on: {
-				init: (fancyboxRef) => {
-					if ( $(this).attr('data-modal-big') ) {
-						$('body').addClass('_big-modal')
-					}
-				},
-				destroy: (fancyboxRef) => {
-					if ( $(this).attr('data-modal-big') ) {
-						$('body').removeClass('_big-modal')
-					}
-
-					$('.modal').find('video').each(function () {
-						this.pause()
-					})
-				},
-			},
-		})
-	})
-
-	$('body').on('click', '.modal-close', function (e) {
-		e.preventDefault()
-
-		Fancybox.close()
-	})
-
-
-	// Увеличение картинки
-	Fancybox.bind('.fancy-img', {
-		Image: {
-			zoom: false,
+	const commonOptions = {
+		autoFocus: false,
+		dragToClose: false,
+		placeFocusBack: false,
+		
+		// Налаштування для інлайнового контенту (HTML модалки)
+		Html: {
+			// Замінюємо шаблон кнопки безпосередньо в модулі Html
+			tpl: myCloseBtn
 		},
-		Thumbs: {
-			autoStart: false,
+		
+		// Налаштування для галерей (зображення)
+		Toolbar: {
+			display: {
+				right: ["close"],
+			},
+			items: {
+				close: {
+					tpl: myCloseBtn
+				}
+			}
 		}
-	})
+	};
+
+	// Відкриття модалок
+	$(document).on('click', '.modal-btn', function (e) {
+		e.preventDefault();
+
+		Fancybox.close();
+	
+		const target = $(this).attr('data-content');
+		const isBig = $(this).attr('data-modal-big') !== undefined;
+
+		setTimeout(() => {
+			Fancybox.show([{
+				src: target,
+				type: 'inline'
+			}], {
+				...commonOptions,
+				on: {
+					reveal: () => {
+						if (isBig) $('body').addClass('_big-modal');
+					},
+					destroy: () => {
+						$('body').removeClass('_big-modal');
+						$('.modal video').each(function () { this.pause(); });
+					}
+				}
+			});
+		}, 10);
+	});
+
+	// 2. Закриття через кнопку .modal-close
+	$('body').on('click', '.modal-close', function (e) {
+		e.preventDefault();
+		Fancybox.close();
+	});
+
+	// Для картинок
+	Fancybox.bind('.fancy-img', {
+		...commonOptions,
+		Carousel: {
+			Thumbs: false,
+		},
+	});
 
 
 	// Аккордион простой моб
