@@ -979,9 +979,43 @@
 	}
 
 
+	._lock-mini{
+		overflow: hidden;
+	}
+
+	.mini-modal-notif{
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		overflow-y: auto;
+		padding: 30px 10px;
+		backdrop-filter: blur(10px);
+		background: rgba(146, 149, 156, 0.8);
+		z-index: 120;
+		display: flex;
+	}
+
+	.mini-modal-notif__wrap{
+		padding: 16px;
+		margin: auto;
+		width: 100%;
+	}
+
 	.mini-modal-notif__name
 	{
 		font-size: 18px;
+	}
+
+	.mini-modal-notif__bot{
+		position: sticky;
+		bottom: -30px;
+		background: #F5F7FA;
+		padding: 20px 0 16px;
+		margin-top: 0;
+		margin-bottom: -16px;
 	}
 
 

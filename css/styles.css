@@ -4893,8 +4893,11 @@ button.informations__tabs-btn
 .mini-modal-notif
 {
 	width: 572px;
+}
+
+.mini-modal-notif__wrap{
 	background: #F5F7FA;
-	padding: 27px 36px 63px;
+	padding: 27px 36px;
 	border-radius: 8px;
 }
 
@@ -4960,9 +4963,12 @@ button.informations__tabs-btn
 	font-size: 14px;
 }
 
+.mini-modal-notif__bot{
+	margin-top: 20px;
+}
+
 .mini-modal-notif__close
 {
-	margin-top: 20px;
 	width: 100%;
 }
 
