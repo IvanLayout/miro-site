@@ -1,5 +1,11 @@
 @media (max-width: 767px)
 {
+
+	.storage__sector-select .select-wrap
+	{
+		display: block;
+	}
+
 	.page-top 
 	{
 		padding-top: 15px;

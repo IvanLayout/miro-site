@@ -1927,6 +1927,12 @@ input[type=checkbox]:checked + .checkbox__text::after
     position: relative;
 }
 
+.storage__sector-select .select-wrap,
+.storage__sector-box .select-wrap
+{
+	display: inline-block;
+}
+
 .select-wrap select
 {
     position: absolute;
@@ -1982,6 +1988,26 @@ input[type=checkbox]:checked + .checkbox__text::after
 	background: #fff;
 
     transition: border .2s linear, color .2s linear;
+}
+
+.storage__sector-select .select-wrap .nice-select .current
+{
+	font-size: 14px;
+	height: 42px;
+	line-height: 40px;
+	padding-right: 40px;
+}
+
+.storage__sector-box .select-wrap .nice-select .current
+{
+	font-size: 14px;
+	height: 34px;
+	line-height: 34px;
+	padding-right: 12px;
+	padding-left: 5px;
+	border: none;
+	min-width: 44px;
+	border: none;
 }
 
 .checkout .select-wrap .nice-select .current
@@ -2088,6 +2114,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 	border-radius: 6px;
 
     transition: color .2s linear, background .2s linear;
+}
+
+.storage__sector-select .select-wrap .nice-select .list .list_item,
+.storage__sector-box .select-wrap .nice-select .list .list_item
+{
+	font-size: 14px;
 }
 
 .select-wrap .nice-select .list .list_item:empty
@@ -5676,6 +5708,16 @@ button.informations__tabs-btn
     background: url(../images/ic_double_arrow.svg) 50% no-repeat;
 }
 
+.storage__sector-select .select-wrap.select-wrap_double-arrow .nice-select .current:after
+{
+	right: 16px;
+}
+
+.storage__sector-box .select-wrap.select-wrap_double-arrow .nice-select .current:after
+{
+	right: 0;
+}
+
 .content-lk__nav-count .select-wrap .nice-select .list
 {
 	top: calc(100% + 10px);
@@ -8183,6 +8225,38 @@ button.informations__tabs-btn
 	color: #363B3F;
 
 	margin-bottom: 20px;
+}
+
+
+.storage__sector-select
+{
+	margin-top: 20px;
+}
+
+.storage__sector-block
+{
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.storage__sector-box
+{
+	border-radius: 6px;
+	border: 1px solid #92959C;
+	padding: 5px;
+}
+
+.storage__sector-days
+{
+	margin-left: 16px;
+	background: #92959C;
+	border-radius: 4px;
+	padding-left: 16px;
+	padding-right: 16px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	color: #fff;
 }
 
 
