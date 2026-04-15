@@ -61,11 +61,11 @@ $(() => {
 		if ($(this).hasClass('_active')){
 			$(this).removeClass('_active')
 			$('.header-lk__links-wrap').removeClass('_show')
-			$('.overlay-catalog').removeClass('_show')
+			$('body').removeClass('_lock-add')
 		} else {
 			$(this).addClass('_active')
 			$('.header-lk__links-wrap').addClass('_show')
-			$('.overlay-catalog').addClass('_show')
+			$('body').addClass('_lock-add')
 		}
 	})
 
@@ -77,11 +77,11 @@ $(() => {
 		if ($(this).hasClass('_active')){
 			$(this).removeClass('_active')
 			$('.aside-lk').removeClass('_show')
-			$('.overlay-catalog').removeClass('_show')
+			$('body').removeClass('_lock-add')
 		} else {
 			$(this).addClass('_active')
 			$('.aside-lk').addClass('_show')
-			$('.overlay-catalog').addClass('_show')
+			$('body').addClass('_lock-add')
 		}
 	})
 
@@ -350,13 +350,11 @@ $(() => {
 		if ( !e.target.closest('.header-lk__links-wrap') && !e.target.closest('.header-lk__open') ) {
 			$('.header-lk__open').removeClass('_active')
 			$('.header-lk__links-wrap').removeClass('_show')
-			$('.overlay-catalog').removeClass('_show')
 		}
 
 		if ( !e.target.closest('.aside-lk') && !e.target.closest('.aside-open') ) {
 			$('.aside-open').removeClass('_active')
 			$('.aside-lk').removeClass('_show')
-			$('.overlay-catalog').removeClass('_show')
 		}
 	})
 

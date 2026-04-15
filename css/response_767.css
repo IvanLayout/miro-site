@@ -80,10 +80,16 @@
 	}
 
 
+	.header-lk__links-wrap
+	{
+		height: calc(100vh - 178px);
+	}
+
+
 	.aside-lk
 	{
 		top: 114px;
-		min-height: calc(100vh - 114px);
+		height: calc(100vh - 178px);
 	}
 
 

@@ -16,6 +16,11 @@
 		height: 23px;
 	}
 
+	.header-lk__links-wrap
+	{
+		height: calc(100vh - 172px);
+	}
+
 	.product-info__title
 	{
 		font-size: 16px;
@@ -249,7 +254,7 @@
 	.aside-lk 
 	{
 		top: 108px;
-		min-height: calc(100vh - 108px);
+		height: calc(100vh - 172px);
 	}
 
 
