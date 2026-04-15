@@ -2095,9 +2095,12 @@ input[type=checkbox]:checked + .checkbox__text::after
     display: none;
 }
 
-.select-wrap .nice-select .list .list_item:hover
+@media (any-hover: hover)
 {
-	background: #F5F7FA;
+	.select-wrap .nice-select .list .list_item:hover
+	{
+		background: #F5F7FA;
+	}
 }
 
 .select-wrap .nice-select .list .list_item.selected
@@ -2741,16 +2744,13 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin: -6px 0 0 -6px;
 }
 
-.product-images .product__stickers._flex
-{
-    margin-top: 6px;
-	margin-left: 6px;
-}
-
-.product-images .product__sticker
+.product-images .product__stickers .sticker
 {
 	font-size: 10px;
 	font-weight: 400;
+
+	margin-top: 6px;
+	margin-left: 6px;
 }
 
 
@@ -3445,6 +3445,7 @@ button.informations__tabs-btn
     color: #363B3F;
 
     background: #fff;
+	font-weight: 600;
 }
 
 
@@ -3656,6 +3657,7 @@ button.informations__tabs-btn
 {
 	width: 100%;
 	line-height: 42px;
+	color: #363B3F;
 }
 
 
@@ -4877,6 +4879,7 @@ button.informations__tabs-btn
 	background: #F5F7FA;
 	padding: 27px 36px;
 	border-radius: 8px;
+	border: 1px solid rgba(54, 59, 63, .5);
 }
 
 .mini-modal-notif__items
@@ -5250,6 +5253,11 @@ button.informations__tabs-btn
     border: 1px solid #92959C;
     border-radius: 6px;
 	background: transparent;
+}
+
+.inner-search__input:focus
+{
+	border-radius: 6px;
 }
 
 .inner-search__submit
@@ -5805,7 +5813,7 @@ button.informations__tabs-btn
 	display: block;
 	width: 24px;
 	height: 24px;
-	color: #F52121;
+	color: #363B3F;
 	transition: color .2s linear;
 }
 
@@ -5822,7 +5830,7 @@ button.informations__tabs-btn
 
 @media (any-hover: hover){
 	.lk-table__btn:hover{
-		color: #D30000;
+		color: #F52121;
 	}
 }
 
@@ -7335,6 +7343,8 @@ button.informations__tabs-btn
     visibility: hidden;
     pointer-events: none;
     transition: .2s linear;
+
+	z-index: 1;
 }
 
 .filter-show._show{

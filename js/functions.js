@@ -414,17 +414,17 @@ $(() => {
 	})
 
 	// Показать все модальном окне
-	$('body').on('click', '.modal-order__details-btn', function (e) {
+	$('body').on('click', '.modal-info__details-btn', function (e) {
 		e.preventDefault()
 
 		if ($(this).hasClass('_active')) {
 			$(this).removeClass('_active')
 
-			$(this).closest('.modal-order__item').find('._hide').removeClass('_show')
+			$(this).closest('.modal-info__item').find('._hide').removeClass('_show')
 		} else {
 			$(this).addClass('_active')
 
-			$(this).closest('.modal-order__item').find('._hide').addClass('_show')
+			$(this).closest('.modal-info__item').find('._hide').addClass('_show')
 		}
 	})
 
