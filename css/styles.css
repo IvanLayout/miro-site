@@ -8260,6 +8260,70 @@ button.informations__tabs-btn
 }
 
 
+.tooltip
+{
+    position: relative;
+
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+.tooltip__icon
+{
+    display: block;
+
+    width: 15px;
+    height: 15px;
+    background: url(../images/ic_tooltip.svg) 50% no-repeat;
+}
+
+.mini-modal__btn.tooltip__icon
+{
+    display: none;
+}
+
+.mini-modal__modal_text
+{
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    left: 100%;
+	margin-left: 5px;
+
+    visibility: hidden;
+
+    padding: 15px;
+	width: 400px;
+
+    pointer-events: none;
+
+    opacity: 0;
+    border-radius: 8px;
+    background: #fff;
+
+    transition: opacity .2s linear, visibility .2s linear;
+	border: 1px solid rgba(54, 59, 63, .5);
+}
+
+@media (min-width: 768px)
+{
+    .tooltip:hover .mini-modal__modal_text
+    {
+        visibility: visible;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+}
+
+.tooltip__text
+{
+    font-size: 14px;
+}
+
+
 .lk-table__info-item + .lk-table__info-item{
 	margin-top: 6px;
 }

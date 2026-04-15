@@ -372,6 +372,14 @@ $(() => {
 	})
 
 
+	$('body').on('click', '[data-mini-close]', function(e) {
+		e.preventDefault()
+
+		$('.mini-modal__modal, .mini-modal__btn').removeClass('_active')
+
+		if (is_touch_device()) $('body').css('cursor', 'default')
+	})
+
 
 
 	// Выпадающее меню в поиске

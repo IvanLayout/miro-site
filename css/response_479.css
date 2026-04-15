@@ -1,5 +1,11 @@
 @media (max-width: 479px)
 {
+	.tooltip__text
+	{
+		font-size: 12px;
+	}
+
+
 	.text-block h1, .text-block .title
 	{
 		font-size: 20px;

@@ -6,6 +6,68 @@
 		display: block;
 	}
 
+	.storage__sector .tooltip__icon
+    {
+        display: none;
+    }
+
+    .storage__sector .mini-modal__btn.tooltip__icon
+    {
+        display: block;
+    }
+
+    .storage__sector .mini-modal__modal_text
+    {
+        position: fixed;
+        top: auto;
+        bottom: 64px;
+        left: 0;
+
+        width: 100%;
+		margin-left: 0;
+    }
+
+    .storage__sector .mini-modal__modal._active
+    {
+        visibility: visible;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+	.storage__sector .mini-modal__close
+    {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+
+        color: #363B3F;
+
+        display: block;
+
+        width: 14px;
+        height: 14px;
+
+        opacity: .5;
+		background: none;
+		border: none;
+    }
+
+    .storage__sector .mini-modal__close svg
+    {
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        stroke: currentColor;
+    }
+
+
+
+
+
 	.page-top 
 	{
 		padding-top: 15px;
