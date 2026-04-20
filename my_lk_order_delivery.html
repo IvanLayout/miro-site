@@ -438,7 +438,7 @@
 										</div>
 
 										<div class="content-lk__choice-item content-lk__choice-item_big">
-											<button type="button" class="content-lk__link content-lk__link_add">
+											<button type="button" data-content="#modal-add-adres" class="content-lk__link content-lk__link_add modal-btn">
 												<svg>
 													<use xlink:href="images/sprite.svg#marker"></use>
 												</svg>
@@ -512,7 +512,7 @@
 													Также как выбранный нами инновационный путь предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач.
 												</td>
 												<td class="lk-table__last-td">
-													<button type="button" class="lk-table__btn">
+													<button type="button" data-content="#modal-edit-adres" class="lk-table__btn modal-btn">
 														<svg>
 															<use xlink:href="images/sprite.svg#edit"></use>
 														</svg>
@@ -543,7 +543,7 @@
 													В результате глубокого анализа, мы пришли к выводу, что необходимо усилить наши позиции на рынке.
 												</td>
 												<td class="lk-table__last-td">
-													<button type="button" class="lk-table__btn">
+													<button type="button" data-content="#modal-edit-adres" class="lk-table__btn modal-btn">
 														<svg>
 															<use xlink:href="images/sprite.svg#edit"></use>
 														</svg>
@@ -574,7 +574,7 @@
 													Обсуждая новые подходы, мы заметили, что креативность становится ключевым фактором успеха.
 												</td>
 												<td class="lk-table__last-td">
-													<button type="button" class="lk-table__btn">
+													<button type="button" data-content="#modal-edit-adres" class="lk-table__btn modal-btn">
 														<svg>
 															<use xlink:href="images/sprite.svg#edit"></use>
 														</svg>
@@ -605,7 +605,7 @@
 													Необходимо учитывать, что инновации открывают новые горизонты и возможности для бизнеса.
 												</td>
 												<td class="lk-table__last-td">
-													<button type="button" class="lk-table__btn">
+													<button type="button" data-content="#modal-edit-adres" class="lk-table__btn modal-btn">
 														<svg>
 															<use xlink:href="images/sprite.svg#edit"></use>
 														</svg>
@@ -636,7 +636,7 @@
 													Важно отметить, что знания и опыт команды играют решающую роль в достижении поставленных целей.
 												</td>
 												<td class="lk-table__last-td">
-													<button type="button" class="lk-table__btn">
+													<button type="button" data-content="#modal-edit-adres" class="lk-table__btn modal-btn">
 														<svg>
 															<use xlink:href="images/sprite.svg#edit"></use>
 														</svg>
@@ -708,6 +708,86 @@
 					<button type="button" class="modal-save__btn btn-red modal-close">Удалить</button>
 					<button type="button" class="modal-save__btn btn-redbord modal-close">Отменить</button>
 				</div>
+			</div>
+		</div>
+
+		<div id="modal-add-adres" class="modal">
+			<div class="modal__box">
+				<div class="modal__title">Добавить адрес доставки</div>
+
+				<form action="" class="form">
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" class="form__input form__input-anim">
+							<label class="form__label">Адрес</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" class="form__input form__input-anim">
+							<label class="form__label">ФИО</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="tel" data-mask="+7 999 999-99-99" value="" class="form__input form__input-anim">
+							<label class="form__label">Телефон</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<textarea class="form__textarea"></textarea>
+							<label class="form__label">Комментарий к адресу</label>
+						</div>
+					</div>
+
+					<div class="modal-info__bot">
+						<div class="modal-save__flex _start-flex _flex">
+							<button type="submit" class="modal-save__btn btn-red modal-close">Сохранить</button>
+							<button type="button" class="modal-save__btn btn-redbord modal-close">Отменить</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="modal-edit-adres" class="modal">
+			<div class="modal__box">
+				<div class="modal__title">Добавить адрес доставки</div>
+
+				<form action="" class="form">
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="Московская обл., г.о.Люберцы, Проектируемый проезд 40, ЖК 1-й Лермонтовский" class="form__input form__input-anim">
+							<label class="form__label">Адрес</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="Константин Константинович Константинопольский" class="form__input form__input-anim">
+							<label class="form__label">ФИО</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="tel" data-mask="+7 999 999-99-99" value="+7 963 923-45-88" class="form__input form__input-anim">
+							<label class="form__label">Телефон</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<textarea class="form__textarea form__textarea-anim">Также как выбранный нами инновационный путь предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач.</textarea>
+							<label class="form__label">Комментарий к адресу</label>
+						</div>
+					</div>
+
+					<div class="modal-info__bot">
+						<div class="modal-save__flex _start-flex _flex">
+							<button type="submit" class="modal-save__btn btn-red modal-close">Сохранить</button>
+							<button type="button" class="modal-save__btn btn-redbord modal-close">Отменить</button>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 

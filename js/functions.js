@@ -436,7 +436,7 @@ $(() => {
 
 	// commit
 
-	$('.form__input-anim').each(function(){
+	$('.form__input-anim, .form__textarea-anim').each(function(){
 		let value = $(this).val()
 
 		if ( value != '' ) {
@@ -446,7 +446,7 @@ $(() => {
 		}
 	})
 
-	$('.form__input-anim').change(function() {
+	$('.form__input-anim, .form__textarea-anim').change(function() {
 		let value = $(this).val()
 
 		if ( value != '' ) {
@@ -521,6 +521,27 @@ $(() => {
 		let datamask = $(this).data('mask');
 
 		$(this).inputmask(`${datamask}`, {
+			showMaskOnHover: false
+		})
+	})
+
+	$('input[type=decimal]').each(function(){
+		$(this).inputmask(`decimal`, {
+			alias: "numeric",
+			radixPoint: "",
+			placeholder: "",
+			// groupSeparator: " ",
+			// autoGroup: true,
+			rightAlign: false,
+			showMaskOnHover: false
+		})
+	})
+
+	$('._datetime').each(function(){
+		$(this).inputmask("datetime", {
+			alias: "datetime",
+			inputFormat: "dd.mm.yyyy",
+			placeholder: "дд.мм.гггг",
 			showMaskOnHover: false
 		})
 	})

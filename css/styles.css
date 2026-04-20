@@ -1639,8 +1639,8 @@ button
     display: block;
 
     width: 100%;
-    height: 120px;
-    padding: 15px 15px;
+    height: 136px;
+    padding: 20px 15px 15px;
 
     border: 1px solid #92959C;
     border-radius: 6px;
@@ -2279,7 +2279,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 --------------*/
 .fancybox__backdrop
 {
-    background: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
+	background: rgba(146, 149, 156, 0.8);
 }
 
 .fancybox__content
@@ -8363,6 +8364,36 @@ button.informations__tabs-btn
 
 .choice-action._pc-none{
 	display: none;
+}
+
+
+.checkbox_agree{
+	margin-top: 32px;
+}
+
+.checkbox__text_agree{
+	font-weight: 400;
+	font-size: 10px;
+	line-height: normal;
+	color: #92959C;
+	min-height: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.checkbox__text_agree a{
+	color: currentColor;
+	border-bottom: 1px solid transparent;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover){
+	.checkbox__text_agree a:hover{
+		border-bottom-color: currentColor;
+	}
 }
 
 

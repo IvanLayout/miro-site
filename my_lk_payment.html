@@ -546,7 +546,7 @@
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">10</div>
 
-														<button type="button" data-content="#" class="list-table__edit-btn modal-btn">
+														<button type="button" data-content="#modal-edit-contract" class="list-table__edit-btn modal-btn">
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
@@ -582,7 +582,7 @@
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
-														<button type="button" data-content="#" class="list-table__edit-btn modal-btn">
+														<button type="button" data-content="#modal-edit-contract" class="list-table__edit-btn modal-btn">
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
@@ -618,7 +618,7 @@
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
-														<button type="button" data-content="#" class="list-table__edit-btn modal-btn">
+														<button type="button" data-content="#modal-edit-contract" class="list-table__edit-btn modal-btn">
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
@@ -654,7 +654,7 @@
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
-														<button type="button" data-content="#" class="list-table__edit-btn modal-btn">
+														<button type="button" data-content="#modal-edit-contract" class="list-table__edit-btn modal-btn">
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
@@ -690,7 +690,7 @@
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
-														<button type="button" data-content="#" class="list-table__edit-btn modal-btn">
+														<button type="button" data-content="#modal-edit-contract" class="list-table__edit-btn modal-btn">
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
@@ -726,7 +726,7 @@
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
-														<button type="button" data-content="#" class="list-table__edit-btn modal-btn">
+														<button type="button" data-content="#modal-edit-contract" class="list-table__edit-btn modal-btn">
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
@@ -762,7 +762,7 @@
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
-														<button type="button" data-content="#" class="list-table__edit-btn modal-btn">
+														<button type="button" data-content="#modal-edit-contract" class="list-table__edit-btn modal-btn">
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
@@ -798,7 +798,7 @@
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
-														<button type="button" data-content="#" class="list-table__edit-btn modal-btn">
+														<button type="button" data-content="#modal-edit-contract" class="list-table__edit-btn modal-btn">
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
@@ -834,7 +834,7 @@
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
-														<button type="button" data-content="#" class="list-table__edit-btn modal-btn">
+														<button type="button" data-content="#modal-edit-contract" class="list-table__edit-btn modal-btn">
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
@@ -870,7 +870,7 @@
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
-														<button type="button" data-content="#" class="list-table__edit-btn modal-btn">
+														<button type="button" data-content="#modal-edit-contract" class="list-table__edit-btn modal-btn">
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
@@ -906,7 +906,7 @@
 													<div class="list-table__expiration-flex _flex">
 														<div class="list-table__expiration">-</div>
 
-														<button type="button" data-content="#" class="list-table__edit-btn modal-btn">
+														<button type="button" data-content="#modal-edit-contract" class="list-table__edit-btn modal-btn">
 															<svg>
 																<use xlink:href="images/sprite.svg#edit"></use>
 															</svg>
@@ -1166,6 +1166,52 @@
 						<button type="button" class="modal-save__btn btn-redbord modal-close">Выйти без сохранения</button>
 					</div>
 				</div>
+			</div>
+		</div>
+
+		<div id="modal-edit-contract" class="modal">
+			<div class="modal__box">
+				<div class="modal__title">Редактировать</div>
+
+				<form action="" class="form">
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" class="form__input form__input-anim">
+							<label class="form__label">Название договора</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" class="form__input form__input-anim">
+							<label class="form__label">Номер реализации</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="decimal" value="" class="form__input form__input-anim">
+							<label class="form__label">Сумма долга, ₽</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="text" value="" class="form__input form__input-anim _datetime">
+							<label class="form__label">Дата оплаты</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="form__field">
+							<input type="decimal" value="" class="form__input form__input-anim">
+							<label class="form__label">Дней просрочки</label>
+						</div>
+					</div>
+
+					<div class="modal-info__bot">
+						<div class="modal-save__flex _start-flex _flex">
+							<button type="submit" class="modal-save__btn btn-red modal-close">Сохранить</button>
+							<button type="button" class="modal-save__btn btn-redbord modal-close">Отменить</button>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 
